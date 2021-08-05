@@ -1,0 +1,1306 @@
+/*
+            ,;               
+            %@@@,          
+              "N@@g,          
+     @@@@@@g     "B@@g        
+    ]@@@@@@@@g,    "*B@@g     
+    ]@@@@@@@@@@@g     "$@@    
+    ]@@@@@@@@@@@@@@g   $@@    
+    ]@@@@@@@@@@@@@@@@@@@P     
+    ]@@@@@@@@@@@@@@@@P*       
+    ]@@@@@@@@@@@@@R*          
+    ]@@@@@@@@@@N"             
+    ]@@@@@@@N*                
+     *B@@N"
+*/
+
+body {
+    background-color: #fff;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+body.active {
+    overflow-y: hidden;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+*:focus {
+    outline: none;
+}
+
+.userPanel-main {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    min-height: 660px;
+    position: relative;
+    padding: 128px 24px 80px 24px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding-right: 24px;
+    padding-left: 24px;
+    box-sizing: border-box;
+}
+
+.userPanelContainer {
+    width: 100%;
+    max-width: 966px;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    direction: rtl;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Userpanel Header
+
+dP     dP                                                                dP    dP     dP                          dP                   
+88     88                                                                88    88     88                          88                   
+88     88 .d8888b. .d8888b. 88d888b. 88d888b. .d8888b. 88d888b. .d8888b. 88    88aaaaa88a .d8888b. .d8888b. .d888b88 .d8888b. 88d888b. 
+88     88 Y8ooooo. 88ooood8 88'  `88 88'  `88 88'  `88 88'  `88 88ooood8 88    88     88  88ooood8 88'  `88 88'  `88 88ooood8 88'  `88 
+Y8.   .8P       88 88.  ... 88       88.  .88 88.  .88 88    88 88.  ... 88    88     88  88.  ... 88.  .88 88.  .88 88.  ... 88       
+`Y88888P' `88888P' `88888P' dP       88Y888P' `88888P8 dP    dP `88888P' dP    dP     dP  `88888P' `88888P8 `88888P8 `88888P' dP       
+                                     88                                                                                                
+                                     dP                                                                                                
+
+*/
+
+.userPanelHeaderContainer {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80px;
+    -webkit-transition: 200ms ease;
+    -o-transition: 200ms ease;
+    transition: 200ms ease;
+    z-index: 1000;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.userPanelHeaderContainer>*+* {
+    margin-top: 24px;
+    -webkit-transition: 200ms ease;
+    -o-transition: 200ms ease;
+    transition: 200ms ease;
+}
+
+.userPanelHeaderContainer.onScroll {
+    top: 44px;
+}
+
+
+.userPanelHeaderContainer.onScroll>*+* {
+    margin-top: 12px;
+}
+
+.userPanelHeaderContainer.onScroll .userPanelAvatarContainer {
+    -webkit-transform: scale(.8);
+    -ms-transform: scale(.8);
+    transform: scale(.8);
+}
+
+.userPanelHeaderContainer.onScroll .usePanelUsername {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.userPanelUserContainer {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.userPanelUserContainer>*+* {
+    margin-top: 12px;
+}
+
+.userPanelAvatarContainer {
+    width: 84px;
+    min-width: 84px;
+    height: 84px;
+    min-height: 84px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 100px;
+    overflow: hidden;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 8px 20px 0px rgba(120, 134, 159, 0.2);
+    box-shadow: 0px 8px 20px 0px rgba(120, 134, 159, 0.2);
+    -webkit-transition: 400ms cubic-bezier(0, 0, .2, 1);
+    -o-transition: 400ms cubic-bezier(0, 0, .2, 1);
+    transition: 400ms cubic-bezier(0, 0, .2, 1);
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+}
+
+.userPanelAvatarContainer:hover .userPanelAvatar {
+    -webkit-filter: blur(.7px);
+    filter: blur(.7px);
+}
+
+.userPanelAvatarContainer:hover .userPanelEditAvatarContainer {
+    -webkit-transform: translateY(60%);
+    -ms-transform: translateY(60%);
+    transform: translateY(60%);
+}
+
+.userPanelAvatar {
+    width: 110%;
+    height: 110%;
+    border-radius: 100px;
+    -webkit-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    transition: 400ms ease;
+}
+
+.usePanelAvatarOverlay {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    position: absolute;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.userPanelEditAvatarContainer {
+    width: 100%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, .3);
+    -webkit-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    transition: 400ms ease;
+    -webkit-transform: translateY(150%);
+    -ms-transform: translateY(150%);
+    transform: translateY(150%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-top: 6px;
+    font-family: IRANSans;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.usePanelUsername {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: IRANSans;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Userpanel Tabs
+
+dP     dP                                                                dP    d888888P          dP                
+88     88                                                                88       88             88                
+88     88 .d8888b. .d8888b. 88d888b. 88d888b. .d8888b. 88d888b. .d8888b. 88       88    .d8888b. 88d888b. .d8888b. 
+88     88 Y8ooooo. 88ooood8 88'  `88 88'  `88 88'  `88 88'  `88 88ooood8 88       88    88'  `88 88'  `88 Y8ooooo. 
+Y8.   .8P       88 88.  ... 88       88.  .88 88.  .88 88    88 88.  ... 88       88    88.  .88 88.  .88       88 
+`Y88888P' `88888P' `88888P' dP       88Y888P' `88888P8 dP    dP `88888P' dP       dP    `88888P8 88Y8888' `88888P' 
+                                     88                                                                            
+                                     dP                                                                            
+
+*/
+
+.userPanelTabWrapper {
+    width: 100%;
+    height: 48px;
+    min-height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(120, 134, 159, .4);
+}
+
+.userPanelTabWrapper>*+* {
+    margin-right: 12px;
+}
+
+.userPanelTabWrapper>*:last-child {
+    margin-right: auto;
+}
+
+.tabBtnContainer {
+    width: auto;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 12px;
+    padding-right: 12px;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.tabBtnContainer:before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: -1px;
+    left: 0;
+    background-color: rgba(120, 134, 159, 1);
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+.tabBtnContainer.active:before {
+    -webkit-transition: 300ms ease;
+    -o-transition: 300ms ease;
+    transition: 300ms ease;
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.tabBtnContainer.active .tabBtnIcon {
+    opacity: 1
+}
+
+.tabBtnContainer.active .tabBtnTitle {
+    opacity: 1
+}
+
+.tabBtnContainer>*+* {
+    margin-right: 12px;
+}
+
+.tabBtnIcon {
+    width: 30px;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: .4;
+    -webkit-transition: 200ms ease;
+    -o-transition: 200ms ease;
+    transition: 200ms ease;
+}
+
+#myVideosTabBtn .tabBtnIcon {
+    background-image: url('../img/myVideosTab.svg');
+}
+
+#myShoppingsTabBtn .tabBtnIcon {
+    background-image: url('../img/myShoppingsTab.svg');
+}
+
+#myBookmarksTabBtn .tabBtnIcon {
+    background-image: url('../img/myBookmarksTab.svg');
+}
+
+#myMessagesTabBtn .tabBtnIcon {
+    background-image: url('../img/myMessagesTab.svg');
+}
+
+.tabBtnTitle {
+    font-family: IRANSans;
+    font-weight: normal;
+    font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: .4;
+    -webkit-transition: 200ms ease;
+    -o-transition: 200ms ease;
+    transition: 200ms ease;
+}
+
+.tabBtnNotifContainer {
+    width: auto;
+    min-width: 20px;
+    height: 20px;
+    font-family: IRANSans;
+    font-weight: 500;
+    font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 2px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: 18px;
+    border-radius: 100px;
+}
+
+.tabBtnNotifContainer.null {
+    min-width: 18px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.userPanelContentContainer {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 12px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.userPanelMyVideosContainer {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Userpanel My Videos
+
+dP     dP                                                                dP    8888ba.88ba              dP     dP oo       dP                            
+88     88                                                                88    88  `8b  `8b             88     88          88                            
+88     88 .d8888b. .d8888b. 88d888b. 88d888b. .d8888b. 88d888b. .d8888b. 88    88   88   88 dP    dP    88    .8P dP .d888b88 .d8888b. .d8888b. .d8888b. 
+88     88 Y8ooooo. 88ooood8 88'  `88 88'  `88 88'  `88 88'  `88 88ooood8 88    88   88   88 88    88    88    d8' 88 88'  `88 88ooood8 88'  `88 Y8ooooo. 
+Y8.   .8P       88 88.  ... 88       88.  .88 88.  .88 88    88 88.  ... 88    88   88   88 88.  .88    88  .d8P  88 88.  .88 88.  ... 88.  .88       88 
+`Y88888P' `88888P' `88888P' dP       88Y888P' `88888P8 dP    dP `88888P' dP    dP   dP   dP `8888P88    888888'   dP `88888P8 `88888P' `88888P' `88888P' 
+                                     88                                                          .88                                                     
+                                     dP                                                      d8888P                                                      
+
+*/
+
+.userPanelMyVideosContainer.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.userPanelMyVideosContainer>*+* {
+    margin-top: 12px;
+}
+
+.myVideoContainer {
+    width: 100%;
+    height: 130px;
+    min-height: 130px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+}
+
+.myVideoContainer>*+* {
+    margin-right: 24px;
+}
+
+.myVideoMainContainer {
+    width: calc(100% - 154px);
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.myVideoMainContainer>*+* {
+    margin-right: 24px;
+}
+
+.myVideoAdditionalContainer {
+    width: 130px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding-left: 6px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.myVideoAdditionalContainer>*+* {
+    margin-top: 12px;
+}
+
+
+.myVideoPurchaseDateContainer {
+    width: auto;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-flow: row-reverse;
+    flex-flow: row-reverse;
+}
+
+.myVideoPurchaseDateContainer>*+* {
+    margin-left: 12px;
+}
+
+.myVideoPurchaseDateIcon {
+    width: 30px;
+    min-height: 30px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url('../img/purchaseIcon.svg');
+}
+
+.myVideoPurchaseDate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 30px;
+    font-family: IRANSans;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+Userpanel My Shoppings
+
+dP     dP                                                                dP    8888ba.88ba              .d88888b  dP                                  oo                            
+88     88                                                                88    88  `8b  `8b             88.    "' 88                                                                
+88     88 .d8888b. .d8888b. 88d888b. 88d888b. .d8888b. 88d888b. .d8888b. 88    88   88   88 dP    dP    `Y88888b. 88d888b. .d8888b. 88d888b. 88d888b. dP 88d888b. .d8888b. .d8888b. 
+88     88 Y8ooooo. 88ooood8 88'  `88 88'  `88 88'  `88 88'  `88 88ooood8 88    88   88   88 88    88          `8b 88'  `88 88'  `88 88'  `88 88'  `88 88 88'  `88 88'  `88 Y8ooooo. 
+Y8.   .8P       88 88.  ... 88       88.  .88 88.  .88 88    88 88.  ... 88    88   88   88 88.  .88    d8'   .8P 88    88 88.  .88 88.  .88 88.  .88 88 88    88 88.  .88       88 
+`Y88888P' `88888P' `88888P' dP       88Y888P' `88888P8 dP    dP `88888P' dP    dP   dP   dP `8888P88     Y88888P  dP    dP `88888P' 88Y888P' 88Y888P' dP dP    dP `8888P88 `88888P' 
+                                     88                                                          .88                                88       88                        .88          
+                                     dP                                                      d8888P                                 dP       dP                    d8888P           
+
+*/
+
+.userPanelMyShoppingsContainer {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding-bottom: 24px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    display: none;
+    position: relative;
+}
+
+.userPanelMyShoppingsContainer.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.userPanelMyShoppingsContainer>*+* {
+    margin-top: 12px;
+}
+
+.countinueShoppingBtn {
+    width: 132px;
+    height: 48px;
+    border-radius: 100px;
+    position: fixed;
+    bottom: 24px;
+    left: 16vw;
+    -webkit-box-shadow: 0px 10px 50px rgba(140, 181, 243, .5), 0px 5px 20px rgba(0, 0, 0, .2);
+    box-shadow: 0px 10px 50px rgba(140, 181, 243, .5), 0px 5px 20px rgba(0, 0, 0, .2);
+    z-index: 2000;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-flow: row-reverse;
+    flex-flow: row-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    transition: 400ms ease;
+}
+
+.countinueShoppingBtn:hover {
+    background-color: rgba(148, 191, 255, 1) !important;
+}
+
+.continueShoppingBtnSmal {
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+    background-image: url('../img/arrowLeft.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.continueShoppingBtnLarge {
+    width: auto;
+    height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-family: IRANSans;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.myShoppingContainer {
+    width: 100%;
+    height: 175px;
+    min-height: 175px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+}
+
+.myShoppingContainer.removed {
+    display: none;
+}
+
+.myShoppingContainer>*+* {
+    margin-top: 12px;
+}
+
+.myShoppingMainContainer {
+    width: 100%;
+    height: 130px;
+    min-height: 130px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+}
+
+.myShoppingMainContainer>*+* {
+    margin-right: 24px;
+}
+
+.myShoppingAdditionalContainer {
+    width: 100%;
+    height: 33px;
+    min-height: 33px;
+    padding-left: 6px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.removeItemBtnContainer {
+    width: 140px;
+    min-width: 140px;
+    height: 100%;
+    min-height: 33px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-flow: row-reverse;
+    flex-flow: row-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.removeItemBtnContainer:hover .removeItemBtnSmal {
+    background-color: rgba(236, 71, 71, 1) !important;
+}
+
+.removeItemBtnContainer:hover .removeItemBtnLarge {
+    background-color: rgba(217, 65, 65, 1) !important;
+}
+
+.removeItemBtnContainer:hover .removeItemHoverAnimate {
+    -webkit-transform: scaleX(1) scaleY(1);
+    -ms-transform: scaleX(1) scaleY(1);
+    transform: scaleX(1) scaleY(1);
+    opacity: .5
+}
+
+.removeItemBtnSmal {
+    width: 33px;
+    min-width: 33px;
+    height: 33px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url('../img/removeItemIcon.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 33px 33px;
+    -webkit-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    transition: 400ms ease;
+}
+
+.removeItemBtnLarge {
+    width: 100%;
+    height: 33px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    line-height: 33px;
+    font-family: IRANSans;
+    font-weight: 500;
+    font-size: 10px;
+    -webkit-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    transition: 400ms ease;
+    position: relative;
+}
+
+.removeItemBtnLarge span {
+    z-index: 2
+}
+
+.removeItemHoverAnimate {
+    position: absolute;
+    left: 0px;
+    width: 110%;
+    height: 200%;
+    -webkit-transform: scaleX(0) scaleY(.5);
+    -ms-transform: scaleX(0) scaleY(.5);
+    transform: scaleX(0) scaleY(.5);
+    -webkit-transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+    -webkit-transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    -o-transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.myShoppingItemPrice {
+    width: auto;
+    height: 33px;
+    line-height: 33px;
+    font-family: IRANSans;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Userpanel My Bookmarks
+
+dP     dP                                                                dP    8888ba.88ba               888888ba                    dP                                    dP                
+88     88                                                                88    88  `8b  `8b              88    `8b                   88                                    88                
+88     88 .d8888b. .d8888b. 88d888b. 88d888b. .d8888b. 88d888b. .d8888b. 88    88   88   88 dP    dP    a88aaaa8P' .d8888b. .d8888b. 88  .dP  88d8b.d8b. .d8888b. 88d888b. 88  .dP  .d8888b. 
+88     88 Y8ooooo. 88ooood8 88'  `88 88'  `88 88'  `88 88'  `88 88ooood8 88    88   88   88 88    88     88   `8b. 88'  `88 88'  `88 88888"   88'`88'`88 88'  `88 88'  `88 88888"   Y8ooooo. 
+Y8.   .8P       88 88.  ... 88       88.  .88 88.  .88 88    88 88.  ... 88    88   88   88 88.  .88     88    .88 88.  .88 88.  .88 88  `8b. 88  88  88 88.  .88 88       88  `8b.       88 
+`Y88888P' `88888P' `88888P' dP       88Y888P' `88888P8 dP    dP `88888P' dP    dP   dP   dP `8888P88     88888888P `88888P' `88888P' dP   `YP dP  dP  dP `88888P8 dP       dP   `YP `88888P' 
+                                     88                                                          .88                                                                                         
+                                     dP                                                      d8888P                                                                                          
+
+ */
+
+.userPanelMyBookmarksContainer {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    display: none;
+}
+
+.userPanelMyBookmarksContainer.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.userPanelMyBookmarksContainer>*+* {
+    margin-top: 12px;
+}
+
+.myBookmarkContainer {
+    width: 100%;
+    height: 130px;
+    min-height: 130px;
+    padding-left: 12px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.myBookmarkContainer.removed {
+    display: none
+}
+
+.myBookmarkMainContainer {
+    width: 100%;
+    height: 100%;
+    min-height: 130px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.myBookmarkMainContainer>*+* {
+    margin-right: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Userpanel My Messages
+
+dP     dP                                                                dP    8888ba.88ba              8888ba.88ba                                                                 
+88     88                                                                88    88  `8b  `8b             88  `8b  `8b                                                                
+88     88 .d8888b. .d8888b. 88d888b. 88d888b. .d8888b. 88d888b. .d8888b. 88    88   88   88 dP    dP    88   88   88 .d8888b. .d8888b. .d8888b. .d8888b. .d8888b. .d8888b. .d8888b. 
+88     88 Y8ooooo. 88ooood8 88'  `88 88'  `88 88'  `88 88'  `88 88ooood8 88    88   88   88 88    88    88   88   88 88ooood8 Y8ooooo. Y8ooooo. 88'  `88 88'  `88 88ooood8 Y8ooooo. 
+Y8.   .8P       88 88.  ... 88       88.  .88 88.  .88 88    88 88.  ... 88    88   88   88 88.  .88    88   88   88 88.  ...       88       88 88.  .88 88.  .88 88.  ...       88 
+`Y88888P' `88888P' `88888P' dP       88Y888P' `88888P8 dP    dP `88888P' dP    dP   dP   dP `8888P88    dP   dP   dP `88888P' `88888P' `88888P' `88888P8 `8888P88 `88888P' `88888P' 
+                                     88                                                          .88                                                          .88                   
+                                     dP                                                      d8888P                                                       d8888P                    
+
+*/
+
+.userPanelMyMessagesContainer {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    display: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.userPanelMyMessagesContainer.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.userPanelMyMessagesContainer>*+* {
+    margin-top: 0px;
+}
+
+.myMessageContainer {
+    width: 100%;
+    height: 108px;
+    min-height: 108px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+}
+
+.myMessageContainer.unRead {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.myMessageContainer.read {
+    background-color: rgba(243, 245, 245, .4);
+}
+
+.myMessageContainer.unRead .myMessageMainContainer .myMessageContentContainer .myMessageSender {
+    font-family: IRANSans;
+    font-weight: bold;
+}
+
+.myMessageContainer.unRead .myMessageMainContainer .myMessageContentContainer .myMessageTitle {
+    font-family: IRANSans;
+    font-weight: 500;
+}
+
+.myMessageContainer.read .myMessageMainContainer .myMessageContentContainer .myMessageTitle {
+    font-family: IRANSans;
+    font-weight: normal;
+}
+
+.myMessageContainer.read .myMessageUnReadAlert {
+    display: none;
+}
+
+.myMessageMainContainer {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.myMessageMainContainer>*+* {
+    margin-right: 24px;
+}
+
+.myMessageImageContainer {
+    width: 84px;
+    height: 84px;
+    border-radius: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-image: url('../img/courses/8.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.myMessageContentContainer {
+    width: calc(100% - 108px);
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    direction: rtl;
+    padding-top: 24px;
+}
+
+.myMessageContentContainer>*+* {
+    margin-top: 12px;
+}
+
+
+.myMessageSender {
+    white-space: nowrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 95%;
+    font-family: IRANSans;
+    font-weight: 500;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.myMessageSender span {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.myMessageTitle {
+    white-space: nowrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 95%;
+    font-family: IRANSans;
+    font-weight: 300;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.myMessageTitle span {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.myMessageTimeContainer {
+    width: 100%;
+    height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.myMessageTimeContainer>*+* {
+    margin-right: 12px;
+}
+
+.myMessageTime {
+    font-family: IRANSans;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.myMessageUnReadAlert {
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Userpanel Sep
+
+dP     dP                                                                dP    .d88888b                    
+88     88                                                                88    88.    "'                   
+88     88 .d8888b. .d8888b. 88d888b. 88d888b. .d8888b. 88d888b. .d8888b. 88    `Y88888b. .d8888b. 88d888b. 
+88     88 Y8ooooo. 88ooood8 88'  `88 88'  `88 88'  `88 88'  `88 88ooood8 88          `8b 88ooood8 88'  `88 
+Y8.   .8P       88 88.  ... 88       88.  .88 88.  .88 88    88 88.  ... 88    d8'   .8P 88.  ... 88.  .88 
+`Y88888P' `88888P' `88888P' dP       88Y888P' `88888P8 dP    dP `88888P' dP     Y88888P  `88888P' 88Y888P' 
+                                     88                                                           88       
+                                     dP                                                           dP       
+
+*/
+
+.userPanelSep {
+    width: calc(100% - 164px);
+    height: 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: auto;
+}
+
+.userPanelSep.myMessagesSep {
+    width: 100%;
+    height: 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: auto;
+}
+
+.userPanelSep.removed {
+    display: none
+}

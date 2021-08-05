@@ -1,0 +1,954 @@
+/*
+            ,;               
+            %@@@,          
+              "N@@g,          
+     @@@@@@g     "B@@g        
+    ]@@@@@@@@g,    "*B@@g     
+    ]@@@@@@@@@@@g     "$@@    
+    ]@@@@@@@@@@@@@@g   $@@    
+    ]@@@@@@@@@@@@@@@@@@@P     
+    ]@@@@@@@@@@@@@@@@P*       
+    ]@@@@@@@@@@@@@R*          
+    ]@@@@@@@@@@N"             
+    ]@@@@@@@N*                
+     *B@@N"
+*/
+
+body {
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body.active {
+  overflow-y: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+/*
+------------------------------------------------------------------------------
+*/
+
+/*
+Courses Top Container
+
+ a88888b.                                                          d888888P                       a88888b.                     dP            oo                            
+d8'   `88                                                             88                         d8'   `88                     88                                          
+88        .d8888b. dP    dP 88d888b. .d8888b. .d8888b. .d8888b.       88    .d8888b. 88d888b.    88        .d8888b. 88d888b. d8888P .d8888b. dP 88d888b. .d8888b. 88d888b. 
+88        88'  `88 88    88 88'  `88 Y8ooooo. 88ooood8 Y8ooooo.       88    88'  `88 88'  `88    88        88'  `88 88'  `88   88   88'  `88 88 88'  `88 88ooood8 88'  `88 
+Y8.   .88 88.  .88 88.  .88 88             88 88.  ...       88       88    88.  .88 88.  .88    Y8.   .88 88.  .88 88    88   88   88.  .88 88 88    88 88.  ... 88       
+ Y88888P' `88888P' `88888P' dP       `88888P' `88888P' `88888P'       dP    `88888P' 88Y888P'     Y88888P' `88888P' dP    dP   dP   `88888P8 dP dP    dP `88888P' dP       
+                                                                                     88                                                                                    
+                                                                                     dP                                                                                    
+
+*/
+
+.courses-main {
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  position: relative;
+  padding: 92px 24px 80px 24px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.courses-main > * + * {
+  margin-top: 24px;
+}
+
+.coursesTopContainer {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  max-width: 1126px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.coursesTopContainer > * + * {
+  margin-left: 24px;
+}
+
+.topCenterCourseContainer {
+  width: calc(100% - 819px);
+  height: auto;
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+
+.topCenterCourseContainer > * + * {
+  margin-top: 24px;
+}
+
+.topCenterCourse {
+  width: 100%;
+  height: 100px;
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-flow: row-reverse;
+  flex-flow: row-reverse;
+}
+
+.topCenterCourse > * + * {
+  margin-right: 12px;
+}
+
+.topRightCourse {
+  width: 323px;
+  min-width: 323px;
+  height: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+
+.topLeftCourse {
+  width: 448px;
+  min-width: 448px;
+  height: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  direction: rtl;
+}
+
+.topRightCourse > * + * {
+  margin-top: 12px;
+}
+
+.topLeftCourse > * + * {
+  margin-top: 12px;
+}
+
+/*
+------------------------------------------------------------------------------
+*/
+
+/*
+Course Elements
+
+ a88888b.                                                  88888888b dP                                         dP            
+d8'   `88                                                  88        88                                         88            
+88        .d8888b. dP    dP 88d888b. .d8888b. .d8888b.    a88aaaa    88 .d8888b. 88d8b.d8b. .d8888b. 88d888b. d8888P .d8888b. 
+88        88'  `88 88    88 88'  `88 Y8ooooo. 88ooood8     88        88 88ooood8 88'`88'`88 88ooood8 88'  `88   88   Y8ooooo. 
+Y8.   .88 88.  .88 88.  .88 88             88 88.  ...     88        88 88.  ... 88  88  88 88.  ... 88    88   88         88 
+ Y88888P' `88888P' `88888P' dP       `88888P' `88888P'     88888888P dP `88888P' dP  dP  dP `88888P' dP    dP   dP   `88888P' 
+                                                                                                                              
+                                                                                                                              
+
+*/
+
+/*
+Course Image Large
+*/
+
+.courseImageLarge {
+  width: 100%;
+  height: 150px;
+  min-height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/*
+Course Content Large
+*/
+
+.courseContentLargeLeft {
+  max-width: 80%;
+  height: calc(100% - 150px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  direction: rtl;
+}
+
+.courseContentLargeRight {
+  max-width: 75%;
+  height: calc(100% - 150px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  direction: rtl;
+}
+
+/*
+Course Title Large
+*/
+
+.courseTitleLarge {
+  overflow: hidden !important;
+  max-height: 56px !important;
+  -o-text-overflow: ellipsis !important;
+  text-overflow: ellipsis !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical;
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+/*
+Course Text Large
+*/
+
+.courseTextLarge {
+  overflow: hidden !important;
+  max-height: 56px !important;
+  -o-text-overflow: ellipsis !important;
+  text-overflow: ellipsis !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical;
+  font-family: IRANSans;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+/*
+Course Image Smal
+*/
+
+.courseImageSmal {
+  width: 100px;
+  height: 100px;
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/*
+Courses Smal Content 
+*/
+
+.courseContentSmal {
+  width: calc(100% - 112px);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  direction: rtl;
+  overflow: hidden;
+}
+
+/*
+Courses Smal Title
+*/
+
+.courseTitleSmal {
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 95%;
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.courseTitleSmal span {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*
+Courses Smal Text
+*/
+
+.courseTextSmal {
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 95%;
+  font-family: IRANSans;
+  font-weight: 300;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.courseTextSmal span {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*
+Courses Carousel
+
+ a88888b.                                                           a88888b.                                                       dP 
+d8'   `88                                                          d8'   `88                                                       88 
+88        .d8888b. dP    dP 88d888b. .d8888b. .d8888b. .d8888b.    88        .d8888b. 88d888b. .d8888b. dP    dP .d8888b. .d8888b. 88 
+88        88'  `88 88    88 88'  `88 Y8ooooo. 88ooood8 Y8ooooo.    88        88'  `88 88'  `88 88'  `88 88    88 Y8ooooo. 88ooood8 88 
+Y8.   .88 88.  .88 88.  .88 88             88 88.  ...       88    Y8.   .88 88.  .88 88       88.  .88 88.  .88       88 88.  ... 88 
+ Y88888P' `88888P' `88888P' dP       `88888P' `88888P' `88888P'     Y88888P' `88888P8 dP       `88888P' `88888P' `88888P' `88888P' dP 
+
+*/
+
+.coursesCarouselWrapper {
+  width: 100%;
+  max-width: 966px;
+  min-height: 200px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-top: 1px solid rgba(120, 134, 159, 0.4);
+  border-bottom: 1px solid rgba(120, 134, 159, 0.4);
+}
+
+.coursesCarouselWrapper:before {
+  content: "";
+  display: block;
+  padding-top: 35.8%;
+}
+
+.coursesCarouselContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 24px 0 24px 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.coursesCarouselBase {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.coursesCarouselItem {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.coursesCarouselItemFirst {
+  background-image: url(../img/courses/carouselItem1.png);
+  background-position: 10% 50%;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  padding: 4% 5%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.coursesCarouselItemFirstContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.coursesCarouselItemFirstContainer > * + * {
+  margin-top: 6%;
+}
+
+.coursesCarouselItemFirstSloganContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+
+.coursesCarouselItemFirstSlogan {
+  font-family: IRANSans;
+  font-weight: bold;
+  font-size: calc(0.8em + 1.2vw);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.coursesCarouselItemFirstSubSlogan {
+  font-family: IRANSans;
+  font-weight: normal;
+  font-size: calc(0.6em + 0.4vw);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.coursesCarouselBtn {
+  max-width: 40px;
+  height: 32px;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 0 24px 0 24px;
+  -webkit-box-shadow: 0px 6px 50px rgba(118, 153, 204, 0.7);
+  box-shadow: 0px 6px 50px rgba(118, 153, 204, 0.7);
+}
+
+.coursesCarouselItemSecond {
+  background-image: url(../img/courses/carouselItem2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.mainCoursesContainer {
+  width: 100%;
+  max-width: 966px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  position: relative;
+}
+
+.mainCoursesContainer > * + * {
+  margin-left: 24px;
+}
+
+.mainCoursesLeftPanel {
+  width: 369px;
+  min-width: 369px;
+  height: auto;
+  position: relative;
+}
+
+.mainCoursesFixerPanel {
+  width: 100%;
+  height: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+
+.mainCoursesFixerPanel > * + * {
+  margin-top: 24px;
+}
+
+/*
+Numbered Course
+
+
+888888ba                      dP                                        dP     a88888b.                                              
+88    `8b                     88                                        88    d8'   `88                                              
+88     88 dP    dP 88d8b.d8b. 88d888b. .d8888b. 88d888b. .d8888b. .d888b88    88        .d8888b. dP    dP 88d888b. .d8888b. .d8888b. 
+88     88 88    88 88'`88'`88 88'  `88 88ooood8 88'  `88 88ooood8 88'  `88    88        88'  `88 88    88 88'  `88 Y8ooooo. 88ooood8 
+88     88 88.  .88 88  88  88 88.  .88 88.  ... 88       88.  ... 88.  .88    Y8.   .88 88.  .88 88.  .88 88             88 88.  ... 
+dP     dP `88888P' dP  dP  dP 88Y8888' `88888P' dP       `88888P' `88888P8     Y88888P' `88888P' `88888P' dP       `88888P' `88888P' 
+                                                                                                                                     
+                                                                                                                                     
+
+*/
+
+.numberedCourse {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-flow: row-reverse;
+  flex-flow: row-reverse;
+}
+
+.numberedCourseNumberContainer {
+  width: 48px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  direction: rtl;
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.numberedCourseContent {
+  width: calc(100% - 48px);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  direction: rtl;
+}
+
+.coursesAdvertContainer {
+  width: 100%;
+  height: 100px;
+}
+
+/*
+Courses Footer
+
+ a88888b.                                                           88888888b                     dP                     
+d8'   `88                                                           88                            88                     
+88        .d8888b. dP    dP 88d888b. .d8888b. .d8888b. .d8888b.    a88aaaa    .d8888b. .d8888b. d8888P .d8888b. 88d888b. 
+88        88'  `88 88    88 88'  `88 Y8ooooo. 88ooood8 Y8ooooo.     88        88'  `88 88'  `88   88   88ooood8 88'  `88 
+Y8.   .88 88.  .88 88.  .88 88             88 88.  ...       88     88        88.  .88 88.  .88   88   88.  ... 88       
+ Y88888P' `88888P' `88888P' dP       `88888P' `88888P' `88888P'     dP        `88888P' `88888P'   dP   `88888P' dP       
+                                                                                                                         
+                                                                                                                         
+
+*/
+
+.coursesFooterWrapper {
+  width: 100%;
+  height: 73px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(120, 134, 159, 0.4);
+  border-bottom: 1px solid rgba(120, 134, 159, 0.4);
+}
+
+.coursesFooterContainer {
+  width: 100%;
+  height: 50%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.coursesFooterLogo {
+  width: 84px;
+  height: 20px;
+  background-image: url("../img/coursesFooterLogo.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.coursesFooterOptionContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: auto;
+}
+
+.coursesFooterOptionContainer > * + * {
+  margin-left: 24px;
+}
+
+.coursesFooterOption {
+  font-family: IRANSans;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.coursesFooterSocialContainer {
+  width: 100%;
+  height: 50%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.coursesFooterSocialContainer > * + * {
+  margin-left: 24px;
+}
+
+.coursesFooterSocial {
+  width: 18px;
+  height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.coursesFooterSocial.instagram {
+  background-image: url("../img/social/instagramGrey.svg");
+}
+
+.coursesFooterSocial.facebook {
+  background-image: url("../img/social/facebookGrey.svg");
+}
+
+.coursesFooterSocial.twitter {
+  background-image: url("../img/social/twitterGrey.svg");
+}
+
+.coursesFooterSocial.telegram {
+  background-image: url("../img/social/telegramGrey.svg");
+}
+
+.coursesCopyright {
+  font-family: IRANSans;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  direction: rtl;
+  margin-top: 0px !important;
+}
+
+/*
+Main Course
+
+
+8888ba.88ba           oo              a88888b.                                              
+88  `8b  `8b                         d8'   `88                                              
+88   88   88 .d8888b. dP 88d888b.    88        .d8888b. dP    dP 88d888b. .d8888b. .d8888b. 
+88   88   88 88'  `88 88 88'  `88    88        88'  `88 88    88 88'  `88 Y8ooooo. 88ooood8 
+88   88   88 88.  .88 88 88    88    Y8.   .88 88.  .88 88.  .88 88             88 88.  ... 
+dP   dP   dP `88888P8 dP dP    dP     Y88888P' `88888P' `88888P' dP       `88888P' `88888P' 
+                                                                                            
+                                                                                            
+
+*/
+
+.mainCoursesRightPanel {
+  width: calc(100% - 393px);
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+
+.mainCoursesRightPanel > * + * {
+  margin-top: 48px;
+}
+
+.mainCourse {
+  width: 100%;
+  height: 174px;
+  min-height: 174px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-flow: row-reverse;
+  flex-flow: row-reverse;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.mainCourse > * + * {
+  margin-right: 24px;
+}
+
+/*Attendance */
+
+.attendanceCourseWrapper {
+  height: auto;
+  width: 100%;
+  max-width: 966px;
+  margin: auto;
+  display: flex;
+  flex-flow: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.attendanceCourseContainer {
+  width: 70%;
+  min-width: 448px;
+  height: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  position: relative;
+  direction: rtl;
+}
+
+.attendanceCourseContainer > * + * {
+  margin-right: 24px;
+}
+
+.attendanceCourseAdvertContainer {
+  width: 30%;
+  height: 320px;
+  display: flex;
+  background-image: url(../img/attendance/classRoom.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+.attendanceCourseAdvertBtn {
+  min-width: 100px;
+  width: auto;
+  height: 42px;
+  padding: 0px 12px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-transition: 400ms ease;
+  -o-transition: 400ms ease;
+  transition: 400ms ease;
+}
+
+.attendanceCourseAdvertBtn:hover {
+  background-color: rgba(168, 204, 114, 1) !important;
+  -webkit-transform: translateY(-3px) !important;
+  -ms-transform: translateY(-3px) !important;
+  transform: translateY(-3px) !important;
+  -webkit-box-shadow: 0px 13px 50px rgba(147, 179, 100, 0.5);
+  box-shadow: 0px 13px 50px rgba(147, 179, 100, 0.5);
+}
+
+.attendanceCourseImg {
+  width: 220px;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.attendanceCourseContententContainer {
+  width: calc(100% - 244px);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  direction: rtl;
+  padding: 12px 0px;
+  box-sizing: border-box;
+}
+
+.attendanceCourseContententContainer > * + * {
+  margin-top: 12px;
+}
+
+.attendanceCourseTitleLarge {
+  overflow: hidden !important;
+  max-height: 56px !important;
+  -o-text-overflow: ellipsis !important;
+  text-overflow: ellipsis !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical;
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+.attendanceCourseTextLarge {
+  overflow: hidden !important;
+  max-height: 140px !important;
+  -o-text-overflow: ellipsis !important;
+  text-overflow: ellipsis !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 5 !important;
+  -webkit-box-orient: vertical;
+  font-family: IRANSans;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 28px;
+  cursor: pointer;
+}

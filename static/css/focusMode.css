@@ -1,0 +1,2212 @@
+/*
+            ,;               
+            %@@@,          
+              "N@@g,          
+     @@@@@@g     "B@@g        
+    ]@@@@@@@@g,    "*B@@g     
+    ]@@@@@@@@@@@g     "$@@    
+    ]@@@@@@@@@@@@@@g   $@@    
+    ]@@@@@@@@@@@@@@@@@@@P     
+    ]@@@@@@@@@@@@@@@@P*       
+    ]@@@@@@@@@@@@@R*          
+    ]@@@@@@@@@@N"             
+    ]@@@@@@@N*                
+     *B@@N"
+*/
+
+
+/*Focus Mode*/
+
+
+/*
+
+ 88888888b                                        8888ba.88ba                 dP          
+ 88                                               88  `8b  `8b                88          
+a88aaaa    .d8888b. .d8888b. dP    dP .d8888b.    88   88   88 .d8888b. .d888b88 .d8888b. 
+ 88        88'  `88 88'  `"" 88    88 Y8ooooo.    88   88   88 88'  `88 88'  `88 88ooood8 
+ 88        88.  .88 88.  ... 88.  .88       88    88   88   88 88.  .88 88.  .88 88.  ... 
+ dP        `88888P' `88888P' `88888P' `88888P'    dP   dP   dP `88888P' `88888P8 `88888P' 
+                                                                                          
+                                                                                          
+
+*/
+
+.player-main.focusMode {
+    display: none;
+}
+
+ 
+
+/*Header FocusMode
+
+dP     dP                          dP                       88888888b                                     8888ba.88ba                 dP          
+88     88                          88                       88                                            88  `8b  `8b                88          
+88aaaaa88a .d8888b. .d8888b. .d888b88 .d8888b. 88d888b.    a88aaaa    .d8888b. .d8888b. dP    dP .d8888b. 88   88   88 .d8888b. .d888b88 .d8888b. 
+88     88  88ooood8 88'  `88 88'  `88 88ooood8 88'  `88     88        88'  `88 88'  `"" 88    88 Y8ooooo. 88   88   88 88'  `88 88'  `88 88ooood8 
+88     88  88.  ... 88.  .88 88.  .88 88.  ... 88           88        88.  .88 88.  ... 88.  .88       88 88   88   88 88.  .88 88.  .88 88.  ... 
+dP     dP  `88888P' `88888P8 `88888P8 `88888P' dP           dP        `88888P' `88888P' `88888P' `88888P' dP   dP   dP `88888P' `88888P8 `88888P' 
+                                                                                                                                                  
+                                                                                                                                                  
+
+*/
+
+.headerBase.focusMode {
+    -webkit-transition: 0ms ease;
+    -o-transition: 0ms ease;
+    transition: 0ms ease;
+    background-color: rgba(54, 56, 69, .9) !important;
+}
+
+
+.headerBase.focusMode.onScroll {
+    height: 45px;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0);
+}
+
+.headerBase.focusMode .headerContainer .headerLogoWrapper .headerLogoContainer {
+    background-image: url(../img/focusMode/headerLogo.svg);
+}
+
+.headerBase.focusMode .headerContainer .headerLogoWrapper .headerLogoTypeContainer {
+    -webkit-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    transition: 400ms ease;
+}
+
+.headerBase.focusMode .headerToolsContainer .headerStarContainer .headerStarBtn {
+    -webkit-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    transition: 400ms ease;
+    background-image: url('../img/focusMode/headerStar.svg');
+}
+
+.headerBase.focusMode .headerToolsContainer .headerStarContainer .headerStarBtn .tooltipStarContainer .tooltipStartailOverlay {
+    background-color: rgba(50, 52, 64, 1) !important;
+}
+
+.headerBase.focusMode .headerToolsContainer .headerStarContainer .headerStarBtn .tooltipStarContainer .tooltipStarOptionContainer {
+    background-color: rgba(50, 52, 64, 1) !important;
+}
+
+.headerBase.focusMode .headerToolsContainer .headerStarContainer .headerStarBtn .tooltipStarContainer .tooltipStarOptionContainer:before {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.headerBase.focusMode .headerToolsContainer .headerStarContainer .headerStarBtn .tooltipStarContainer .tooltipStarTail:before {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.headerBase.focusMode .headerToolsContainer .headerStarContainer .headerStarBtn .tooltipStarContainer .tooltipStarOptionContainer .tooltipStarRate {
+    background-image: url('../img/focusMode/starRateHeaderNorm.svg');
+}
+
+.headerBase.focusMode .headerToolsContainer .headerStarContainer .headerStarBtn .tooltipStarContainer .tooltipStarOptionContainer .tooltipStarRate.active {
+    background-image: url('../img/starRateActive.svg');
+}
+
+.headerBase.focusMode .headerToolsContainer .headerStarContainer .headerStarBtn .tooltipStarContainer .tooltipStarOptionContainer .starRate1:hover {
+    background-image: url('../img/starRateActive.svg');
+}
+
+.headerBase.focusMode .headerToolsContainer .headerStarContainer .headerStarBtn .tooltipStarContainer .tooltipStarOptionContainer .starRate2:hover {
+    background-image: url('../img/starRateActive.svg');
+}
+
+.headerBase.focusMode .headerToolsContainer .headerStarContainer .headerStarBtn .tooltipStarContainer .tooltipStarOptionContainer .starRate2:hover~* {
+    background-image: url('../img/starRateActive.svg');
+}
+
+.headerBase.focusMode .headerToolsContainer .headerStarContainer .headerStarBtn .tooltipStarContainer .tooltipStarOptionContainer .starRate3:hover {
+    background-image: url('../img/starRateActive.svg');
+}
+
+.headerBase.focusMode .headerToolsContainer .headerStarContainer .headerStarBtn .tooltipStarContainer .tooltipStarOptionContainer .starRate3:hover~* {
+    background-image: url('../img/starRateActive.svg');
+}
+
+.headerBase.focusMode .headerToolsContainer .headerStarContainer .headerStarBtn .tooltipStarContainer .tooltipStarOptionContainer .starRate4:hover {
+    background-image: url('../img/starRateActive.svg');
+}
+
+.headerBase.focusMode .headerToolsContainer .headerStarContainer .headerStarBtn .tooltipStarContainer .tooltipStarOptionContainer .starRate4:hover~* {
+    background-image: url('../img/starRateActive.svg');
+}
+
+.headerBase.focusMode .headerToolsContainer .headerStarContainer .headerStarBtn .tooltipStarContainer .tooltipStarOptionContainer .starRate5:hover {
+    background-image: url('../img/starRateActive.svg');
+}
+
+.headerBase.focusMode .headerToolsContainer .headerStarContainer .headerStarBtn .tooltipStarContainer .tooltipStarOptionContainer .starRate5:hover~* {
+    background-image: url('../img/starRateActive.svg');
+}
+
+.headerBase.focusMode .headerToolsContainer .headerStarContainer .headerStarNumber {}
+
+.headerBase.focusMode .headerToolsContainer .headerBookmarkContainer {
+    -webkit-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    transition: 400ms ease;
+    background-image: url('../img/focusMode/headerBookmarkNorm.svg');
+}
+
+.headerBase.focusMode .headerToolsContainer .headerBookmarkContainer.active {
+    -webkit-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    transition: 400ms ease;
+    background-image: url('../img/focusMode/headerBookmarkActive.svg');
+}
+
+.headerBase.focusMode .headerAvatarContainer {
+    -webkit-transition: -webkit-transform 400ms ease;
+    transition: -webkit-transform 400ms ease;
+    -o-transition: transform 400ms ease;
+    transition: transform 400ms ease;
+    transition: transform 400ms ease, -webkit-transform 400ms ease;
+    background-color: rgba(54, 56, 69, .9) !important;
+}
+
+.menuBase.focusMode {
+    background-color: rgba(54, 56, 69, .9) !important;
+}
+
+.menuBase.focusMode.active {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.menuBase.focusMode.active .menuContainer .menuUserContainer {
+    border-left: 1px solid rgba(50, 52, 64, .8);
+}
+
+.menuBase.focusMode.active .menuContainer .menuUserContainer .menuAvatarContainer {
+    background-color: rgba(54, 56, 69, .9) !important;
+}
+
+.menuBase.focusMode.active .menuContainer .menuUserContainer .menuUsername {
+    font-weight: normal;
+}
+
+.menuBase.focusMode.active .menuContainer .menuOptionContainer {
+    border-left: 1px solid rgba(50, 52, 64, .8);
+}
+
+.menuBase.focusMode.active .menuContainer .menuOptionContainer a {
+    font-weight: normal;
+}
+
+.menuBase.focusMode.active .menuContainer .menuOptionContainer .menuUserOptionContainer .menuUserOption {
+    font-weight: normal;
+}
+
+
+.menuBase.focusMode.active .menuContainer .menuOptionContainer .menuUserOptionContainer .menuUserOptionNotif {
+    color: rgba(54, 56, 69, .9) !important;
+    font-weight: bold;
+}
+ 
+.menuBaseMobile.focusMode {
+    background-color: rgba(54, 56, 69, 1) !important;
+}
+
+.menuBaseMobile.focusMode.active {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.menuBaseMobile.focusMode.active .menuMobileContainer .menuMobileUserContainer {
+    border-bottom: 1px solid rgba(50, 52, 64, .8);
+}
+
+.menuBaseMobile.focusMode.active .menuMobileContainer .menuMobileUserContainer .menuMobileAvatarContainer {
+    background-color: rgba(54, 56, 69, .9) !important;
+}
+
+.menuBaseMobile.focusMode.active .menuMobileContainer .menuMobileUserContainer .menuMobileUsername {
+    font-weight: normal;
+}
+
+.menuBaseMobile.focusMode.active .menuMobileContainer .menuMobileOptionContainer {
+    border-bottom: 1px solid rgba(50, 52, 64, .8);
+}
+
+.menuBaseMobile.focusMode.active .menuMobileContainer .menuMobileOptionContainer a {
+    font-weight: normal;
+}
+
+.menuBaseMobile.focusMode.active .menuMobileContainer .menuMobileOptionContainer .menuUserOptionContainer .menuUserOption {
+    font-weight: normal;
+}
+
+
+.menuBaseMobile.focusMode.active .menuMobileContainer .menuMobileOptionContainer .menuUserOptionContainer .menuUserOptionNotif {
+    color: rgba(54, 56, 69, .9) !important;
+    font-weight: bold;
+}
+
+ 
+
+/*Player Container FocusMode
+
+ 888888ba  dP                                         a88888b.                     dP            oo                                88888888b                                     8888ba.88ba                 dP          
+ 88    `8b 88                                        d8'   `88                     88                                              88                                            88  `8b  `8b                88          
+a88aaaa8P' 88 .d8888b. dP    dP .d8888b. 88d888b.    88        .d8888b. 88d888b. d8888P .d8888b. dP 88d888b. .d8888b. 88d888b.    a88aaaa    .d8888b. .d8888b. dP    dP .d8888b. 88   88   88 .d8888b. .d888b88 .d8888b. 
+ 88        88 88'  `88 88    88 88ooood8 88'  `88    88        88'  `88 88'  `88   88   88'  `88 88 88'  `88 88ooood8 88'  `88     88        88'  `88 88'  `"" 88    88 Y8ooooo. 88   88   88 88'  `88 88'  `88 88ooood8 
+ 88        88 88.  .88 88.  .88 88.  ... 88          Y8.   .88 88.  .88 88    88   88   88.  .88 88 88    88 88.  ... 88           88        88.  .88 88.  ... 88.  .88       88 88   88   88 88.  .88 88.  .88 88.  ... 
+ dP        dP `88888P8 `8888P88 `88888P' dP           Y88888P' `88888P' dP    dP   dP   `88888P8 dP dP    dP `88888P' dP           dP        `88888P' `88888P' `88888P' `88888P' dP   dP   dP `88888P' `88888P8 `88888P' 
+                            .88                                                                                                                                                                                          
+                        d8888P                                                                                                                                                                                           
+
+*/
+
+.playerFocusModeWrapper {
+    width: 100%;
+    min-width: 320px;
+     height: auto;
+    display: none;
+    padding: 24px 24px 24px 24px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.playerFocusModeWrapper.focusMode {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.playerFocusModeWrapper>*+* {
+    margin-top: 24px;
+}
+
+.playerFocusModeTopContainer {
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+ }
+
+.playerFocusModeWrapper.theater {
+    padding: 0px 24px 24px 24px;
+}
+
+.playerFocusModeTopContainer.theater {
+    padding-top: 0px;
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.playerFocusModeTopContainer.theater>*+* {
+    margin-left: 0px;
+    margin-top: 12px;
+}
+
+.playerFocusModeWrapper.theater .palyerFocusRightPanel {
+    width: 100%;
+}
+
+.playerFocusModeTopContainer>*+* {
+    margin-left: 3px;
+}
+
+.palyerFocusLeftPanel {
+    width: 854px;
+    min-width: 854px;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    direction: rtl;
+    position: relative;
+}
+
+.palyerFocusLeftPanel>*+* {
+    margin-top: 24px;
+}
+
+.palyerFocusRightPanel {
+    width: calc(100% - 857px);
+    height: 480px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    background-color: rgba(46, 48, 59, 1) !important;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Video Tools FocusMode
+
+dP     dP oo       dP                      d888888P                   dP              88888888b                                     8888ba.88ba                 dP          
+88     88          88                         88                      88              88                                            88  `8b  `8b                88          
+88    .8P dP .d888b88 .d8888b. .d8888b.       88    .d8888b. .d8888b. 88 .d8888b.    a88aaaa    .d8888b. .d8888b. dP    dP .d8888b. 88   88   88 .d8888b. .d888b88 .d8888b. 
+88    d8' 88 88'  `88 88ooood8 88'  `88       88    88'  `88 88'  `88 88 Y8ooooo.     88        88'  `88 88'  `"" 88    88 Y8ooooo. 88   88   88 88'  `88 88'  `88 88ooood8 
+88  .d8P  88 88.  .88 88.  ... 88.  .88       88    88.  .88 88.  .88 88       88     88        88.  .88 88.  ... 88.  .88       88 88   88   88 88.  .88 88.  .88 88.  ... 
+888888'   dP `88888P8 `88888P' `88888P'       dP    `88888P' `88888P' dP `88888P'     dP        `88888P' `88888P' `88888P' `88888P' dP   dP   dP `88888P' `88888P8 `88888P' 
+                                                                                                                                                                            
+                                                                                                                                                                            
+
+*/
+
+.videoToolsContainerFocus {
+    width: 100%;
+    height: 30px;
+    min-height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-flow: row-reverse;
+    flex-flow: row-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin-top: 12px !important;
+}
+
+.videoToolsContainerFocus>*+* {
+    margin-left: 12px;
+}
+
+.videoToolsSepFocus {
+    width: 1px;
+    min-width: 1px;
+    height: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: rgba(50, 52, 64, .8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+My Video Progress FocusMode 
+
+
+8888ba.88ba              dP     dP oo       dP                       888888ba                                                                     88888888b                                     8888ba.88ba                 dP             
+88  `8b  `8b             88     88          88                       88    `8b                                                                    88                                            88  `8b  `8b                88             
+88   88   88 dP    dP    88    .8P dP .d888b88 .d8888b. .d8888b.    a88aaaa8P' 88d888b. .d8888b. .d8888b. 88d888b. .d8888b. .d8888b. .d8888b.    a88aaaa    .d8888b. .d8888b. dP    dP .d8888b. 88   88   88 .d8888b. .d888b88 .d8888b.    
+88   88   88 88    88    88    d8' 88 88'  `88 88ooood8 88'  `88     88        88'  `88 88'  `88 88'  `88 88'  `88 88ooood8 Y8ooooo. Y8ooooo.     88        88'  `88 88'  `"" 88    88 Y8ooooo. 88   88   88 88'  `88 88'  `88 88ooood8    
+88   88   88 88.  .88    88  .d8P  88 88.  .88 88.  ... 88.  .88     88        88       88.  .88 88.  .88 88       88.  ...       88       88     88        88.  .88 88.  ... 88.  .88       88 88   88   88 88.  .88 88.  .88 88.  ...    
+dP   dP   dP `8888P88    888888'   dP `88888P8 `88888P' `88888P'     dP        dP       `88888P' `8888P88 dP       `88888P' `88888P' `88888P'     dP        `88888P' `88888P' `88888P' `88888P' dP   dP   dP `88888P' `88888P8 `88888P'    
+                  .88                                                                                 .88                                                                                                                                  
+              d8888P                                                                              d8888P                                                                                                                                   
+                                                                                                                                                                                                                                           
+
+*/
+
+.myVideoProgressWrapperFocus {
+    width: auto;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.myVideoProgressWrapperFocus>*+* {
+    margin-right: 12px;
+}
+
+.myVideoProgressTitleFocus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: IRANSans;
+    font-weight: normal;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.myVideoProgressContainerFocus {
+    width: 30px;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.courseProgressBaseFocus {
+    width: 30px;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+}
+
+.courseProgressBarFocus {
+    width: 30px;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    stroke-dasharray: 0% 360%;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: 1000ms ease 400ms;
+    -o-transition: 1000ms ease 400ms;
+    transition: 1000ms ease 400ms;
+}
+
+.myVideoProgressContainerFocus:hover .tooltipProgressContainerFocus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.tooltipProgressContainerFocus {
+    width: auto;
+    height: 45px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-flow: row-reverse;
+    flex-flow: row-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    -webkit-transform: translateX(70%);
+    -ms-transform: translateX(70%);
+    transform: translateX(70%);
+    z-index: 1000;
+    display: none;
+}
+
+.tooltipProgressTailFocus {
+    width: 10px;
+    height: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    position: relative;
+    border-bottom-left-radius: 3px;
+    position: relative;
+}
+
+.tooltipProgressTailFocus:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 3px 20px 0px rgba(120, 134, 159, 0.2);
+    box-shadow: 0px 3px 20px 0px rgba(120, 134, 159, 0.2);
+}
+
+.tooltipProgressTailOverlayFocus {
+    width: 10px;
+    height: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    position: absolute;
+    border-bottom-left-radius: 3px;
+    z-index: 2;
+    background-color: rgba(54, 56, 69, .9);
+}
+
+.tooltipProgressContentContainerFocus {
+    width: 68px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    transform: translateX(-5px);
+    border-radius: 3px;
+    position: relative;
+    font-family: IRANSans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 47px;
+    letter-spacing: -.003em;
+    direction: ltr;
+    background-color: rgba(54, 56, 69, .9);
+}
+
+.tooltipProgressContentContainer:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 3px 20px 0px rgba(120, 134, 159, 0.2);
+    box-shadow: 0px 3px 20px 0px rgba(120, 134, 159, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+My Video Star FocusMode
+
+
+8888ba.88ba              dP     dP oo       dP                       888888ba                                                                     88888888b                                     8888ba.88ba                 dP             
+88  `8b  `8b             88     88          88                       88    `8b                                                                    88                                            88  `8b  `8b                88             
+88   88   88 dP    dP    88    .8P dP .d888b88 .d8888b. .d8888b.    a88aaaa8P' 88d888b. .d8888b. .d8888b. 88d888b. .d8888b. .d8888b. .d8888b.    a88aaaa    .d8888b. .d8888b. dP    dP .d8888b. 88   88   88 .d8888b. .d888b88 .d8888b.    
+88   88   88 88    88    88    d8' 88 88'  `88 88ooood8 88'  `88     88        88'  `88 88'  `88 88'  `88 88'  `88 88ooood8 Y8ooooo. Y8ooooo.     88        88'  `88 88'  `"" 88    88 Y8ooooo. 88   88   88 88'  `88 88'  `88 88ooood8    
+88   88   88 88.  .88    88  .d8P  88 88.  .88 88.  ... 88.  .88     88        88       88.  .88 88.  .88 88       88.  ...       88       88     88        88.  .88 88.  ... 88.  .88       88 88   88   88 88.  .88 88.  .88 88.  ...    
+dP   dP   dP `8888P88    888888'   dP `88888P8 `88888P' `88888P'     dP        dP       `88888P' `8888P88 dP       `88888P' `88888P' `88888P'     dP        `88888P' `88888P' `88888P' `88888P' dP   dP   dP `88888P' `88888P8 `88888P'    
+                  .88                                                                                 .88                                                                                                                                  
+              d8888P                                                                              d8888P                                                                                                                                   
+                                                                                                                                                                                                                                         
+                                                                                  
+*/
+
+.myVideoStarContainerFocus {
+    width: auto;
+    height: 30px;
+    min-height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.myVideoStarRateFocus {
+    width: 20px;
+    height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    pointer-events: auto;
+    cursor: pointer;
+    background-image: url('../img/focusMode/starRateNorm.svg');
+    -webkit-transition: 300ms ease;
+    -o-transition: 300ms ease;
+    transition: 300ms ease;
+}
+
+.myVideoStarRateFocus.active {
+    background-image: url('../img/starRateActive.svg');
+}
+
+.myVideoStarRate1Focus:hover {
+    background-image: url('../img/starRateActive.svg');
+}
+
+.myVideoStarRate2Focus:hover {
+    background-image: url('../img/starRateActive.svg');
+}
+
+.myVideoStarRate2Focus:hover~* {
+    background-image: url('../img/starRateActive.svg');
+}
+
+.myVideoStarRate2Focus.active~* {
+    background-image: url('../img/starRateActive.svg');
+}
+
+.myVideoStarRate3Focus:hover {
+    background-image: url('../img/starRateActive.svg');
+}
+
+.myVideoStarRate3Focus:hover~* {
+    background-image: url('../img/starRateActive.svg');
+}
+
+.myVideoStarRate3Focus.active~* {
+    background-image: url('../img/starRateActive.svg');
+}
+
+.myVideoStarRate4Focus:hover {
+    background-image: url('../img/starRateActive.svg');
+}
+
+.myVideoStarRate4Focus:hover~* {
+    background-image: url('../img/starRateActive.svg');
+}
+
+.myVideoStarRate4Focus.active~* {
+    background-image: url('../img/starRateActive.svg');
+}
+
+.myVideoStarRate5Focus:hover {
+    background-image: url('../img/starRateActive.svg');
+}
+
+.myVideoStarRate5Focus:hover~* {
+    background-image: url('../img/starRateActive.svg');
+}
+
+.myVideoStarRate5Focus.active~* {
+    background-image: url('../img/starRateActive.svg');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Video Bookmark Btn FocusMode
+
+dP     dP oo       dP                       888888ba                    dP                                    dP           888888ba    dP                88888888b                                     8888ba.88ba                 dP          
+88     88          88                       88    `8b                   88                                    88           88    `8b   88                88                                            88  `8b  `8b                88          
+88    .8P dP .d888b88 .d8888b. .d8888b.    a88aaaa8P' .d8888b. .d8888b. 88  .dP  88d8b.d8b. .d8888b. 88d888b. 88  .dP     a88aaaa8P' d8888P 88d888b.    a88aaaa    .d8888b. .d8888b. dP    dP .d8888b. 88   88   88 .d8888b. .d888b88 .d8888b. 
+88    d8' 88 88'  `88 88ooood8 88'  `88     88   `8b. 88'  `88 88'  `88 88888"   88'`88'`88 88'  `88 88'  `88 88888"       88   `8b.   88   88'  `88     88        88'  `88 88'  `"" 88    88 Y8ooooo. 88   88   88 88'  `88 88'  `88 88ooood8 
+88  .d8P  88 88.  .88 88.  ... 88.  .88     88    .88 88.  .88 88.  .88 88  `8b. 88  88  88 88.  .88 88       88  `8b.     88    .88   88   88    88     88        88.  .88 88.  ... 88.  .88       88 88   88   88 88.  .88 88.  .88 88.  ... 
+888888'   dP `88888P8 `88888P' `88888P'     88888888P `88888P' `88888P' dP   `YP dP  dP  dP `88888P8 dP       dP   `YP     88888888P   dP   dP    dP     dP        `88888P' `88888P' `88888P' `88888P' dP   dP   dP `88888P' `88888P8 `88888P' 
+                                                                                                                                               
+
+*/
+
+
+/*
+.videoBookmarkBtnFocus {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url('../img/focusMode/bookmarkNorm.svg');
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: 300ms ease;
+    -o-transition: 300ms ease;
+    transition: 300ms ease;
+}
+
+.videoBookmarkBtnFocus:hover {
+    background-image: url('../img/focusMode/bookmarkHover.svg');
+}
+
+.videoBookmarkBtnFocus.active {
+    background-image: url('../img/focusMode/bookmarkActive.svg');
+    opacity: 1
+}
+
+
+*/
+
+
+/*Toggle FocusMode
+
+dP     dP oo       dP                       888888ba                    dP                                    dP           888888ba    dP                88888888b                                     8888ba.88ba                 dP          
+88     88          88                       88    `8b                   88                                    88           88    `8b   88                88                                            88  `8b  `8b                88          
+88    .8P dP .d888b88 .d8888b. .d8888b.    a88aaaa8P' .d8888b. .d8888b. 88  .dP  88d8b.d8b. .d8888b. 88d888b. 88  .dP     a88aaaa8P' d8888P 88d888b.    a88aaaa    .d8888b. .d8888b. dP    dP .d8888b. 88   88   88 .d8888b. .d888b88 .d8888b. 
+88    d8' 88 88'  `88 88ooood8 88'  `88     88   `8b. 88'  `88 88'  `88 88888"   88'`88'`88 88'  `88 88'  `88 88888"       88   `8b.   88   88'  `88     88        88'  `88 88'  `"" 88    88 Y8ooooo. 88   88   88 88'  `88 88'  `88 88ooood8 
+88  .d8P  88 88.  .88 88.  ... 88.  .88     88    .88 88.  .88 88.  .88 88  `8b. 88  88  88 88.  .88 88       88  `8b.     88    .88   88   88    88     88        88.  .88 88.  ... 88.  .88       88 88   88   88 88.  .88 88.  .88 88.  ... 
+888888'   dP `88888P8 `88888P' `88888P'     88888888P `88888P' `88888P' dP   `YP dP  dP  dP `88888P8 dP       dP   `YP     88888888P   dP   dP    dP     dP        `88888P' `88888P' `88888P' `88888P' dP   dP   dP `88888P' `88888P8 `88888P' 
+ 
+
+*/
+
+.toggleWrapperFocus {
+    width: auto;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.toggleWrapperFocus>*+* {
+    margin-right: 12px;
+}
+
+.toggleTitleFocus {
+    font-family: IRANSans;
+    font-weight: 500;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.toggleBaseFocus {
+    width: 46px;
+    height: 28px;
+    border-radius: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    transition: 400ms ease;
+}
+
+.toggleBaseFocus:hover {
+    background-color: rgba(120, 134, 159, .3) !important;
+}
+
+.toggleBaseFocus.active .toggleHandleFocus:before {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+}
+
+.toggleBaseFocus.active .toggleHandleFocus {
+    -webkit-transform: translateX(-18px);
+        -ms-transform: translateX(-18px);
+            transform: translateX(-18px);
+}
+
+.toggleHandleFocus {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    right: 2px;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    -o-transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.toggleHandleFocus:before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: -1;
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    background-color: rgba(140, 181, 243, 1) !important;
+    -webkit-transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    -o-transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.toggleHandleFocus:after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 1) !important;
+    -webkit-transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    -o-transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+FocusMode Lessons List
+
+ 88888888b                                        8888ba.88ba                 dP             dP                                                                 dP        oo            dP   
+ 88                                               88  `8b  `8b                88             88                                                                 88                      88   
+a88aaaa    .d8888b. .d8888b. dP    dP .d8888b.    88   88   88 .d8888b. .d888b88 .d8888b.    88        .d8888b. .d8888b. .d8888b. .d8888b. 88d888b. .d8888b.    88        dP .d8888b. d8888P 
+ 88        88'  `88 88'  `"" 88    88 Y8ooooo.    88   88   88 88'  `88 88'  `88 88ooood8    88        88ooood8 Y8ooooo. Y8ooooo. 88'  `88 88'  `88 Y8ooooo.    88        88 Y8ooooo.   88   
+ 88        88.  .88 88.  ... 88.  .88       88    88   88   88 88.  .88 88.  .88 88.  ...    88        88.  ...       88       88 88.  .88 88    88       88    88        88       88   88   
+ dP        `88888P' `88888P' `88888P' `88888P'    dP   dP   dP `88888P' `88888P8 `88888P'    88888888P `88888P' `88888P' `88888P' `88888P' dP    dP `88888P'    88888888P dP `88888P'   dP   
+                                                                                                                                                                                          
+
+*/
+
+.LessonListHeader {
+    width: 100%;
+    height: auto;
+    min-height: 72px;
+    background-color: rgba(54, 56, 69, .9) !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    direction: rtl;
+    padding: 12px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    direction: rtl;
+}
+
+.LessonListHeader>*+* {
+    margin-top: 12px;
+}
+
+.LessonListHeaderTitle {
+    font-family: IRANSans;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.LessonListHeaderMaster {
+    font-family: IRANSans;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.LessonListHeaderDuration {
+    font-family: IRSansNumMedium;
+    font-size: 12px;
+}
+
+.LessonListWrapper {
+    width: 100%;
+    height: calc(100% - 72px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    direction: rtl;
+}
+
+.LessonListWrapper::-webkit-scrollbar {
+    width: 5px;
+}
+
+.LessonListWrapper::-webkit-scrollbar-thumb {
+    background: rgba(70, 72, 89, .9);
+}
+
+
+
+.lessonListStatus {
+    width: 48px;
+    height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.lessonListStatusWaiting {
+    width: 48px;
+    min-width: 48px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url('../img/focusMode/lessonWaiting.svg');
+    background-position: center;
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    -webkit-transform: translateX(0px) scale(1);
+        -ms-transform: translateX(0px) scale(1);
+            transform: translateX(0px) scale(1);
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    -webkit-transition: opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease;
+    transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease;
+    transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    opacity: 1
+}
+
+
+.lessonListStatusDone {
+    width: 48px;
+    min-width: 48px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url('../img/focusMode/lessonDone.svg');
+    background-position: center;
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    -webkit-transform: translateX(0px) scale(1);
+        -ms-transform: translateX(0px) scale(1);
+            transform: translateX(0px) scale(1);
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    -webkit-transition: opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease;
+    transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease;
+    transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    opacity: 1;
+}
+
+.lessonListStatusPlay {
+    width: 48px;
+    min-width: 48px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url('../img/focusMode/lessonPlay.svg');
+    background-position: center;
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    -webkit-transform: translateX(0px) scale(0);
+        -ms-transform: translateX(0px) scale(0);
+            transform: translateX(0px) scale(0);
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    -webkit-transition: opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease;
+    transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease;
+    transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    opacity: 0;
+}
+
+.lessonListStatusBlinker1 {
+    width: 80%;
+    height: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 50%;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-animation: currentBlinker 1s linear;
+    animation: currentBlinker 1s linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.lessonListStatusBlinker2 {
+    width: 80%;
+    height: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-animation: currentBlinker 1s linear .3s;
+    animation: currentBlinker 1s linear .3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+.lessonListLesson:hover .lessonListStatus .lessonListStatusWaiting {
+    -webkit-transform: translateX(-48px) scale(0);
+        -ms-transform: translateX(-48px) scale(0);
+            transform: translateX(-48px) scale(0);
+    opacity: 0;
+    -webkit-transition: opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease;
+    transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease;
+    transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.lessonListLesson:hover .lessonListStatus .lessonListStatusDone {
+    -webkit-transform: translateX(-48px) scale(0);
+        -ms-transform: translateX(-48px) scale(0);
+            transform: translateX(-48px) scale(0);
+    opacity: 0;
+    -webkit-transition: opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease;
+    transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease;
+    transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.lessonListLesson:hover .lessonListStatus .lessonListStatusPlay {
+    -webkit-transform: translateX(-48px) scale(1);
+        -ms-transform: translateX(-48px) scale(1);
+            transform: translateX(-48px) scale(1);
+    opacity: 1;
+    -webkit-transition: opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease;
+    transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease;
+    transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+
+
+.lessonListChapterStatusProgressBase {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+}
+
+.lessonListChapterStatusProgressBar {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    stroke-dasharray: 0% 360%;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: 1000ms ease 400ms;
+    -o-transition: 1000ms ease 400ms;
+    transition: 1000ms ease 400ms;
+}
+
+.lessonListSection {
+    width: 100%;
+    height: auto;
+    min-height: 74px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 24px;
+    box-sizing: border-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    direction: rtl;
+    cursor: default;
+    background-color: rgba(0, 0, 0, .08);
+}
+
+.lessonListSection>*+* {
+    margin-right: 12px;
+}
+
+.lessonListChapter {
+    width: 100%;
+    height: auto;
+    min-height: 74px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 12px;
+    box-sizing: border-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    direction: rtl;
+    cursor: default;
+    background-color: rgba(0, 0, 0, .06);
+}
+
+.lessonListChapter>*+* {
+    margin-right: 0px;
+}
+
+.lessonListLesson {
+    width: 100%;
+    height: auto;
+    min-height: 74px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 12px;
+    box-sizing: border-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    direction: rtl;
+    cursor: pointer;
+    position: relative;
+}
+
+.lessonListLesson>*+* {
+    margin-right: 24px;
+}
+
+
+.lessonListLesson:before {
+    content: "";
+    width: 100%;
+    height: 90%;
+    z-index: 2;
+    position: absolute;
+    border-right: 2px solid rgba(140, 181, 243, 1);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-transform: scaleY(.3);
+    -ms-transform: scaleY(.3);
+    transform: scaleY(.3);
+    opacity: 0;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: 300ms ease;
+    -o-transition: 300ms ease;
+    transition: 300ms ease;
+}
+
+.lessonListLesson:hover:before {
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+    opacity: 1
+}
+
+
+.lessonListLesson.current .lessonListStatus .lessonListStatusWaiting {
+    -webkit-transform: translateX(-48px) scale(0);
+        -ms-transform: translateX(-48px) scale(0);
+            transform: translateX(-48px) scale(0);
+    opacity: 0;
+    -webkit-transition: opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease;
+    transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease;
+    transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.lessonListLesson.current .lessonListStatus .lessonListStatusDone {
+    -webkit-transform: translateX(-48px) scale(0);
+        -ms-transform: translateX(-48px) scale(0);
+            transform: translateX(-48px) scale(0);
+    opacity: 0;
+    -webkit-transition: opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease;
+    transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease;
+    transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.lessonListLesson.current .lessonListStatus .lessonListStatusPlay {
+    -webkit-transform: translateX(0px) scale(1);
+        -ms-transform: translateX(0px) scale(1);
+            transform: translateX(0px) scale(1);
+    opacity: 1;
+    -webkit-transition: opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease;
+    transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease;
+    transition: transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 600ms ease, -webkit-transform 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.lessonListContentContainer {
+    width: calc(100% - 60px);
+    height: all;
+    min-height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.lessonListContentContainer>*+* {
+    margin-top: 6px;
+}
+
+.lessonListTitle {
+    font-family: IRANSans;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.lessonListDuration {
+    font-family: IRSansNumMedium;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Insert Question FocusMode
+dP                                       dP       .88888.                                dP   oo                       88888888b                                     8888ba.88ba                 dP          
+88                                       88      d8'   `8b                               88                            88                                            88  `8b  `8b                88          
+88 88d888b. .d8888b. .d8888b. 88d888b. d8888P    88     88  dP    dP .d8888b. .d8888b. d8888P dP .d8888b. 88d888b.    a88aaaa    .d8888b. .d8888b. dP    dP .d8888b. 88   88   88 .d8888b. .d888b88 .d8888b. 
+88 88'  `88 Y8ooooo. 88ooood8 88'  `88   88      88  db 88  88    88 88ooood8 Y8ooooo.   88   88 88'  `88 88'  `88     88        88'  `88 88'  `"" 88    88 Y8ooooo. 88   88   88 88'  `88 88'  `88 88ooood8 
+88 88    88       88 88.  ... 88         88      Y8.  Y88P  88.  .88 88.  ...       88   88   88 88.  .88 88    88     88        88.  .88 88.  ... 88.  .88       88 88   88   88 88.  .88 88.  .88 88.  ... 
+dP dP    dP `88888P' `88888P' dP         dP       `8888PY8b `88888P' `88888P' `88888P'   dP   dP `88888P' dP    dP     dP        `88888P' `88888P' `88888P' `88888P' dP   dP   dP `88888P' `88888P8 `88888P' 
+                                                                                                                                                                                                             
+                                                                                                                                                                                                             
+*/
+
+.insertQuestionFocusWrapper {
+    width: 370px;
+    height: 568px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    bottom: 24px !important;
+    z-index: 6000;
+    -webkit-transition: height .6s cubic-bezier(0.68, -0.55, 0.265, 1.55) 100ms;
+    -o-transition: height .6s cubic-bezier(0.68, -0.55, 0.265, 1.55) 100ms;
+    transition: height .6s cubic-bezier(0.68, -0.55, 0.265, 1.55) 100ms;
+    pointer-events: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.insertQuestionFocusWrapper.active {
+    pointer-events: auto;
+    -webkit-user-select: auto;
+       -moz-user-select: auto;
+        -ms-user-select: auto;
+            user-select: auto;
+}
+
+.insertQuestionFocusWrapper>*+* {
+    margin-bottom: 12px;
+}
+
+.insertQuestionBtnFocus {
+    width: 60px;
+    min-height: 60px;
+    height: 60px;
+    border-radius: 44px;
+    margin-right: auto;
+    cursor: pointer;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    pointer-events: auto;
+    -webkit-user-select: auto;
+       -moz-user-select: auto;
+        -ms-user-select: auto;
+            user-select: auto;
+    -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, .2), 0 6px 32px rgba(0, 0, 0, .16);
+            box-shadow: 0 3px 12px rgba(0, 0, 0, .2), 0 6px 32px rgba(0, 0, 0, .16);
+    -webkit-transition: -webkit-box-shadow 0.4s cubic-bezier(.25, .8, .25, 1), -webkit-transform 400ms ease;
+    transition: -webkit-box-shadow 0.4s cubic-bezier(.25, .8, .25, 1), -webkit-transform 400ms ease;
+    -o-transition: box-shadow 0.4s cubic-bezier(.25, .8, .25, 1), transform 400ms ease;
+    transition: box-shadow 0.4s cubic-bezier(.25, .8, .25, 1), transform 400ms ease;
+    transition: box-shadow 0.4s cubic-bezier(.25, .8, .25, 1), transform 400ms ease, -webkit-box-shadow 0.4s cubic-bezier(.25, .8, .25, 1), -webkit-transform 400ms ease;
+}
+
+.insertQuestionBtnFocus:hover {
+    -webkit-transform: translateY(-3px);
+        -ms-transform: translateY(-3px);
+            transform: translateY(-3px);
+    -webkit-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.22), 0 10px 28px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.22), 0 10px 28px rgba(0, 0, 0, 0.3);
+}
+
+.inputQuestionWrapperFocus {
+    width: 100%;
+    height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, .08), 0 6px 32px rgba(0, 0, 0, .04);
+            box-shadow: 0 3px 20px rgba(0, 0, 0, .08), 0 6px 32px rgba(0, 0, 0, .04);
+    opacity: 0;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 0% 50%;
+        -ms-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    -webkit-transition: 0ms ease 0ms;
+    -o-transition: 0ms ease 0ms;
+    transition: 0ms ease 0ms;
+    direction: rtl;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    z-index: 2;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.insertQuestionFocusWrapper.active .inputQuestionWrapperFocus {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transition: 300ms ease 100ms;
+    -o-transition: 300ms ease 100ms;
+    transition: 300ms ease 100ms;
+}
+
+.inputQuestionFocus {
+    width: calc(100% - 48px);
+    height: 48px;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    background: transparent;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    direction: rtl;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: IRANSans;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    padding-right: 10px;
+    padding-top: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    resize: none;
+    color: rgba(120, 134, 159, 1);
+    opacity: 0;
+}
+
+
+
+
+
+
+.inputQuestionFocus::-webkit-input-placeholder {
+    color: rgba(120, 134, 159, .4);
+}
+
+.inputQuestionFocus::-moz-placeholder {
+    color: rgba(120, 134, 159, .4);
+}
+
+.inputQuestionFocus:-ms-input-placeholder {
+    color: rgba(120, 134, 159, .4);
+}
+
+.inputQuestionFocus:-moz-placeholder {
+    color: rgba(120, 134, 159, .4);
+}
+
+.inputQuestionFocus::-moz-selection {
+    background-color: rgba(140, 181, 243, 1);
+    color: #fff;
+}
+
+.inputQuestionFocus::selection {
+    background-color: rgba(140, 181, 243, 1);
+    color: #fff;
+}
+
+.inputQuestionFocus::-webkit-scrollbar {
+    width: 3px;
+}
+
+.inputQuestionFocus::-webkit-scrollbar-thumb {
+    background: rgba(120, 134, 159, .6);
+    border-radius: 20px;
+}
+
+
+.insertQuestionFocusWrapper.active .inputQuestionWrapperFocus .inputQuestionFocus {
+    opacity: 1;
+    -webkit-transition: 100ms ease 300ms;
+    -o-transition: 100ms ease 300ms;
+    transition: 100ms ease 300ms;
+}
+
+
+.sendQuestionBtnFocus {
+    width: 48px;
+    height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    outline: none;
+    border: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    transition: 400ms ease;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: transparent;
+}
+
+.questionAnswerWrapperFocus {
+    width: 100%;
+    height: 448px;
+    margin-bottom: 0px !important;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    opacity: 0;
+    padding: 0px 0px;
+    -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    -webkit-transition: opacity 0ms ease 0ms, -webkit-transform 0ms ease 0ms;
+    transition: opacity 0ms ease 0ms, -webkit-transform 0ms ease 0ms;
+    -o-transition: transform 0ms ease 0ms, opacity 0ms ease 0ms;
+    transition: transform 0ms ease 0ms, opacity 0ms ease 0ms;
+    transition: transform 0ms ease 0ms, opacity 0ms ease 0ms, -webkit-transform 0ms ease 0ms;
+}
+
+.insertQuestionFocusWrapper.active .questionAnswerWrapperFocus {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transition: opacity 400ms ease 300ms, -webkit-transform 550ms ease 300ms;
+    transition: opacity 400ms ease 300ms, -webkit-transform 550ms ease 300ms;
+    -o-transition: transform 550ms ease 300ms, opacity 400ms ease 300ms;
+    transition: transform 550ms ease 300ms, opacity 400ms ease 300ms;
+    transition: transform 550ms ease 300ms, opacity 400ms ease 300ms, -webkit-transform 550ms ease 300ms;
+}
+
+.questionAnswerContainerFocus {
+    width: 100%;
+    height: 400px;
+    min-height: 400px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 12px 6px;
+    background-color: rgba(228, 231, 236, 1);
+    overflow-y: auto;
+    overflow-x: hidden;
+    direction: rtl;
+}
+
+.questionAnswerContainerFocus::-webkit-scrollbar {
+    width: 3px;
+}
+
+.questionAnswerContainerFocus::-webkit-scrollbar-thumb {
+    background: rgba(120, 134, 159, .6);
+    border-radius: 20px;
+}
+
+
+.questionAnswerContainerFocus>*+* {
+    margin-top: 9px;
+}
+
+.insertQuestionBtnFocusOpen {
+    width: 60px;
+    height: 60px;
+    background-image: url('../img/focusMode/insertQuestionBtn.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-transition: 300ms ease;
+    -o-transition: 300ms ease;
+    transition: 300ms ease;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    opacity: 1;
+}
+
+.insertQuestionBtnFocusClose {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    -webkit-transition: 300ms ease;
+    -o-transition: 300ms ease;
+    transition: 300ms ease;
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    opacity: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.insertQuestionBtnFocusCloseTop {
+    width: 24px;
+    height: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    position: absolute;
+    border-radius: 100px;
+    -webkit-transition: .35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: .35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: .35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.insertQuestionBtnFocusCloseBottom {
+    width: 24px;
+    height: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    position: absolute;
+    border-radius: 100px;
+    -webkit-transition: .35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: .35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: .35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.insertQuestionBtnFocus.active .insertQuestionBtnFocusOpen {
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+}
+
+.insertQuestionBtnFocus.active .insertQuestionBtnFocusClose {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+}
+
+.insertQuestionBtnFocus.active .insertQuestionBtnFocusClose .insertQuestionBtnFocusCloseTop {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: .35s cubic-bezier(0.68, -0.55, 0.265, 1.55) 100ms;
+    -o-transition: .35s cubic-bezier(0.68, -0.55, 0.265, 1.55) 100ms;
+    transition: .35s cubic-bezier(0.68, -0.55, 0.265, 1.55) 100ms;
+}
+
+.insertQuestionBtnFocus.active .insertQuestionBtnFocusClose .insertQuestionBtnFocusCloseBottom {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transition: .35s cubic-bezier(0.68, -0.55, 0.265, 1.55) 100ms;
+    -o-transition: .35s cubic-bezier(0.68, -0.55, 0.265, 1.55) 100ms;
+    transition: .35s cubic-bezier(0.68, -0.55, 0.265, 1.55) 100ms;
+}
+
+
+
+.answerSectionWrapper.focusMode {
+    opacity: 0;
+    -webkit-transform: translateY(72px);
+        -ms-transform: translateY(72px);
+            transform: translateY(72px);
+}
+
+
+.answerSectionWrapper.focusMode .answerSectionAvatar {
+    -webkit-transform: translate(3px, -3px);
+    -ms-transform: translate(3px, -3px);
+    transform: translate(3px, -3px);
+}
+
+.answerSectionAvatar.neolejAvatar {
+    background-image: url(../img/neolejAvatar.jpg);
+}
+
+.answerSectionWrapper.focusMode .answerSectionTail {
+    background-image: url(../img/focusMode/chatTailMaster.svg);
+}
+
+.answerSectionWrapper.focusMode .answerSectionTextContainer {
+    width: calc(100% - 84px);
+    padding: 12px;
+}
+
+
+.questionSectionWrapper.focusMode {
+    opacity: 0;
+    -webkit-transform: translateY(72px);
+        -ms-transform: translateY(72px);
+            transform: translateY(72px);
+}
+
+.questionSectionWrapper.focusMode .questionSectionAvatar {
+    -webkit-transform: translate(-3px, -3px);
+    -ms-transform: translate(-3px, -3px);
+    transform: translate(-3px, -3px);
+}
+
+.questionSectionWrapper.focusMode .answerSectionAvatar {
+    -webkit-transform: translate(3px, -3px);
+    -ms-transform: translate(3px, -3px);
+    transform: translate(3px, -3px);
+}
+
+.questionSectionWrapper.focusMode .questionSectionTextContainer {
+    width: calc(100% - 84px);
+    padding: 12px;
+}
+
+.insertQuestionFocusWrapper.active .questionAnswerWrapperFocus .questionAnswerContainerFocus .answerSectionWrapper.focusMode {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+            transform: translateY(0px);
+}
+
+.insertQuestionFocusWrapper.active .questionAnswerWrapperFocus .questionAnswerContainerFocus .questionSectionWrapper.focusMode {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+            transform: translateY(0px);
+}
+
+.insertQuestionFocusWrapper.active .questionAnswerWrapperFocus .questionAnswerContainerFocus div:nth-child(1) {
+    -webkit-transition: 600ms ease 700ms;
+    -o-transition: 600ms ease 700ms;
+    transition: 600ms ease 700ms;
+}
+
+.insertQuestionFocusWrapper.active .questionAnswerWrapperFocus .questionAnswerContainerFocus div:nth-child(2) {
+    -webkit-transition: 600ms ease 900ms;
+    -o-transition: 600ms ease 900ms;
+    transition: 600ms ease 900ms;
+}
+
+.insertQuestionFocusWrapper.active .questionAnswerWrapperFocus .questionAnswerContainerFocus div:nth-child(3) {
+    -webkit-transition: 600ms ease 1100ms;
+    -o-transition: 600ms ease 1100ms;
+    transition: 600ms ease 1100ms;
+}
+
+.insertQuestionHeaderFocus {
+    width: 100%;
+    height: 48px;
+    min-height: 48px;
+    margin-bottom: 0px !important;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    opacity: 0;
+    padding-right: 8px;
+    direction: rtl;
+    -webkit-box-shadow: 0 -3px 20px rgba(0, 0, 0, .1), 0 -6px 32px rgba(0, 0, 0, .06);
+            box-shadow: 0 -3px 20px rgba(0, 0, 0, .1), 0 -6px 32px rgba(0, 0, 0, .06);
+    cursor: move;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    overflow: hidden;
+    font-family: IRANSans;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.insertQuestionHeaderFocus>*+* {
+    margin-right: 12px;
+}
+
+.insertQuestionFocusWrapper.active .insertQuestionHeaderFocus {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transition: opacity 400ms ease 300ms, -webkit-transform 550ms ease 300ms;
+    transition: opacity 400ms ease 300ms, -webkit-transform 550ms ease 300ms;
+    -o-transition: transform 550ms ease 300ms, opacity 400ms ease 300ms;
+    transition: transform 550ms ease 300ms, opacity 400ms ease 300ms;
+    transition: transform 550ms ease 300ms, opacity 400ms ease 300ms, -webkit-transform 550ms ease 300ms;
+}
+
+.insertQuestionHeaderFocusAvatar {
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    min-height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url(../img/courses/8.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.insertQuestionHeaderFocusCloseBtn {
+    width: 48px;
+    height: 48px;
+    display: none;
+    margin-right: auto !important;
+    cursor: pointer;
+    background-image: url('../img/removeItemIcon.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

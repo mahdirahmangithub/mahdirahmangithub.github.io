@@ -1,0 +1,687 @@
+/*
+            ,;               
+            %@@@,          
+              "N@@g,          
+     @@@@@@g     "B@@g        
+    ]@@@@@@@@g,    "*B@@g     
+    ]@@@@@@@@@@@g     "$@@    
+    ]@@@@@@@@@@@@@@g   $@@    
+    ]@@@@@@@@@@@@@@@@@@@P     
+    ]@@@@@@@@@@@@@@@@P*       
+    ]@@@@@@@@@@@@@R*          
+    ]@@@@@@@@@@N"             
+    ]@@@@@@@N*                
+     *B@@N"
+*/
+
+body {
+  background-color: #fff;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body.active {
+  overflow-y: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+/*
+Single Course Body
+
+.d88888b  oo                   dP              a88888b.                                                  888888ba                 dP          
+88.    "'                      88             d8'   `88                                                  88    `8b                88          
+`Y88888b. dP 88d888b. .d8888b. 88 .d8888b.    88        .d8888b. dP    dP 88d888b. .d8888b. .d8888b.    a88aaaa8P' .d8888b. .d888b88 dP    dP 
+      `8b 88 88'  `88 88'  `88 88 88ooood8    88        88'  `88 88    88 88'  `88 Y8ooooo. 88ooood8     88   `8b. 88'  `88 88'  `88 88    88 
+d8'   .8P 88 88    88 88.  .88 88 88.  ...    Y8.   .88 88.  .88 88.  .88 88             88 88.  ...     88    .88 88.  .88 88.  .88 88.  .88 
+ Y88888P  dP dP    dP `8888P88 dP `88888P'     Y88888P' `88888P' `88888P' dP       `88888P' `88888P'     88888888P `88888P' `88888P8 `8888P88 
+                           .88                                                                                                            .88 
+                       d8888P                                                                                                         d8888P  
+
+
+
+*/
+
+.singleCourse-main {
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  position: relative;
+  padding: 128px 24px 80px 24px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding-right: 24px;
+  padding-left: 24px;
+  box-sizing: border-box;
+}
+
+.singleCourseContainer {
+  width: 100%;
+  max-width: 966px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  direction: rtl;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.singleCourseContainer > * + * {
+  margin-top: 24px;
+}
+
+.singleCourseTop {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+
+.singleCourseTop > * + * {
+  margin-top: 24px;
+}
+
+.singleCourseInfoContainer {
+  width: 100%;
+  height: auto;
+  min-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.singleCourseMasterTimeContainer {
+  width: 50%;
+  min-width: 298px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+
+.singleCourseMasterTimeContainer > * + * {
+  margin-top: 12px;
+}
+
+.singleCoursePriceContainer {
+  width: 50%;
+  min-width: 272px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.singleCourseImageContainer {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  vertical-align: middle;
+}
+
+.singleCourseImageContainer > * + * {
+  margin-top: 6px;
+}
+
+.singleCourseImage {
+  width: 100%;
+  height: auto;
+}
+
+.singleCourseImageFooter {
+  width: 100%;
+  height: auto;
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 10px;
+}
+
+.singleCourseImageFooter.englishImageFooter {
+  direction: ltr;
+}
+
+.singleCourseExpandableWrapper {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  position: relative;
+  -webkit-transition: 400ms ease;
+  -o-transition: 400ms ease;
+  transition: 400ms ease;
+}
+
+.singleCourseExpandableWrapper.showMore {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  padding-bottom: 24px;
+}
+
+.singleCourseExpandableWrapper.showMore .singleCourseDescriptionHiderContainer {
+  background: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0);
+  -webkit-filter: unset;
+  filter: unset;
+}
+
+.singleCourseExpandableWrapper.showMore
+  .singleCourseDescriptionHiderContainer
+  span {
+  border-bottom: none;
+}
+
+.singleCourseDescriptionHiderContainer {
+  width: 100%;
+  height: 72px;
+  background-color: red;
+  position: absolute;
+  bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.72) 49%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(255, 255, 255, 0)),
+    color-stop(49%, rgba(255, 255, 255, 0.72)),
+    to(rgba(255, 255, 255, 1))
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.72) 49%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.72) 49%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
+}
+
+.singleCourseDescriptionHiderContainer span {
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 16px;
+  border-bottom: 1px dashed;
+  margin-top: 12px;
+}
+
+.singleCourseContentContainer {
+  width: 100%;
+  height: auto;
+}
+
+.singleCourseDescriptionTitleContainer {
+  width: 100%;
+  height: 20px;
+  min-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding-right: 12px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+.singleCourseDescriptionTitleContainer > * + * {
+  margin-right: 12px;
+}
+
+.singleCourseDescriptionIcon {
+  width: 30px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../img/courses/pencilIcon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.singleCourseDescriptionTitle {
+  width: auto;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: IRANSans;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.singleCourseContentContainer p {
+  font-family: IRANSans;
+  font-weight: normal;
+  --x-height-multiplier: 0.375;
+  --baseline-multiplier: 0.17;
+  letter-spacing: 0.01rem;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 2.3;
+  letter-spacing: -0.003em;
+}
+
+.singleCourseContentContainer h1 {
+  font-family: IRANSans;
+  font-weight: bold;
+  --x-height-multiplier: 0.375;
+  --baseline-multiplier: 0.17;
+  letter-spacing: 0.01rem;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: -0.003em;
+}
+
+ 
+
+
+/*View Course Player Btn*/
+
+/*
+
+dP     dP oo                         a88888b.                                                  888888ba  dP                                         888888ba    dP            
+88     88                           d8'   `88                                                  88    `8b 88                                         88    `8b   88            
+88    .8P dP .d8888b. dP  dP  dP    88        .d8888b. dP    dP 88d888b. .d8888b. .d8888b.    a88aaaa8P' 88 .d8888b. dP    dP .d8888b. 88d888b.    a88aaaa8P' d8888P 88d888b. 
+88    d8' 88 88ooood8 88  88  88    88        88'  `88 88    88 88'  `88 Y8ooooo. 88ooood8     88        88 88'  `88 88    88 88ooood8 88'  `88     88   `8b.   88   88'  `88 
+88  .d8P  88 88.  ... 88.88b.88'    Y8.   .88 88.  .88 88.  .88 88             88 88.  ...     88        88 88.  .88 88.  .88 88.  ... 88           88    .88   88   88    88 
+888888'   dP `88888P' 8888P Y8P      Y88888P' `88888P' `88888P' dP       `88888P' `88888P'     dP        dP `88888P8 `8888P88 `88888P' dP           88888888P   dP   dP    dP 
+                                                                                                                          .88                                                 
+                                                                                                                      d8888P                                                  
+
+*/
+
+.courseViewingBtnContainer {
+  width: 140px;
+  min-width: 140px;
+  height: 37px;
+  min-height: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-flow: row-reverse;
+  flex-flow: row-reverse;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-right: auto;
+}
+
+.courseViewingBtnContainer:hover .courseViewingBtnSmal {
+  background-color: rgba(137, 176, 236, 1) !important;
+}
+
+.courseViewingBtnContainer:hover .courseViewingBtnLarge {
+  background-color: rgba(126, 162, 217, 1) !important;
+}
+
+.courseViewingBtnContainer:hover .courseViewingHoverAnimate {
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  opacity: 0.5;
+}
+
+.courseViewingBtnSmal {
+  width: 37px;
+  min-width: 37px;
+  height: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("../img/courseViewingBtn.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 37px 37px;
+  -webkit-transition: 400ms ease;
+  -o-transition: 400ms ease;
+  transition: 400ms ease;
+}
+
+.courseViewingBtnLarge {
+  width: 100%;
+  height: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 37px;
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 10px;
+  -webkit-transition: 400ms ease;
+  -o-transition: 400ms ease;
+  transition: 400ms ease;
+  position: relative;
+}
+
+.courseViewingBtnLarge span {
+  z-index: 2;
+}
+
+.courseViewingHoverAnimate {
+  position: absolute;
+  left: 0px;
+  width: 110%;
+  height: 200%;
+  -webkit-transform: scaleX(0) scaleY(0.5);
+  -ms-transform: scaleX(0) scaleY(0.5);
+  transform: scaleX(0) scaleY(0.5);
+  -webkit-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+/* Table */
+/* 
+d888888P          dP       dP          
+   88             88       88          
+   88    .d8888b. 88d888b. 88 .d8888b. 
+   88    88'  `88 88'  `88 88 88ooood8 
+   88    88.  .88 88.  .88 88 88.  ... 
+   dP    `88888P8 88Y8888' dP `88888P' 
+                                       
+                                       
+ */
+
+.singleCourse-tableWrapper {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 200px 200px auto;
+  grid-template-rows: 48px auto auto auto 64px;
+  direction: ltr;
+  grid-row-gap: 12px;
+  grid-template-areas:
+    "headerThirdColumn headerSecondColumn headerFirstColumn "
+    "tableCellThirdFirst tableCellSecondFirst tableCellFirstFirst"
+    "tableCellThirdSecond tableCellSecondSecond tableCellFirstSecond"
+    "tableCellThirdThird tableCellSecondThird tableCellFirstThird"
+    "tableCellThirdBtn tableCellSecondBtn tableCellFirstBtn";
+}
+
+.tableHeader {
+  font-family: IRANSans;
+  font-weight: bold;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tableHeader.headerFirstColumn {
+  grid-area: headerFirstColumn;
+}
+
+.tableHeader.headerSecondColumn {
+  grid-area: headerSecondColumn;
+}
+
+.tableHeader.headerThirdColumn {
+  grid-area: headerThirdColumn;
+}
+
+.tableCell {
+  width: 100%;
+  font-family: IRSansNum;
+  font-weight: 300;
+  font-size: 13px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  direction: rtl;
+  padding: 12px;
+  box-sizing: border-box;
+  position: relative;
+}
+.tableCell.borderedCell::before {
+  content: "";
+  width: 1px;
+  height: 64%;
+  position: absolute;
+  right: 0px;
+  background-color: rgba(120, 134, 159, 0.2);
+}
+.tableCell.coloredCell {
+  background-color: rgba(140, 181, 243, 0.05);
+}
+.tableCell.tableCellFirstFirst {
+  grid-area: tableCellFirstFirst;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 0px 6px 6px 0px;
+}
+
+.tableCell.tableCellSecondFirst {
+  grid-area: tableCellSecondFirst;
+}
+
+.tableCell.tableCellThirdFirst {
+  grid-area: tableCellThirdFirst;
+  border-radius: 6px 0px 0px 6px;
+}
+
+.tableCell.tableCellFirstSecond {
+  grid-area: tableCellFirstSecond;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 0px 6px 6px 0px;
+}
+
+.tableCell.tableCellSecondSecond {
+  grid-area: tableCellSecondSecond;
+}
+
+.tableCell.tableCellThirdSecond {
+  grid-area: tableCellThirdSecond;
+  border-radius: 6px 0px 0px 6px;
+}
+.tableCell.tableCellFirstThird {
+  grid-area: tableCellFirstThird;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 0px 6px 6px 0px;
+}
+
+.tableCell.tableCellSecondThird {
+  grid-area: tableCellSecondThird;
+}
+
+.tableCell.tableCellThirdThird {
+  grid-area: tableCellThirdThird;
+  border-radius: 6px 0px 0px 6px;
+}
+
+.tableCell.tableCellFirstBtn {
+  grid-area: tableCellFirstBtn;
+}
+
+.tableCell.tableCellSecondBtn {
+  grid-area: tableCellSecondBtn;
+}
+.tableCell.tableCellThirdBtn {
+  grid-area: tableCellThirdBtn;
+}
+
+.goToPricingTableBtn {
+  width: auto;
+  min-width: 120px;
+  height: 100%;
+  cursor: pointer;
+  line-height: 40px;
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tableCellAttendanceBtn {
+  min-width: 142px;
+  width: auto;
+  padding: 0px 12px;
+  height: 37px;
+  min-height: 37px;
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 33px;
+  border-radius: 2px;
+  cursor: pointer;
+  -webkit-transition: 400ms ease;
+  -o-transition: 400ms ease;
+  transition: 400ms ease;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  letter-spacing: 0.01rem;
+}
+
+.tableCellAttendanceBtn:hover {
+  background-color: rgba(126, 153, 86, 1) !important;
+}
+
+.tableCellAttendanceBtn.unattendanceBtn:hover {
+  background-color: rgba(217, 90, 43, 1) !important;
+}
+.mobileTableCell1,
+.mobileTableCell2,
+.mobileTableCell3 {
+  display: none;
+}

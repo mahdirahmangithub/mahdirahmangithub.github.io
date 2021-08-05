@@ -1,0 +1,1462 @@
+/*
+            ,;               
+            %@@@,          
+              "N@@g,          
+     @@@@@@g     "B@@g        
+    ]@@@@@@@@g,    "*B@@g     
+    ]@@@@@@@@@@@g     "$@@    
+    ]@@@@@@@@@@@@@@g   $@@    
+    ]@@@@@@@@@@@@@@@@@@@P     
+    ]@@@@@@@@@@@@@@@@P*       
+    ]@@@@@@@@@@@@@R*          
+    ]@@@@@@@@@@N"             
+    ]@@@@@@@N*                
+     *B@@N"
+*/
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: rgb(132, 192, 246);
+    background: -webkit-linear-gradient(left, rgba(132, 192, 246, 1) 0%, rgba(132, 176, 246, 1) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(132, 192, 246, 1)), to(rgba(132, 176, 246, 1)));
+    background: -o-linear-gradient(left, rgba(132, 192, 246, 1) 0%, rgba(132, 176, 246, 1) 100%);
+    background: linear-gradient(to right, rgba(132, 192, 246, 1) 0%, rgba(132, 176, 246, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#84c0f6', endColorstr='#84b0f6', GradientType=1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.signup-base {
+    width: 70%;
+    height: 90vh;
+    max-width: 950px;
+    max-height: 650px;
+    background-color: rgba(255, 255, 255, 1);
+    position: relative;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-transition: 1000ms ease;
+    -o-transition: 1000ms ease;
+    transition: 1000ms ease;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+.signup-base:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    width: 90%;
+    height: 200px;
+    -webkit-box-shadow: 0 2px 60px rgba(0, 0, 0, .2), 0 2px 120px rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 60px rgba(0, 0, 0, .2), 0 2px 120px rgba(0, 0, 0, .1);
+    z-index: -1
+}
+
+
+.signup-leftPanel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    width: 65%;
+    min-width: 320px;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-transition: 500ms ease;
+    -o-transition: 500ms ease;
+    transition: 500ms ease;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+.signup-rightPanel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 350px;
+    width: 35%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-image: url('../img/classRoomLight.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: 500ms ease;
+    -o-transition: 500ms ease;
+    transition: 500ms ease;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.signup-logoWrapper {
+    width: 100%;
+    height: 60px;
+    min-height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.signup-logoContainer {
+    width: 100%;
+    height: 60px;
+    min-height: 60px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-image: url('../img/signUpLogo.svg');
+    background-position: 12% 50%;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+}
+
+
+
+.signup-optionsContainer {
+    width: 80%;
+    height: 40px;
+    min-height: 40px;
+    border-bottom: 1px solid rgba(207, 215, 229, 1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.signup-optionBtn {
+    width: 50%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: IRANSans;
+    font-weight: 500;
+    font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: rgba(120, 134, 159, 1);
+    -webkit-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    transition: 400ms ease;
+    cursor: pointer;
+}
+
+.signup-optionBtn:hover {
+    color: rgba(140, 181, 243, 1);
+}
+
+.signup-optionBtn:focus {
+    color: rgba(140, 181, 243, 1);
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+}
+
+.signup-optionBtn.active {
+    color: rgba(140, 181, 243, 1);
+}
+
+.signup-fieldWrapper {
+    width: 100%;
+    height: calc(100% - 100px);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.signup-fieldContainer {
+    width: 200%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.signup-fieldContainer.login {
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.signup-registerPanel {
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    /*display: flex;*/
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-y: auto;
+    position: relative;
+    padding-top: 24px
+}
+
+.signup-registerPanel>*+* {
+    margin-top: 24px;
+}
+
+.signup-loginPanel {
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.signup-loginPanelContainer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    /*display: flex;*/
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-y: auto;
+    -webkit-transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-user-select: auto;
+    -moz-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+    padding-top: 24px
+}
+
+.signup-loginPanelContainer>*+* {
+    margin-top: 24px;
+}
+
+.signup-loginPanelContainer.forget {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.signup-forgetPanelContainer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    /*display: flex;*/
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-y: auto;
+    -webkit-transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-user-select: auto;
+    -moz-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+    pointer-events: auto;
+    position: relative;
+    padding-top: 24px
+}
+
+.signup-forgetPanelContainer.sent .signup-inputWrapper {
+    -webkit-transition: 200ms ease;
+    -o-transition: 200ms ease;
+    transition: 200ms ease;
+    -webkit-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    transform: translateY(-100px);
+    opacity: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.signup-forgetPanelContainer.sent .signup-forgetContainer {
+    -webkit-transition: 200ms ease 100ms;
+    -o-transition: 200ms ease 100ms;
+    transition: 200ms ease 100ms;
+    -webkit-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    transform: translateY(-100px);
+    opacity: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.signup-forgetPanelContainer>*+* {
+    margin-top: 24px;
+}
+
+.signup-forgetPanelContainer.forget {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+
+
+.signup-inputWrapper {
+    width: 100%;
+    min-height: 50px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    pointer-events: auto;
+}
+
+.signup-loginUserPassError {
+    width: 50%;
+    min-width: 170px;
+    height: 50px;
+    top: 48px;
+    font-family: IRANSans;
+    font-weight: normal;
+    font-size: 12px;
+    direction: rtl;
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: none;
+}
+
+.signup-loginUserPassError.active {
+    display: block;
+}
+
+.signup-inputContainer {
+    width: 50%;
+    min-width: 170px;
+    height: 50px;
+    min-height: 50px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.signup-input {
+    width: 100%;
+    height: 40px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    direction: rtl;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: IRANSans;
+    font-weight: normal;
+    line-height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-bottom: 1px solid rgba(207, 215, 229, 1);
+    border-radius: 0;
+}
+
+.signup-input.ltr {
+    direction: ltr;
+}
+
+
+.signup-input:focus~.signup-inputLabel {
+
+    font-size: 10px;
+    -webkit-transform: translateX(10px) translateY(-20px);
+    -ms-transform: translateX(10px) translateY(-20px);
+    transform: translateX(10px) translateY(-20px);
+    opacity: 1;
+    color: rgba(140, 181, 243, 1) !important;
+}
+
+.signup-input:valid~.signup-inputLabel {
+    font-size: 10px;
+    -webkit-transform: translateX(10px) translateY(-20px);
+    -ms-transform: translateX(10px) translateY(-20px);
+    transform: translateX(10px) translateY(-20px);
+    opacity: 1;
+    color: rgba(140, 181, 243, 1) !important;
+}
+
+.signup-input:focus~.signup-inputUnderline {
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.signup-input:focus~.signup-retypePassChecker {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.signup-input::-moz-selection {
+    background-color: rgba(140, 181, 243, 1);
+    color: #fff;
+}
+
+.signup-input::selection {
+    background-color: rgba(140, 181, 243, 1);
+    color: #fff;
+}
+
+.signup-inputLabel {
+    font-family: IRANSans;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 50px;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    opacity: .8;
+    -webkit-transition: 200ms ease;
+    -o-transition: 200ms ease;
+    transition: 200ms ease;
+    pointer-events: none;
+    direction: rtl;
+    -webkit-transition: .3s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: .3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: .3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.signup-inputLabel.hasValue {
+    font-size: 10px;
+    -webkit-transform: translateX(10px) translateY(-20px);
+    -ms-transform: translateX(10px) translateY(-20px);
+    transform: translateX(10px) translateY(-20px);
+    opacity: 1;
+    color: rgba(140, 181, 243, 1) !important;
+}
+
+.signup-inputUnderline {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transition: .3s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: .3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: .3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.signup-retypePassChecker {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    left: 0;
+    background-image: url('../img/close.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    transition: 400ms ease;
+}
+
+.signup-retypePassChecker.correct {
+    background-image: url("../img/check.svg");
+}
+
+.signup-retypePassChecker.filledPass {
+    -webkit-transform: scale(.8);
+    -ms-transform: scale(.8);
+    transform: scale(.8);
+}
+
+
+
+
+
+
+
+
+.signup-inputError {
+    position: absolute;
+    font-family: IRANSans;
+    font-weight: normal;
+    font-size: 10px;
+    left: 0;
+    bottom: -20px;
+    direction: rtl;
+    display: none;
+}
+
+.signup-inputContainer.error .signup-inputError {
+    display: block;
+}
+
+.signup-inputContainer.error .signup-inputLabel {
+    color: rgba(243, 119, 72, 1) !important
+}
+
+.signup-inputContainer.error .signup-inputUnderline {
+    background-color: rgba(243, 119, 72, 1) !important
+}
+
+.signup-rulesWrapper {
+    width: 100%;
+    height: 48px;
+    min-height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.signup-rulesContainer {
+    width: 50%;
+    min-width: 170px;
+    height: 48px;
+    min-height: 48px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    direction: rtl;
+}
+
+.signup-checkboxContainer {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+
+.signup-rulesText {
+    font-family: IRANSans;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.signup-rulesText a {
+    color: rgba(140, 181, 243, 1);
+    opacity: .8;
+    -webkit-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    transition: 400ms ease;
+}
+
+.signup-rulesText a:hover {
+    opacity: 1
+}
+
+.signup-checkboxBase {
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgba(120, 134, 159, .4);
+    cursor: pointer;
+    -webkit-transition: 300ms ease;
+    -o-transition: 300ms ease;
+    transition: 300ms ease;
+    overflow: hidden;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.signup-checkboxBase:hover {
+    border: 1px solid rgba(120, 134, 159, .6);
+}
+
+.signup-checkboxBase:focus {
+    border: 1px solid rgba(120, 134, 159, .6);
+}
+
+.signup-checkboxBase.checked {
+    border: 1px solid rgba(140, 181, 243, 1);
+}
+
+.signup-checkboxColorFiller {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 25px;
+    -webkit-transition: 300ms ease;
+    -o-transition: 300ms ease;
+    transition: 300ms ease;
+    -webkit-transform: scale(.5);
+        -ms-transform: scale(.5);
+            transform: scale(.5);
+    opacity: 0;
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+}
+
+.signup-checkboxBase.checked .signup-checkboxColorFiller {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+}
+
+.signup-checkboxCheck {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-image: url('../img/checkIcon.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    -webkit-transition: 200ms ease;
+    -o-transition: 200ms ease;
+    transition: 200ms ease;
+}
+
+.signup-checkboxBase.checked .signup-checkboxCheck {
+    -webkit-transform: scale(.5);
+        -ms-transform: scale(.5);
+            transform: scale(.5);
+    opacity: 1;
+    -webkit-transition: 200ms ease 200ms;
+    -o-transition: 200ms ease 200ms;
+    transition: 200ms ease 200ms;
+}
+
+.signup-enterBtnContainer {
+    width: 50%;
+    min-width: 170px;
+    height: 48px;
+    min-height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 50px 0 12px 0 !important;
+    position: relative;
+}
+
+.signup-enterBtn {
+    width: 132px;
+    height: 48px;
+    border-radius: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    outline: none;
+    border: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-family: IRANSans;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 12px;
+    cursor: pointer;
+    -webkit-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    transition: 400ms ease;
+}
+
+.signup-enterBtn:hover {
+    background-color: rgba(166, 206, 255, 1) !important;
+}
+
+.signup-enterBtn:focus {
+    background-color: rgba(166, 206, 255, 1) !important;
+}
+
+.signup-enterBtn.sent {
+    width: 48px;
+    -webkit-transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.signup-googleBtn {
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    outline: none;
+    border: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    background-image: url('../img/googleLogo.svg');
+    background-position: 0% center;
+    background-repeat: no-repeat;
+    left: 0px;
+    -webkit-box-shadow: 0 5px 24px rgba(102, 143, 204, 0.2);
+            box-shadow: 0 5px 24px rgba(102, 143, 204, 0.2);
+    -webkit-transition: width 400ms ease, -webkit-box-shadow .08s ease;
+    transition: width 400ms ease, -webkit-box-shadow .08s ease;
+    -o-transition: box-shadow .08s ease, width 400ms ease;
+    transition: box-shadow .08s ease, width 400ms ease;
+    transition: box-shadow .08s ease, width 400ms ease, -webkit-box-shadow .08s ease;
+}
+
+.signup-googleBtn:hover {
+    width: 144px;
+}
+
+.signup-googleBtn span {
+    font-family: IRANSans;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 12px;
+    opacity: 0;
+    -webkit-transform: translateX(-36px) scaleY(0);
+        -ms-transform: translateX(-36px) scaleY(0);
+            transform: translateX(-36px) scaleY(0);
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+}
+
+.signup-googleBtn:hover span {
+    opacity: 1;
+    -webkit-transform: translateX(12px) scaleY(1);
+        -ms-transform: translateX(12px) scaleY(1);
+            transform: translateX(12px) scaleY(1);
+    -webkit-transition: 300ms ease 150ms;
+    -o-transition: 300ms ease 150ms;
+    transition: 300ms ease 150ms;
+}
+
+.signup-googleBtn:hover~.signup-enterBtn {
+    -webkit-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+}
+
+.signup-forgetContainer {
+    width: 50%;
+    height: 60px;
+    min-height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.signup-loadingContainer {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    transition: 400ms ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.signup-loadingContainer.loading {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    opacity: 1
+}
+
+.loadingCircle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    -webkit-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+
+.signup-loadingContainer.loading .loadingCircle {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: orbit;
+    animation-name: orbit;
+    -webkit-animation-duration: 5.5s;
+    animation-duration: 5.5s;
+}
+
+.loadingCircle:after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 5px;
+    background: rgba(140, 181, 243, 1);
+}
+
+.loadingCircle2 {
+    -webkit-animation-delay: 240ms;
+    animation-delay: 240ms;
+}
+
+.loadingCircle3 {
+    -webkit-animation-delay: 480ms;
+    animation-delay: 480ms;
+}
+
+.loadingCircle4 {
+    -webkit-animation-delay: 720ms;
+    animation-delay: 720ms;
+}
+
+.loadingCircle5 {
+    -webkit-animation-delay: 960ms;
+    animation-delay: 960ms;
+}
+
+@-webkit-keyframes orbit {
+    0% {
+        -webkit-transform: rotate(225deg);
+        transform: rotate(225deg);
+        opacity: 1;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    7% {
+        -webkit-transform: rotate(345deg);
+        transform: rotate(345deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+    30% {
+        -webkit-transform: rotate(455deg);
+        transform: rotate(455deg);
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+    }
+    39% {
+        -webkit-transform: rotate(690deg);
+        transform: rotate(690deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+    70% {
+        -webkit-transform: rotate(815deg);
+        transform: rotate(815deg);
+        opacity: 1;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    75% {
+        -webkit-transform: rotate(945deg);
+        transform: rotate(945deg);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    76% {
+        -webkit-transform: rotate(945deg);
+        transform: rotate(945deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: rotate(945deg);
+        transform: rotate(945deg);
+        opacity: 0;
+    }
+}
+
+@keyframes orbit {
+    0% {
+        -webkit-transform: rotate(225deg);
+        transform: rotate(225deg);
+        opacity: 1;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    7% {
+        -webkit-transform: rotate(345deg);
+        transform: rotate(345deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+    30% {
+        -webkit-transform: rotate(455deg);
+        transform: rotate(455deg);
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+    }
+    39% {
+        -webkit-transform: rotate(690deg);
+        transform: rotate(690deg);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+    70% {
+        -webkit-transform: rotate(815deg);
+        transform: rotate(815deg);
+        opacity: 1;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    75% {
+        -webkit-transform: rotate(945deg);
+        transform: rotate(945deg);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    76% {
+        -webkit-transform: rotate(945deg);
+        transform: rotate(945deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: rotate(945deg);
+        transform: rotate(945deg);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.signup-checkContainer {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    border-radius: 50%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    transition: 400ms ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.signup-checkContainer.sent {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.signup-enterBtn:hover~.signup-checkContainer {
+    background-color: rgba(166, 206, 255, 1) !important;
+}
+
+.signup-check {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-dasharray: 180;
+    stroke-dashoffset: 180;
+}
+
+.signup-check.active {
+    -webkit-animation: drawCheck 2s forwards ease;
+    animation: drawCheck 2s forwards ease;
+}
+
+@-webkit-keyframes drawCheck {
+    0% {
+        stroke-dashoffset: 180;
+    }
+    40% {
+        stroke-dashoffset: 120;
+    }
+    80% {
+        stroke-dashoffset: 60;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes drawCheck {
+    0% {
+        stroke-dashoffset: 180;
+    }
+    40% {
+        stroke-dashoffset: 120;
+    }
+    80% {
+        stroke-dashoffset: 60;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.signup-forgetSpan {
+    direction: rtl;
+    font-family: IRANSans;
+    font-weight: normal;
+    font-size: 12px;
+    opacity: .6;
+    -webkit-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    transition: 400ms ease;
+    cursor: pointer;
+}
+
+
+.signup-forgetSpan:hover {
+    opacity: 1
+}
+
+
+.signup-forgetPanelTitleContainer {
+    width:60%;
+    height: auto;
+    min-height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    direction: rtl;
+}
+
+.signup-forgetPanelTitleContainer span {
+    font-family: IRANSans;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.signup-forgetPanelTitleContainer a {
+    -webkit-user-select: auto;
+    -moz-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+    opacity: .6;
+    cursor: pointer;
+    -webkit-transition: 400ms ease;
+    -o-transition: 400ms ease;
+    transition: 400ms ease;
+}
+
+.signup-forgetPanelTitleContainer a:hover {
+    opacity: 1;
+}
+
+.signup-resetPassWrapper {
+    width: 100%;
+    height: calc(100% - 60px);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    overflow: hidden;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.signup-resetPassWrapper>*+* {
+    margin-top: 24px;
+}
+
+.signup-mailAnimationContainer {
+    width: 150px;
+    height: 100px;
+    -webkit-transform: translateY(-100px) scale(0);
+    -ms-transform: translateY(-100px) scale(0);
+    transform: translateY(-100px) scale(0);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    opacity: 0;
+    pointer-events: none;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.signup-mailAnimationContainer.sent {
+    -webkit-transform: translateY(-210px) scale(1);
+    -ms-transform: translateY(-210px) scale(1);
+    transform: translateY(-210px) scale(1);
+    opacity: 1;
+    -webkit-transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.signup-envelopeDoor {
+    fill: #96befa;
+}
+
+
+.signup-mailAnimationContainer.sent .signup-envelopeDoor {
+    -webkit-animation: envelopeDoorOpen .4s ease-in forwards 600ms;
+    animation: envelopeDoorOpen .4s ease-in forwards 600ms;
+}
+
+.signup-envelopePaper {
+    -webkit-transform: translateY(0px) scaleY(0);
+    -ms-transform: translateY(0px) scaleY(0);
+    transform: translateY(0px) scaleY(0);
+    -webkit-transform-origin: center 100%;
+    -ms-transform-origin: center 100%;
+    transform-origin: center 100%;
+}
+
+.signup-mailAnimationContainer.sent .signup-envelopePaper {
+    -webkit-transform: translateY(-25px) scaleY(1);
+    -ms-transform: translateY(-25px) scaleY(1);
+    transform: translateY(-25px) scaleY(1);
+    -webkit-transition: 400ms ease 800ms;
+    -o-transition: 400ms ease 800ms;
+    transition: 400ms ease 800ms;
+}
+
+@-webkit-keyframes envelopeDoorOpen {
+    0% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        -webkit-transform-origin: center 34px;
+        transform-origin: center 34px;
+    }
+    100% {
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+        -webkit-transform-origin: center 34px;
+        transform-origin: center 34px;
+    }
+}
+
+@keyframes envelopeDoorOpen {
+    0% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        -webkit-transform-origin: center 34px;
+        transform-origin: center 34px;
+    }
+    100% {
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+        -webkit-transform-origin: center 34px;
+        transform-origin: center 34px;
+    }
+}

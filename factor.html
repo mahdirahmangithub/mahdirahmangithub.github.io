@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<!--
+            ,;               
+            %@@@,          
+              "N@@g,          
+     @@@@@@g     "B@@g        
+    ]@@@@@@@@g,    "*B@@g     
+    ]@@@@@@@@@@@g     "$@@    
+    ]@@@@@@@@@@@@@@g   $@@    
+    ]@@@@@@@@@@@@@@@@@@@P     
+    ]@@@@@@@@@@@@@@@@P*       
+    ]@@@@@@@@@@@@@R*          
+    ]@@@@@@@@@@N"             
+    ]@@@@@@@N*                
+     *B@@N"
+ -->
+<html lang="en , fa">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>n e o l e j</title>
+    <meta name="description" content="Learning without boundries" />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/static/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/static/favicon/safari-pinned-tab.svg"
+      color="#8cb5f3"
+    />
+    <link rel="shortcut icon" href="/static/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#8cb5f3" />
+    <meta
+      name="msapplication-config"
+      content="/static/favicon/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- style -->
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/factor.css" />
+    <link rel="stylesheet" href="static/css/userPanel.css" />
+    <link rel="stylesheet" href="static/css/media.css" />
+    <!-- script -->
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/fontfaceobserver.js"></script>
+  </head>
+
+  <body>
+    <div class="factor-headerBase">
+      <div class="factor-headerContainer">
+        <a href="index.html">
+          <div class="factor-headerLogo"></div>
+        </a>
+      </div>
+    </div>
+    <div class="factor-main">
+      <div class="factor-panelContainer">
+        <div class="factor-leftPanel">
+          <div class="factor-finalPriceWrapper">
+            <div class="factor-finalPriceContainer">
+              <div class="factor-finalPriceRow">
+                <span class="factor-finalPriceTitle clrGrey"
+                  >مبلغ کل (<span>3</span>&nbsp;دوره)</span
+                >
+                <span class="factor-finalPriceValue clrGrey"
+                  ><span>750,000</span>&nbsp;تومان</span
+                >
+              </div>
+              <div class="factor-finalPriceRow">
+                <span class="factor-finalPriceTitle clrGreen"> سود شما</span>
+                <span class="factor-finalPriceValue clrGreen"
+                  >(<span>20%</span>)&nbsp;<span>60,000</span>&nbsp;تومان</span
+                >
+              </div>
+              <div class="factor-finalPriceSep  ">
+                <div class="factor-finalPriceSepCut rightCut"></div>
+                <div class="factor-finalPriceSepCut leftCut"></div>
+              </div>
+              <div class="factor-finalPriceMainContainer">
+                <span class="factor-finalPriceMainTitle clrGrey"
+                  >مبلغ قابل پرداخت:</span
+                >
+                <span class="factor-finalPriceMainValue clrOrange">
+                  <span>690,000</span>&nbsp;تومان</span
+                >
+              </div>
+              <div class="factor-finalPriceSep  ">
+                <div class="factor-finalPriceSepCut rightCut"></div>
+                <div class="factor-finalPriceSepCut leftCut"></div>
+              </div>
+              <div class="factor-finalPriceRow">
+                <span class="factor-finalPriceTitle clrGrey"
+                  >انتخاب درگاه پرداخت</span
+                >
+              </div>
+              <div class="factor-paymentGatewayContainer active">
+                <div class="radioBtnContainer">
+                  <div class="radioBtnBase checked" tabindex="1">
+                    <div class="radioBtnColorFiller bgBlue"></div>
+                  </div>
+                </div>
+                <div class="factor-paymentGatewayIcon samanBank"></div>
+                <span class="factor-paymentGatewayName clrGrey"
+                  >بانک سامان</span
+                >
+              </div>
+              <div class="factor-paymentGatewayContainer">
+                <div class="radioBtnContainer">
+                  <div class="radioBtnBase" tabindex="1">
+                    <div class="radioBtnColorFiller bgBlue"></div>
+                  </div>
+                </div>
+                <div class="factor-paymentGatewayIcon ayandehBank"></div>
+                <span class="factor-paymentGatewayName clrGrey"
+                  >بانک آینده</span
+                >
+              </div>
+
+              <div class="factor-paymentGatewayContainer">
+                <div class="radioBtnContainer">
+                  <div class="radioBtnBase" tabindex="1">
+                    <div class="radioBtnColorFiller bgBlue"></div>
+                  </div>
+                </div>
+                <div class="factor-paymentGatewayIcon zarinpal"></div>
+                <span class="factor-paymentGatewayName clrGrey">
+                  زرین‌پال
+                </span>
+              </div>
+
+              <div class="factor-paymentBtn bgBlue clrWhite">
+                ورود به درگاه پرداخت
+              </div>
+            </div>
+          </div>
+
+          <div class="factor-discountCodeWrapper">
+            <div class="factor-discountCodeContainer">
+              <div class="factor-finalPriceRow">
+                <span class="factor-finalPriceTitle clrGrey">ثبت کد تخفیف</span>
+              </div>
+              <div class="factor-finalPriceRow">
+                <span class="factor-finalPriceSubitle clrGrey">
+                  با ثبت کد تخفیف، مبلغ کد تخفیف از “مبلغ قابل پرداخت” کسر
+                  می‌شود.
+                </span>
+              </div>
+              <input
+                class="factor-discountInput clrGrey"
+                placeholder="مثلا 837A2CS"
+              />
+
+              <div class="factor-paymentBtn bgBlue clrWhite">
+                ثبت کد تخفیف
+              </div>
+
+              <div class="factor-discountCodeError   clrRed">
+                کد تخفیف وارد شده درست نیست
+              </div>
+            </div>
+          </div>
+
+          <div class="factor-returnToCartBtnContainer leftPanel">
+            <a href="userPanel-shoppings.html">
+              <div class="factor-returnToCartBtn clrGreen">
+                <div class="factor-returnToCartBtnIcon"></div>
+                <span>بازگشت به سبد خرید</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="factor-rightPanel">
+          <div class="factor-rightPanelAlertContainer redAlert clrRed">
+            پیش از نهایی کردن خرید، مشخصات خود را در تنظیمات کاربری کامل کنید.
+          </div>
+          <div class="factor-rightPanelAlertContainer orangeAlert clrOrange">
+            قیمت یک دوره بروز شد.
+          </div>
+          <div class="factor-userInfoWrapper error">
+            <div class="factor-userAvatarContainer"></div>
+            <div class="factor-userInfoContainer">
+              <span class="factor-userInfoHeader clrBlue">مشخصات کاربر</span>
+              <div class="factor-userInfoContentWrapper">
+                <div class="factor-userInfoContentContainerName clrGrey">
+                  <span>نام و نام خانوادگی</span>
+                  <span>مهدی رحمن</span>
+                </div>
+                <div class="factor-userInfoContentContainer clrGrey">
+                  <span> ایمیل </span>
+                  <span>mahdi.rahman@gmail.com</span>
+                </div>
+                <div class="factor-userInfoContentContainer clrGrey">
+                  <span> شماره همراه </span>
+                  <span class="factor-userInfoPhone">09359703849</span>
+                </div>
+              </div>
+              <a
+                class="factor-userInfoBtnWrapper "
+                href="userPanel-editor-personalInfo.html"
+              >
+                <div class="factor-userInfoBtnContainer ">
+                  <div class="factor-userInfoBtnSmal bgGreenLight"></div>
+                  <div class="factor-userInfoBtnLarge bgGreen  clrWhite">
+                    <span>تنظیمات کاربری</span>
+                    <div
+                      class="factor-userInfoBtnHoverAnimate bgGreenLight "
+                    ></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <a
+              class="factor-userInfoErrorContainer"
+              href="userPanel-editor-personalInfo.html"
+            >
+              <div
+                class="factor-userInfoError bgRed"
+                title="در تنظیمات کاربری مشخصات خود را کامل کنید"
+              ></div>
+            </a>
+          </div>
+          <div class="factor-coursesMainHeader clrGrey60">
+            دوره&zwnj;های زیر را خواهید خرید (<span>3</span>&nbsp;دوره)
+          </div>
+          <div class="factor-coursesWrapper">
+            <div class="factor-courseContainer">
+              <div class="factor-courseMainContainer">
+                <div
+                  class="factor-courseRemoveBtnContainer bgGrey10"
+                  title="حذف دوره"
+                ></div>
+                <a href="player.html" style="height: 100%">
+                  <div
+                    class="factor-courseImage"
+                    style="background-image: url('static/img/courses/3.png')"
+                  ></div>
+                </a>
+                <div class="factor-courseContentContainer">
+                  <a href="player.html">
+                    <div class="courseTitleMedium clrGrey">
+                      <span class=""
+                        >مطالعات مرور سیستماتیک و متاآنالیز - پزشکی</span
+                      >
+                    </div>
+                  </a>
+                  <a href="player.html">
+                    <div class="courseTextMedium clrGrey">
+                      <span class=""
+                        >این ویدیو، محصول وبیناری به همین نام است که هدف آن،
+                        آشنایی متخصصین، اعضای هیات علمی، محققین
+                      </span>
+                    </div>
+                  </a>
+                  <div class="factor-courseBottomWrapper">
+                    <div
+                      class="factor-courseMasterAvatar "
+                      style="background-image: url('static/img/courses/8.jpg')"
+                    ></div>
+                    <div class="courseBottomContainer">
+                      <div class="courseMasterName clrGrey ">
+                        <span> عباس علی کشتکار</span>
+                      </div>
+                      <div class="courseTimeToolsContainer  ">
+                        <span class="courseDate clrGrey">۱۳۹۶/۰۹/۱۲</span>
+                        <span class="courseDate clrGrey">|</span>
+                        <div class="courseDurationMedium">
+                          <span class="courseDuration clrGrey"
+                            >۲ ساعت و ۴۰ دقیقه</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="factor-coursePriceContainer clrOrange">
+                <div class="factor-CoursePriceOld   clrGrey60">290,000</div>
+                <div class="factor-coursePriceSep bgGrey40"></div>
+                <span>230,000 تومان</span>
+              </div>
+              <div class="factor-discountContainer  "><span>20%</span></div>
+            </div>
+            <div class="factor-courseContainer">
+              <div class="factor-courseMainContainer">
+                <div
+                  class="factor-courseRemoveBtnContainer bgGrey10"
+                  title="حذف دوره"
+                ></div>
+                <a href="player.html" style="height: 100%">
+                  <div
+                    class="factor-courseImage"
+                    style="background-image: url('static/img/courses/5.jpeg')"
+                  ></div>
+                </a>
+                <div class="factor-courseContentContainer">
+                  <a href="player.html">
+                    <div class="courseTitleMedium clrGrey">
+                      <span class=""
+                        >مطالعات مرور سیستماتیک و متاآنالیز - پزشکی</span
+                      >
+                    </div>
+                  </a>
+                  <a href="player.html">
+                    <div class="courseTextMedium clrGrey">
+                      <span class=""
+                        >این ویدیو، محصول وبیناری به همین نام است که هدف آن،
+                        آشنایی متخصصین، اعضای هیات علمی، محققین
+                      </span>
+                    </div>
+                  </a>
+                  <div class="factor-courseBottomWrapper">
+                    <div
+                      class="factor-courseMasterAvatar "
+                      style="background-image: url('static/img/courses/8.jpg')"
+                    ></div>
+                    <div class="courseBottomContainer">
+                      <div class="courseMasterName clrGrey ">
+                        <span> عباس علی کشتکار</span>
+                      </div>
+                      <div class="courseTimeToolsContainer  ">
+                        <span class="courseDate clrGrey">۱۳۹۶/۰۹/۱۲</span>
+                        <span class="courseDate clrGrey">|</span>
+                        <div class="courseDurationMedium">
+                          <span class="courseDuration clrGrey"
+                            >۲ ساعت و ۴۰ دقیقه</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="factor-coursePriceContainer clrOrange">
+                <span>230,000 تومان</span>
+              </div>
+            </div>
+            <div class="factor-courseContainer">
+              <div class="factor-courseMainContainer">
+                <div
+                  class="factor-courseRemoveBtnContainer bgGrey10"
+                  title="حذف دوره"
+                ></div>
+                <a href="player.html" style="height: 100%">
+                  <div
+                    class="factor-courseImage"
+                    style="background-image: url('static/img/courses/6.jpeg')"
+                  ></div>
+                </a>
+                <div class="factor-courseContentContainer">
+                  <a href="player.html">
+                    <div class="courseTitleMedium clrGrey">
+                      <span class=""
+                        >مطالعات مرور سیستماتیک و متاآنالیز - پزشکی</span
+                      >
+                    </div>
+                  </a>
+                  <a href="player.html">
+                    <div class="courseTextMedium clrGrey">
+                      <span class=""
+                        >این ویدیو، محصول وبیناری به همین نام است که هدف آن،
+                        آشنایی متخصصین، اعضای هیات علمی، محققین
+                      </span>
+                    </div>
+                  </a>
+                  <div class="factor-courseBottomWrapper">
+                    <div
+                      class="factor-courseMasterAvatar "
+                      style="background-image: url('static/img/courses/8.jpg')"
+                    ></div>
+                    <div class="courseBottomContainer">
+                      <div class="courseMasterName clrGrey ">
+                        <span> عباس علی کشتکار</span>
+                      </div>
+                      <div class="courseTimeToolsContainer  ">
+                        <span class="courseDate clrGrey">۱۳۹۶/۰۹/۱۲</span>
+                        <span class="courseDate clrGrey">|</span>
+                        <div class="courseDurationMedium">
+                          <span class="courseDuration clrGrey"
+                            >۲ ساعت و ۴۰ دقیقه</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="factor-coursePriceContainer clrOrange">
+                <div class="factor-coursePriceAlert">
+                  قیمت این دوره بروز شد:
+                </div>
+                <span>230,000 تومان</span>
+              </div>
+            </div>
+            <div class="factor-returnToCartBtnContainer rightPanel">
+              <a href="userPanel-shoppings.html">
+                <div class="factor-returnToCartBtn clrGreen">
+                  <div class="factor-returnToCartBtnIcon"></div>
+                  <span>بازگشت به سبد خرید</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="static/js/main.js"></script>
+    <script src="static/js/factor.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1261 @@
+/*
+
+ a88888b.                           dP oo                                                d88  d8888b. .d8888P .d8888P 
+d8'   `88                           88                                                    88      `88 88'     88'     
+88 d8P 88 88d8b.d8b. .d8888b. .d888b88 dP .d8888b.       88d8b.d8b. .d8888b. dP.  .dP     88   aaad8' 88baaa. 88baaa. 
+88 Yo8b88 88'`88'`88 88ooood8 88'  `88 88 88'  `88       88'`88'`88 88'  `88  `8bd8'      88      `88 88` `88 88` `88 
+Y8.       88  88  88 88.  ... 88.  .88 88 88.  .88       88  88  88 88.  .88  .d88b.      88      .88 8b. .d8 8b. .d8 
+ Y88888P' dP  dP  dP `88888P' `88888P8 dP `88888P8       dP  dP  dP `88888P8 dP'  `dP    d88P d88888P `Y888P' `Y888P' 
+                                                                                
+*/
+/*@media  max 1366*/
+
+@media screen and (min-width: 1366px) {
+  .landing-page3iPadBase {
+    border-radius: 28px;
+  }
+}
+/*@media  max 1366*/
+
+@media screen and (max-width: 1160px) {
+  .videoSideRatePercentContainer {
+    display: none;
+  }
+
+  .videoSidePanelMasterContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    direction: rtl;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .videoSidePanelMasterContent > * + * {
+    margin-top: 6px;
+  }
+
+  .sidePanelDownloadBtnTitle {
+    display: none;
+  }
+}
+/*
+
+ a88888b.                           dP oo                                                d88  d88  d8888b. .d8888P 
+d8'   `88                           88                                                    88   88      `88 88'     
+88 d8P 88 88d8b.d8b. .d8888b. .d888b88 dP .d8888b.       88d8b.d8b. .d8888b. dP.  .dP     88   88  .aaadP' 88baaa. 
+88 Yo8b88 88'`88'`88 88ooood8 88'  `88 88 88'  `88       88'`88'`88 88'  `88  `8bd8'      88   88  88'     88` `88 
+Y8.       88  88  88 88.  ... 88.  .88 88 88.  .88       88  88  88 88.  .88  .d88b.      88   88  88.     8b. .d8 
+ Y88888P' dP  dP  dP `88888P' `88888P8 dP `88888P8       dP  dP  dP `88888P8 dP'  `dP    d88P d88P Y88888P `Y888P' 
+                                                                                                                   
+                                                                                                                   
+                                                                             
+*/
+/*@media  max 1126*/
+
+@media screen and (max-width: 1126px) {
+  .topRightCourse {
+    display: none;
+  }
+  .topCenterCourseContainer {
+    width: calc(100% - 472px);
+  }
+  .tooltipHeaderShareContainer.courseBottomFooter {
+    top: -220%;
+  }
+
+  .tooltipHeaderShareContainer.courseBottomFooter
+    .tooltipHeaderShareOptionContainer {
+    height: auto;
+    min-height: 30px;
+    width: 30px;
+    padding: 6px 3px 6px 3px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+  }
+
+  .tooltipHeaderShareContainer.courseBottomFooter
+    .tooltipHeaderShareOptionContainer
+    > *
+    + * {
+    margin-right: 0px;
+    margin-top: 6px;
+  }
+  .similarCoursesWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  .similarCoursesWrapper > * + * {
+    margin-right: 0px;
+    margin-top: 12px;
+  }
+  .countinueShoppingBtn {
+    width: 100%;
+    height: 48px;
+    border-radius: 0px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    -webkit-box-shadow: 0px 0px 0px rgba(140, 181, 243, 0);
+    box-shadow: 0px 0px 0px rgba(140, 181, 243, 0);
+    z-index: 2000;
+  }
+  .countinueShoppingBtn:hover .continueShoppingBtnSmal {
+    background-color: rgba(153, 194, 255, 1) !important;
+  }
+  .countinueShoppingBtn > * + * {
+    margin-left: 12px;
+  }
+  .continueShoppingBtnSmal {
+    background-color: rgba(148, 191, 255, 1);
+    border-radius: 0px;
+  }
+  .playerTopContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+  }
+  .playerTopContainer > * + * {
+    margin-left: 0px;
+    margin-top: 24px;
+  }
+  .palyerLeftPanel {
+    width: 100%;
+    min-width: 0px;
+  }
+  .palyerRightPanel {
+    width: 100%;
+  }
+  .playerFooterWrapper {
+    display: none;
+  }
+  .playerFooterWrapperMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .landing-pieChartWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+  }
+  .landing-pieChartWrapper > * + * {
+    margin-left: 0px;
+    margin-top: 24px;
+  }
+  .videoSideRatePercentContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .videoSidePanelMasterContent {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .videoSidePanelMasterContent > * + * {
+    margin-top: 0px;
+  }
+
+  .playerFocusModeTopContainer {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 0px;
+  }
+  .playerFocusModeTopContainer > * + * {
+    margin-left: 0px;
+    margin-top: 12px;
+  }
+  .palyerFocusLeftPanel {
+    width: 100%;
+    min-width: 0px;
+  }
+  .palyerFocusRightPanel {
+    width: 100%;
+    min-height: 144px;
+  }
+  .playerSimilarCoursesWrapper {
+    display: none;
+  }
+  .playerSimilarCoursesWrapperSidePanle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .playerSimilarCoursesSep {
+    display: none;
+  }
+  .similarCoursesMainTitleContainer {
+    display: none;
+  }
+  .sidePanelDownloadBtnTitle {
+    display: flex;
+  }
+}
+/*
+ a88888b.                           dP oo             .d888b. 888888P  a8888a  
+d8'   `88                           88                Y8' `8P 88'     d8' ..8b 
+88 d8P 88 88d8b.d8b. .d8888b. .d888b88 dP .d8888b.    d8bad8b 88baaa. 88 .P 88 
+88 Yo8b88 88'`88'`88 88ooood8 88'  `88 88 88'  `88    88` `88     `88 88 d' 88 
+Y8.       88  88  88 88.  ... 88.  .88 88 88.  .88    8b. .88      88 Y8'' .8P 
+ Y88888P' dP  dP  dP `88888P' `88888P8 dP `88888P8    Y88888P d88888P  Y8888P  
+                                                                               
+                                                                               
+*/
+/*@media  850*/
+
+@media screen and (max-width: 850px) {
+  .landing-headerContainer {
+    visibility: hidden;
+  }
+  .landing-headerContainerScroll {
+    visibility: hidden;
+  }
+  .landing-headerContainerMobile {
+    visibility: visible;
+  }
+  .landing-headerContainerMobileScroll {
+    visibility: visible;
+  }
+
+  .landing-page1Pattern {
+    width: 100%;
+    height: 600px;
+    background-image: url("../img/landigFirstPagePatternMobile.svg");
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .landing-page1HumansContainer {
+    visibility: hidden;
+    display: none;
+  }
+  .landing-page1Humans {
+    visibility: hidden;
+    display: none;
+  }
+  .landing-page1Pigeon {
+    visibility: hidden;
+    display: none;
+  }
+  .landing-page1Content {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .landing-page1Slogan {
+    margin-top: 100px;
+    font-size: calc(1.5em + 0.8vw);
+  }
+  .landing-page1SubSlogan {
+    font-size: calc(0.7em + 0.4vw);
+  }
+  .landing-page1signUpBtn {
+    margin-top: auto;
+    margin-bottom: 10vh;
+    margin-left: 0px;
+  }
+  .landing-page2Slogan {
+    text-align: center;
+  }
+  .landing-page2ParallaxContainer {
+    background-attachment: scroll;
+  }
+  .landing-page3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+  }
+  .landing-page3LeftContainer {
+    width: 100%;
+    height: 100vh;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .landing-page3RightContainer {
+    width: 100%;
+    height: 100vh;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .landing-page3iPadBase {
+    border-radius: 15px;
+  }
+  .landing-page3Pencils {
+    background-size: 90%;
+    top: 10%;
+  }
+  .landing-page3Slogan {
+    font-size: calc(0.6em + 0.8vw);
+  }
+  .landing-pieChartPage {
+    background-attachment: scroll;
+  }
+  .landing-page4LeftContainer {
+    width: 100%;
+    height: 100vh;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .landing-page4RightContainer {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .landing-page4ManualContainer {
+    height: auto;
+    max-width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .landing-page4ManualSlogan {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 0px;
+    margin-top: 10px;
+  }
+  .landing-page4signUpBtn {
+    visibility: hidden;
+  }
+  .landing-page4iPhoneXBase {
+    width: 100%;
+  }
+  .landing-footerLogo {
+    background-position: 50% 50%;
+  }
+  .landing-scrollDownContainer {
+    display: none;
+  }
+  .footerEmpty {
+    visibility: hidden;
+    display: none;
+  }
+  .footerSocialContainer {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .signup-base {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+
+  .signup-base:after {
+    visibility: hidden;
+    display: none;
+  }
+  .signup-leftPanel {
+    width: 100%;
+    height: 100%;
+    min-width: 320px;
+  }
+  .signup-rightPanel {
+    width: 0%;
+    display: none;
+    visibility: hidden;
+  }
+
+  .coursesTopContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .coursesTopContainer > * + * {
+    margin-left: 0px;
+    margin-top: 24px;
+  }
+  .topLeftCourse {
+    width: 100%;
+    min-width: 272px;
+  }
+  .courseContentLargeLeft {
+    max-width: 100%;
+  }
+  .tooltipShareContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-flow: row-reverse;
+    flex-flow: row-reverse;
+    right: -200%;
+  }
+  .tooltipShareOptionContainer {
+    -webkit-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  .topCenterCourseContainer {
+    width: 100%;
+  }
+
+  .mainCoursesContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-flow: column-reverse;
+    flex-flow: column-reverse;
+  }
+  .mainCoursesContainer > * + * {
+    margin-left: 0px;
+    margin-bottom: 24px;
+  }
+  .mainCoursesRightPanel {
+    width: 100%;
+  }
+  .mainCoursesLeftPanel {
+    width: 100%;
+    min-width: 100%;
+  }
+  .menuBase {
+    display: none;
+  }
+  .headerToolsContainer {
+    display: none;
+  }
+  .headerContainer.playerPageMenu .headerToolsContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .headerContainer.playerPageMenu .headerToolsContainer .headerStarContainer {
+    display: none;
+  }
+  .headerContainer.playerPageMenu
+    .headerToolsContainer
+    .headerBookmarkContainer {
+    display: none;
+  }
+  .headerContainer.playerPageMenu
+    .headerToolsContainer
+    .headerContentTableContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .headerAvatarContainer {
+    margin-left: auto;
+  }
+  .headerContainer.playerPageMenu .headerAvatarContainer {
+    margin-left: 24px;
+  }
+
+  .contentTableMobileContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menuBaseMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .singleCourseInfoContainer > * + * {
+    margin-top: 12px;
+  }
+
+  .singleCourseMasterTimeContainer {
+    width: 100%;
+  }
+
+  .singleCoursePriceContainer {
+    width: 100%;
+  }
+  .headerCourseTitle {
+    max-width: 200px;
+  }
+  .userPanelTabWrapper > * + * {
+    margin-right: 0px;
+  }
+  .tabBtnContainer > * + * {
+    margin-right: 0px;
+  }
+  .tabBtnTitle {
+    display: none;
+  }
+  .tabBtnNotifContainer {
+    margin-right: 0px;
+    -webkit-transform: translateY(-8px) translateX(38px) scale(0.8);
+    -ms-transform: translateY(-8px) translateX(38px) scale(0.8);
+    transform: translateY(-8px) translateX(38px) scale(0.8);
+    border: 3px solid rgba(255, 255, 255, 1);
+    min-width: 26px;
+    height: 26px;
+  }
+
+  .userPanelSep {
+    width: 100%;
+    height: 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 0;
+  }
+  .userPanelSep.myMessagesSep {
+    width: 100%;
+    height: 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 0;
+  }
+  .myVideoContainer {
+    width: 100%;
+    height: 190px;
+    min-height: 190px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+  }
+
+  .myVideoContainer > * + * {
+    margin-right: 0px;
+    margin-top: 24px;
+  }
+
+  .myVideoAdditionalContainer {
+    width: 100%;
+    height: 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-flow: row-reverse;
+    flex-flow: row-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .myVideoAdditionalContainer > * + * {
+    margin-top: 0px;
+  }
+  .myVideoMainContainer {
+    width: 100%;
+  }
+  .myMessageUnReadAlert {
+    top: 16px;
+  }
+
+  .playerContentTableContainer {
+    display: none;
+  }
+
+  .error404TopContainer {
+    -ms-flex-wrap: wrap;
+
+    flex-wrap: wrap;
+  }
+  .error404Slogan2Container {
+    z-index: 1000;
+  }
+  .playerFooterLogo {
+    background-position: center center;
+  }
+  .playerFooterWrapperMobile {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .userPanel-main {
+    padding: 98px 24px 80px 24px;
+  }
+
+  .userPanelEditorContainer {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .userPanelEditorContainer > * + * {
+    margin-left: 0px;
+    margin-top: 24px;
+  }
+  .userPanelEditorLeft {
+    width: 100%;
+  }
+  .userPanelEditorRight {
+    width: 100%;
+  }
+  .userPanelPhotoEditorWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .userPanelPhotoEditorWrapper > * + * {
+    margin-right: 0px;
+    margin-top: 24px;
+  }
+
+  .userPanelNameEditorContainer {
+    width: 100%;
+  }
+  .nameEditorInputLabel {
+    font-size: 12px;
+    bottom: -5px;
+  }
+  .userpanelInfoEditorContainer {
+    padding-right: 10px;
+  }
+  .userpanelPasswordEditorInputContainer {
+    width: 100%;
+  }
+
+  .userpanelEditorSideWrapper {
+    padding-left: 0px;
+  }
+  .userPanelEditorSideMenuWrapper {
+    display: none;
+  }
+  #userpanelEditorSide2nd {
+    margin-top: 0px !important;
+  }
+  .userPanelEditorMobileMenuWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #userPanelPhotoEditorWrapper1st {
+    margin-top: 24px !important;
+  }
+  .searchPageResultSep {
+    width: 100%;
+    height: 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 0;
+  }
+
+  .searchPageResultsWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
+  .searchPageResultsWrapper > * + * {
+    margin-right: 0px;
+    margin-top: 48px;
+  }
+
+  .searchPageResultsRightPanel {
+    width: 100%;
+  }
+
+  .searchPageResultsLeftPanel {
+    width: 100%;
+  }
+  .factor-panelContainer {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-flow: column-reverse;
+    flex-flow: column-reverse;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .factor-panelContainer > * + * {
+    margin-left: 0px;
+    margin-bottom: 48px;
+  }
+  .factor-leftPanel {
+    width: 100%;
+    min-width: 0px;
+  }
+  .factor-finalPriceWrapper {
+    padding-right: 0px;
+  }
+
+    .factor-discountCodeWrapper {
+    padding-right: 0px;
+  }
+  .factor-rightPanel {
+    width: 100%;
+  }
+  .factor-returnToCartBtnContainer.leftPanel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .factor-returnToCartBtnContainer.rightPanel {
+    display: none;
+  }
+  .factor-userInfoWrapper.error {
+    margin-top: 24px !important;
+  }
+}
+
+/* 
+
+
+ a88888b.                           dP oo                .d8888P .d8888P  a8888a  
+d8'   `88                           88                   88'     88'     d8' ..8b 
+88 d8P 88 88d8b.d8b. .d8888b. .d888b88 dP .d8888b.       88baaa. 88baaa. 88 .P 88 
+88 Yo8b88 88'`88'`88 88ooood8 88'  `88 88 88'  `88       88` `88 88` `88 88 d' 88 
+Y8.       88  88  88 88.  ... 88.  .88 88 88.  .88       8b. .d8 8b. .d8 Y8'' .8P 
+ Y88888P' dP  dP  dP `88888P' `88888P8 dP `88888P8       `Y888P' `Y888P'  Y8888P  
+                                                                                  
+                                                                                  
+
+*/
+/*@media  660*/
+@media screen and (max-width: 660px) {
+  .videoToolsContainer {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .videoToolsContainer > * + * {
+    margin-left: 0px;
+    margin-top: 12px;
+  }
+  .videoToolsSep {
+    display: none;
+  }
+
+  .singleCourse-tableWrapper {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .tableHeader.headerSecondColumn {
+    order: 1;
+  }
+
+  .tableHeader.headerThirdColumn {
+    order: 9;
+  }
+
+  .tableCell.tableCellFirstFirst {
+    order: 2;
+    border-radius: 6px 6px 0px 0px;
+    margin-top: 12px;
+  }
+
+  .tableCell.tableCellSecondFirst {
+    order: 3;
+    border-radius: 0px 0px 6px 6px;
+  }
+
+  .tableCell.tableCellFirstSecond {
+    order: 4;
+    border-radius: 6px 6px 0px 0px;
+  }
+  .tableCell.tableCellSecondSecond {
+    order: 5;
+    border-radius: 0px 0px 6px 6px;
+  }
+  .tableCell.tableCellFirstThird {
+    order: 6;
+    border-radius: 6px 6px 0px 0px;
+  }
+
+  .tableCell.tableCellSecondThird {
+    order: 7;
+    border-radius: 0px 0px 6px 6px;
+  }
+
+  .tableCell.tableCellSecondBtn {
+    order: 8;
+    margin-bottom: 12px;
+  }
+  .tableCell.tableCellThirdFirst {
+    order: 11;
+    border-radius: 0px 0px 6px 6px;
+  }
+  .tableCell.tableCellThirdSecond {
+    order: 13;
+  }
+
+  .tableCell.tableCellThirdThird {
+    order: 15;
+    border-radius: 0px 0px 6px 6px;
+  }
+
+  .tableCell.tableCellThirdBtn {
+    order: 16;
+  }
+  .headerFirstColumn {
+    display: none;
+  }
+  .tableCell.borderedCell::before {
+    display: none;
+  }
+  .tableCellAttendanceBtn {
+    width: 90%;
+  }
+  .mobileTableCell1,
+  .mobileTableCell2,
+  .mobileTableCell3 {
+    display: flex;
+  }
+  .mobileTableCell1 {
+    order: 10;
+    margin-top: 12px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 6px 6px 0px 0px;
+  }
+  .mobileTableCell2 {
+    order: 12;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 6px 6px 0px 0px;
+  }
+  .mobileTableCell3 {
+    order: 14;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 6px 6px 0px 0px;
+  }
+}
+
+/*
+
+
+ a88888b.                           dP oo                dP   dP 888888P  a8888a  
+d8'   `88                           88                   88   88 88'     d8' ..8b 
+88 d8P 88 88d8b.d8b. .d8888b. .d888b88 dP .d8888b.       88aaa88 88baaa. 88 .P 88 
+88 Yo8b88 88'`88'`88 88ooood8 88'  `88 88 88'  `88            88     `88 88 d' 88 
+Y8.       88  88  88 88.  ... 88.  .88 88 88.  .88            88      88 Y8'' .8P 
+ Y88888P' dP  dP  dP `88888P' `88888P8 dP `88888P8            dP d88888P  Y8888P  
+                                                                                  
+                                                                                  
+                                                                      
+
+*/
+/*@media  450*/
+
+@media screen and (max-width: 450px) {
+  .courseDurationMedium {
+    max-width: 55px;
+  }
+
+  .addtoCartBtnLarge {
+    display: none;
+  }
+  .addtoCartBtnSepGrey {
+    display: none;
+  }
+
+  .addtoCartBtnSepWhite {
+    display: none;
+  }
+
+  .coursePrice {
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+
+  .coursePriceOld {
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  .myBookmarkContainer {
+    padding-left: 0px;
+  }
+  .myMessageContainer {
+    padding-left: 0px;
+    padding-right: 6px;
+  }
+  .myMessageImageContainer {
+    width: 72px;
+    height: 72px;
+  }
+  .myMessageContentContainer {
+    width: calc(100% - 84px);
+  }
+
+  .videoToolsContainerFocus {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .videoToolsContainerFocus > * + * {
+    margin-left: 0px;
+    margin-top: 12px;
+  }
+  .videoToolsSepFocus {
+    display: none;
+  }
+
+  .factor-userInfoWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+  }
+  .factor-userInfoWrapper > * + * {
+    margin-right: 0px;
+    margin-top: 12px;
+  }
+  .factor-userInfoErrorContainer {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    right: calc(50% - 15px);
+    top: -15px;
+  }
+  .factor-userInfoContainer {
+    width: 100%;
+  }
+  .factor-userInfoContainer > * + * {
+    margin-top: 24px;
+  }
+  .factor-userInfoHeader {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .factor-userInfoContentContainerName {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+  }
+  .factor-userInfoContentContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+  }
+  .factor-userInfoContentWrapper > * + * {
+    margin-top: 24px;
+  }
+  .factor-userInfoContentContainerName > * + * {
+    margin-right: 0px;
+    margin-top: 6px;
+  }
+  .factor-userInfoContentContainer > * + * {
+    margin-right: 0px;
+    margin-top: 6px;
+  }
+  .factor-userInfoContentContainerName span:nth-child(1) {
+    margin-left: auto;
+  }
+  .factor-userInfoContentContainerName span:nth-child(2) {
+    margin-left: auto;
+  }
+  .factor-userInfoContentContainer span:nth-child(1) {
+    margin-left: auto;
+  }
+  .factor-userInfoContentContainer span:nth-child(2) {
+    margin-right: auto;
+  }
+
+  .factor-userInfoBtnWrapper {
+    margin-right: 0px;
+    width: 100%;
+  }
+  .factor-userInfoBtnContainer {
+    width: 100%;
+  }
+  .factor-courseImage {
+    width: 72px;
+    height: 72px;
+    margin-bottom: auto;
+  }
+  .factor-courseContentContainer {
+    width: calc(100% - 122px);
+  }
+  .factor-courseBottomWrapper {
+    width: calc(100% + 84px);
+    -webkit-transform: translateX(84px);
+    -ms-transform: translateX(84px);
+    transform: translateX(84px);
+  }
+}
+/*
+
+ a88888b.                           dP oo                dP   dP d88  dP   dP 
+d8'   `88                           88                   88   88  88  88   88 
+88 d8P 88 88d8b.d8b. .d8888b. .d888b88 dP .d8888b.       88aaa88  88  88aaa88 
+88 Yo8b88 88'`88'`88 88ooood8 88'  `88 88 88'  `88            88  88       88 
+Y8.       88  88  88 88.  ... 88.  .88 88 88.  .88            88  88       88 
+ Y88888P' dP  dP  dP `88888P' `88888P8 dP `88888P8            dP d88P      dP 
+                                                                              
+*/
+/*@media  414*/
+
+@media screen and (max-width: 414px) {
+  .landing-backToTopBtn {
+    top: -72px;
+    right: 0px;
+  }
+  .signup-inputContainer {
+    width: 70%;
+  }
+  .signup-loginUserPassError {
+    width: 70%;
+  }
+  .signup-rulesContainer {
+    width: 70%;
+  }
+  .signup-forgetContainer {
+    width: 70%;
+  }
+  .signup-enterBtnContainer {
+    width: 70%;
+  }
+  .mainCourse > * + * {
+    margin-right: 12px;
+  }
+  .mainCourseImage {
+    width: 72px;
+    height: 72px;
+    min-width: 72px;
+  }
+  .maincourseContentContainer {
+    width: calc(100% - 84px);
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    direction: rtl;
+  }
+
+  .courseDurationMedium {
+    max-width: 100px;
+  }
+  .headerCourseTitle {
+    max-width: 180px;
+  }
+  .myVideoMainContainer > * + * {
+    margin-right: 12px;
+  }
+  .myShoppingMainContainer > * + * {
+    margin-right: 12px;
+  }
+  .myBookmarkMainContainer > * + * {
+    margin-right: 12px;
+  }
+  .myMessageMainContainer > * + * {
+    margin-right: 12px;
+  }
+  .removeItemBtnContainer {
+    width: 72px;
+    min-width: 72px;
+  }
+  .removeItemBtnSmal {
+    width: 72px;
+    min-width: 72px;
+  }
+
+  .removeItemBtnLarge {
+    display: none;
+  }
+  .error404TopContainer {
+    margin-top: 72px;
+  }
+  .error404Slogan2Container {
+    display: none;
+  }
+  .error404Slogan2Top {
+    display: none;
+  }
+  .error404Slogan2Bottom {
+    display: none;
+  }
+  .error404FooterWrapper {
+    margin-top: auto;
+  }
+
+  .videoSideRatePercentContainer {
+    display: none;
+  }
+
+  .mainCourse .courseBottomContainer {
+    width: calc(100% + 84px);
+    -webkit-transform: translateX(84px);
+    -ms-transform: translateX(84px);
+    transform: translateX(84px);
+  }
+  .myVideoMainContainer .maincourseContentContainer .courseBottomContainer {
+    width: calc(100% + 84px);
+    -webkit-transform: translateX(84px);
+    -ms-transform: translateX(84px);
+    transform: translateX(84px);
+  }
+  .myShoppingMainContainer .maincourseContentContainer .courseBottomContainer {
+    width: calc(100% + 84px);
+    -webkit-transform: translateX(84px);
+    -ms-transform: translateX(84px);
+    transform: translateX(84px);
+  }
+  .myBookmarkMainContainer .maincourseContentContainer .courseBottomContainer {
+    width: calc(100% + 84px);
+    -webkit-transform: translateX(84px);
+    -ms-transform: translateX(84px);
+    transform: translateX(84px);
+  }
+  .searchPageResultBottomWrapper {
+    width: calc(100% + 96px);
+    -webkit-transform: translateX(96px);
+    -ms-transform: translateX(96px);
+    transform: translateX(96px);
+  }
+}
+/*
+
+
+ a88888b.                           dP oo                d8888b. d88888P 888888P 
+d8'   `88                           88                       `88     d8' 88'     
+88 d8P 88 88d8b.d8b. .d8888b. .d888b88 dP .d8888b.        aaad8'    d8'  88baaa. 
+88 Yo8b88 88'`88'`88 88ooood8 88'  `88 88 88'  `88           `88   d8'       `88 
+Y8.       88  88  88 88.  ... 88.  .88 88 88.  .88           .88  d8'         88 
+ Y88888P' dP  dP  dP `88888P' `88888P8 dP `88888P8       d88888P d8'     d88888P 
+                                                                                 
+                                                                                                                                                          
+*/
+/*@media  375*/
+
+@media screen and (max-width: 375px) {
+  .headerCourseTitle {
+    max-width: 140px;
+  }
+}
+/*
+
+
+ a88888b.                           dP oo                d8888b. d88888P 888888P 
+d8'   `88                           88                       `88     d8' 88'     
+88 d8P 88 88d8b.d8b. .d8888b. .d888b88 dP .d8888b.        aaad8'    d8'  88baaa. 
+88 Yo8b88 88'`88'`88 88ooood8 88'  `88 88 88'  `88           `88   d8'       `88 
+Y8.       88  88  88 88.  ... 88.  .88 88 88.  .88           .88  d8'         88 
+ Y88888P' dP  dP  dP `88888P' `88888P8 dP `88888P8       d88888P d8'     d88888P 
+                                                                                 
+                                                                                                                                                          
+*/
+/*@media  320*/
+
+@media screen and (max-width: 320px) {
+  .headerCourseTitle {
+    max-width: 110px;
+  }
+
+  .headerLogoSep {
+    margin-left: 12px;
+  }
+  .factor-discountContainer {
+    bottom: -20px;
+  }
+}

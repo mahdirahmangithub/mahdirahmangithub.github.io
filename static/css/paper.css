@@ -1,0 +1,244 @@
+.paperContentContainer {
+  width: 100%;
+  height: auto;
+  font-family: IRANSans;
+}
+
+.paperContentContainer p {
+  font-weight: normal;
+  --x-height-multiplier: 0.375;
+  --baseline-multiplier: 0.17;
+  letter-spacing: 0.01rem;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 2.3;
+  letter-spacing: -0.003em;
+}
+
+.paperContentContainer p.indented {
+  text-indent: 12px;
+}
+
+.paperContentContainer p .bolder {
+  font-weight: 500;
+  font-size: 16px;
+}
+.paperContentContainer p .underlined {
+  text-decoration: underline;
+}
+
+.paperDeviderContainer hr {
+  margin-top: 28px;
+  margin-bottom: 18px;
+  display: block;
+  border: 0;
+  text-align: center;
+  overflow: visible;
+}
+
+.paperDeviderContainer hr::before {
+  --x-height-multiplier: 0.342;
+  --baseline-multiplier: 0.22;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0.6em;
+  content: "...";
+  display: inline-block;
+  margin-left: 0.6em;
+  position: relative;
+}
+
+.paperContentContainer .paperTitleContainer h1 {
+  margin: 0 !important;
+  font-weight: 500;
+  letter-spacing: 0.01rem;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 2.8;
+  letter-spacing: -0.003em;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.paperContentContainer .paperTitleContainer h1::before {
+  display: none;
+}
+.paperContentContainer .paperTitleContainer.bullet h1::before {
+  font-weight: bolder;
+  font-size: 30px;
+  content: ".";
+  display: flex;
+  position: relative;
+  transform: translateY(-6px);
+  margin-left: 8px;
+  line-height: 44px;
+}
+
+.paperContentContainer .paperTitleContainer h2 {
+  margin: 0 !important;
+  font-weight: 500;
+  letter-spacing: 0.01rem;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: -0.003em;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.paperContentContainer .paperTitleContainer h2::before {
+  display: none;
+}
+.paperContentContainer .paperTitleContainer.bullet h2::before {
+  font-weight: bolder;
+  font-size: 30px;
+  content: ".";
+  display: flex;
+  position: relative;
+  transform: translateY(-6px);
+  margin-left: 8px;
+  line-height: 44px;
+}
+
+.quoteWrapper {
+  width: auto;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px !important;
+  margin-bottom: 32px;
+}
+
+.quoteContainer {
+  width: auto;
+  max-width: 600px;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quoteBox {
+  width: auto;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 32px;
+  background-color: rgba(241, 243, 245, 1);
+}
+.quoteIcon {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  right: 24px;
+  top: -20px;
+  background-image: url("../img/quoteIcon.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.paperListContainer {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.paperListContainer span {
+  margin: 0 !important;
+  font-weight: normal;
+  --x-height-multiplier: 0.375;
+  --baseline-multiplier: 0.17;
+  letter-spacing: 0.01rem;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 2.3;
+  letter-spacing: -0.003em;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.paperListContainer span::before {
+  font-weight: bolder;
+  font-size: 30px;
+  content: ".";
+  display: flex;
+  position: relative;
+  transform: translateY(-6px);
+  margin-left: 8px;
+  line-height: 24px;
+}
+.paperImgWrapper {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px !important;
+  margin-bottom: 32px;
+
+}
+.paperImgContainer {
+  width: auto;
+  height: auto;
+  max-width: 80%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+}
+.paperImgContainer>*+*{
+  margin-top: 6px;
+}
+.paperImgContainer img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+.paperImgContainer span{
+    width: 100%;
+    height: auto;
+    font-family: IRANSans;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.courses-main.papers{
+  padding:104px 24px 80px 24px;
+}
+
+.courses-main.papers .mainCoursesRightPanel > * + * {
+  margin-top:24px;
+}
+.mainCourse.paper {
+ box-shadow: 0 5px 42px rgba(102, 143, 204, 0.2)
+ }
+.mainCourse.paper .maincourseContentContainer {
+padding: 24px 0px 24px 24px;
+box-sizing: border-box;
+}

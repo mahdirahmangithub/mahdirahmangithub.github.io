@@ -1,0 +1,1540 @@
+/*
+            ,;               
+            %@@@,          
+              "N@@g,          
+     @@@@@@g     "B@@g        
+    ]@@@@@@@@g,    "*B@@g     
+    ]@@@@@@@@@@@g     "$@@    
+    ]@@@@@@@@@@@@@@g   $@@    
+    ]@@@@@@@@@@@@@@@@@@@P     
+    ]@@@@@@@@@@@@@@@@P*       
+    ]@@@@@@@@@@@@@R*          
+    ]@@@@@@@@@@N"             
+    ]@@@@@@@N*                
+     *B@@N"
+*/
+
+body {
+  background-color: #fff;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+*:focus {
+  outline: none;
+}
+
+.factor-headerBase {
+  width: 100%;
+  height: 110px;
+  min-height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+}
+
+.factor-headerContainer {
+  width: 100%;
+  max-width: 966px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.factor-headerLogo {
+  width: 200px;
+  height: 110px;
+  background-image: url("../img/factor/factorHeaderLogo.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.factor-main {
+  width: 100%;
+  height: auto;
+  padding: 48px 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.factor-panelContainer {
+  width: 100%;
+  max-width: 966px;
+  min-width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0px 24px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.factor-panelContainer > * + * {
+  margin-left: 24px;
+}
+
+.factor-leftPanel {
+  width: 288px;
+  min-width: 288px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  direction: rtl;
+  -webkit-transition: 400ms ease;
+  -o-transition: 400ms ease;
+  transition: 400ms ease;
+}
+
+.factor-leftPanel > * + * {
+  margin-top: 12px;
+}
+
+.factor-rightPanel {
+  width: calc(100% - 312px);
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  direction: rtl;
+}
+
+.factor-rightPanel > * + * {
+  margin-top: 12px;
+}
+
+.factor-rightPanelAlertContainer.redAlert {
+  width: 100%;
+  min-height: 36px;
+  height: auto;
+  border: 1px solid rgba(243, 72, 72, 0.6);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: rgba(243, 72, 72, 0.1);
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  direction: rtl;
+  padding: 0px 12px;
+  line-height: 36px;
+}
+
+.factor-rightPanelAlertContainer.orangeAlert {
+  width: 100%;
+  min-height: 36px;
+  height: auto;
+  border: 1px solid rgba(243, 119, 72, 0.6);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: rgba(243, 119, 72, 0.1);
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  direction: rtl;
+  padding: 0px 12px;
+  line-height: 36px;
+}
+
+/* Factor User Info
+
+ 88888888b                     dP                        dP     dP                               dP          .8888b          
+ 88                            88                        88     88                               88          88   "          
+a88aaaa    .d8888b. .d8888b. d8888P .d8888b. 88d888b.    88     88 .d8888b. .d8888b. 88d888b.    88 88d888b. 88aaa  .d8888b. 
+ 88        88'  `88 88'  `""   88   88'  `88 88'  `88    88     88 Y8ooooo. 88ooood8 88'  `88    88 88'  `88 88     88'  `88 
+ 88        88.  .88 88.  ...   88   88.  .88 88          Y8.   .8P       88 88.  ... 88          88 88    88 88     88.  .88 
+ dP        `88888P8 `88888P'   dP   `88888P' dP          `Y88888P' `88888P' `88888P' dP          dP dP    dP dP     `88888P' 
+                                                                                                                             
+                                                                                                                             
+
+
+*/
+
+.factor-userInfoWrapper {
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 24px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid rgba(120, 134, 159, 0.2);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  direction: rtl;
+  position: relative;
+}
+
+.factor-userInfoWrapper > * + * {
+  margin-right: 24px;
+}
+
+.factor-userAvatarContainer {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  min-width: 84px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  background-image: url("../img/headerAvatar.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.factor-userInfoContainer {
+  width: calc(100% - 108px);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.factor-userInfoContainer > * + * {
+  margin-top: 12px;
+}
+
+.factor-userInfoHeader {
+  width: 100%;
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.factor-userInfoContentWrapper {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.factor-userInfoContentWrapper > * + * {
+  margin-top: 6px;
+}
+
+.factor-userInfoContentContainerName {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  direction: rtl;
+  font-family: IRANSans;
+  font-weight: 500;
+}
+
+.factor-userInfoContentContainerName > * + * {
+  margin-right: 12px;
+}
+
+.factor-userInfoContentContainerName span:nth-child(1) {
+  opacity: 0.6;
+  font-size: 10px;
+}
+
+.factor-userInfoContentContainerName span:nth-child(2) {
+  opacity: 1;
+  font-size: 14px;
+}
+
+.factor-userInfoContentContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  direction: rtl;
+  font-family: IRANSans;
+  font-weight: 500;
+}
+
+.factor-userInfoContentContainer > * + * {
+  margin-right: 12px;
+}
+
+.factor-userInfoContentContainer span:nth-child(1) {
+  opacity: 0.6;
+  font-size: 10px;
+}
+
+.factor-userInfoContentContainer span:nth-child(2) {
+  opacity: 1;
+  font-size: 12px;
+}
+
+.factor-userInfoPhone {
+  font-family: IRSansNumMedium;
+}
+
+/* Factor User Info Error
+
+    88888888b                     dP                        dP     dP                               dP          .8888b              88888888b                                     
+    88                            88                        88     88                               88          88   "              88                                            
+   a88aaaa    .d8888b. .d8888b. d8888P .d8888b. 88d888b.    88     88 .d8888b. .d8888b. 88d888b.    88 88d888b. 88aaa  .d8888b.    a88aaaa    88d888b. 88d888b. .d8888b. 88d888b. 
+    88        88'  `88 88'  `""   88   88'  `88 88'  `88    88     88 Y8ooooo. 88ooood8 88'  `88    88 88'  `88 88     88'  `88     88        88'  `88 88'  `88 88'  `88 88'  `88 
+    88        88.  .88 88.  ...   88   88.  .88 88          Y8.   .8P       88 88.  ... 88          88 88    88 88     88.  .88     88        88       88       88.  .88 88       
+    dP        `88888P8 `88888P'   dP   `88888P' dP          `Y88888P' `88888P' `88888P' dP          dP dP    dP dP     `88888P'     88888888P dP       dP       `88888P' dP       
+                                                                                                                                                                                  
+                                                                                                                                                                                  
+
+*/
+
+.factor-userInfoErrorContainer {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: -15px;
+  margin: 0px !important;
+  display: none;
+}
+
+.factor-userInfoWrapper.error .factor-userInfoErrorContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.factor-userInfoError {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 10px 50px rgba(243, 72, 72, 0.6);
+  box-shadow: 0px 10px 50px rgba(243, 72, 72, 0.6);
+  cursor: pointer;
+  z-index: 1000;
+  background-image: url("../img/errorIcon.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.factor-userInfoError.onLoad {
+  -webkit-animation: errorShake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  animation: errorShake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+.factor-userInfoError:hover {
+  -webkit-animation: errorShake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  animation: errorShake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+@-webkit-keyframes errorShake {
+  10%,
+  90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes errorShake {
+  10%,
+  90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+/*
+Factor User Info Btn
+
+ 88888888b                     dP                        dP     dP                               dP          .8888b              888888ba    dP            
+ 88                            88                        88     88                               88          88   "              88    `8b   88            
+a88aaaa    .d8888b. .d8888b. d8888P .d8888b. 88d888b.    88     88 .d8888b. .d8888b. 88d888b.    88 88d888b. 88aaa  .d8888b.    a88aaaa8P' d8888P 88d888b. 
+ 88        88'  `88 88'  `""   88   88'  `88 88'  `88    88     88 Y8ooooo. 88ooood8 88'  `88    88 88'  `88 88     88'  `88     88   `8b.   88   88'  `88 
+ 88        88.  .88 88.  ...   88   88.  .88 88          Y8.   .8P       88 88.  ... 88          88 88    88 88     88.  .88     88    .88   88   88    88 
+ dP        `88888P8 `88888P'   dP   `88888P' dP          `Y88888P' `88888P' `88888P' dP          dP dP    dP dP     `88888P'     88888888P   dP   dP    dP 
+                                                                                                                                                           
+                                                                                                                                                           
+
+*/
+
+.factor-userInfoBtnWrapper {
+  margin-right: auto;
+  width: auto;
+}
+
+.factor-userInfoBtnContainer {
+  width: 140px;
+  min-width: 140px;
+  height: 100%;
+  min-height: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-flow: row-reverse;
+  flex-flow: row-reverse;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.factor-userInfoBtnContainer:hover .factor-userInfoBtnSmal {
+  background-color: rgba(147, 179, 100, 1) !important;
+}
+
+.factor-userInfoBtnContainer:hover .factor-userInfoBtnLarge {
+  background-color: rgba(126, 153, 86, 1) !important;
+}
+
+.factor-userInfoBtnContainer:hover .factor-userInfoBtnHoverAnimate {
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  opacity: 0.5;
+}
+
+.factor-userInfoBtnSmal {
+  width: 33px;
+  min-width: 33px;
+  height: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("../img/personalInfoIconSmal.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 33px 33px;
+  -webkit-transition: 400ms ease;
+  -o-transition: 400ms ease;
+  transition: 400ms ease;
+}
+
+.factor-userInfoBtnLarge {
+  width: 100%;
+  height: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 33px;
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 10px;
+  -webkit-transition: 400ms ease;
+  -o-transition: 400ms ease;
+  transition: 400ms ease;
+  position: relative;
+}
+
+.factor-userInfoBtnLarge span {
+  z-index: 2;
+}
+
+.factor-userInfoBtnHoverAnimate {
+  position: absolute;
+  left: 0px;
+  width: 110%;
+  height: 200%;
+  -webkit-transform: scaleX(0) scaleY(0.5);
+  -ms-transform: scaleX(0) scaleY(0.5);
+  transform: scaleX(0) scaleY(0.5);
+  -webkit-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.factor-userInfoWrapper.error
+  .factor-userInfoBtnWrapper
+  .factor-userInfoBtnContainer:hover
+  .factor-userInfoBtnSmal {
+  background-color: rgba(236, 71, 71, 1) !important;
+}
+
+.factor-userInfoWrapper.error
+  .factor-userInfoBtnWrapper
+  .factor-userInfoBtnContainer:hover
+  .factor-userInfoBtnLarge {
+  background-color: rgba(217, 65, 65, 1) !important;
+}
+
+.factor-userInfoWrapper.error
+  .factor-userInfoBtnWrapper
+  .factor-userInfoBtnContainer:hover
+  .factor-userInfoBtnLarge
+  .factor-userInfoBtnHoverAnimate {
+  -webkit-transform: scaleX(1) scaleY(1);
+  -ms-transform: scaleX(1) scaleY(1);
+  transform: scaleX(1) scaleY(1);
+  opacity: 0.5;
+}
+
+.factor-userInfoWrapper.error
+  .factor-userInfoBtnWrapper
+  .factor-userInfoBtnSmal {
+  width: 33px;
+  min-width: 33px;
+  height: 33px;
+  background-color: rgba(255, 76, 76, 1) !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("../img/errorIconSmal.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 33px 33px;
+  -webkit-transition: 400ms ease;
+  -o-transition: 400ms ease;
+  transition: 400ms ease;
+}
+
+.factor-userInfoWrapper.error
+  .factor-userInfoBtnWrapper
+  .factor-userInfoBtnLarge {
+  background-color: rgba(243, 72, 72, 1) !important;
+}
+
+.factor-userInfoWrapper.error
+  .factor-userInfoBtnWrapper
+  .factor-userInfoBtnLarge
+  .factor-userInfoBtnHoverAnimate {
+  background-color: rgba(255, 76, 76, 1) !important;
+}
+
+/* Factor Courses
+
+ 88888888b                     dP                         a88888b.                                                       
+ 88                            88                        d8'   `88                                                       
+a88aaaa    .d8888b. .d8888b. d8888P .d8888b. 88d888b.    88        .d8888b. dP    dP 88d888b. .d8888b. .d8888b. .d8888b. 
+ 88        88'  `88 88'  `""   88   88'  `88 88'  `88    88        88'  `88 88    88 88'  `88 Y8ooooo. 88ooood8 Y8ooooo. 
+ 88        88.  .88 88.  ...   88   88.  .88 88          Y8.   .88 88.  .88 88.  .88 88             88 88.  ...       88 
+ dP        `88888P8 `88888P'   dP   `88888P' dP           Y88888P' `88888P' `88888P' dP       `88888P' `88888P' `88888P' 
+                                                                                                                         
+                                                                                                                         
+
+*/
+
+.factor-coursesMainHeader {
+  width: 100%;
+  min-height: 36px;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  direction: rtl;
+  padding: 0px 12px;
+  line-height: 36px;
+}
+
+.factor-coursesMainHeader span {
+  font-family: IRSansNumMedium;
+}
+
+.factor-coursesWrapper {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: 6px !important;
+}
+
+.factor-coursesWrapper > * + * {
+  margin-top: 24px;
+}
+
+.factor-courseContainer {
+  width: 100%;
+  height: auto;
+  min-height: 175px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 12px 12px;
+  -webkit-box-shadow: 0 5px 32px rgba(102, 143, 204, 0.15);
+  box-shadow: 0 5px 32px rgba(102, 143, 204, 0.15);
+  -webkit-transition: 200ms ease;
+  -o-transition: 200ms ease;
+  transition: 200ms ease;
+}
+
+.factor-courseContainer:hover {
+  -webkit-box-shadow: 0 1px 6px rgba(102, 143, 204, 0.2);
+  box-shadow: 0 1px 6px rgba(102, 143, 204, 0.2);
+}
+
+.factor-courseContainer.removed {
+  display: none;
+}
+
+.factor-courseMainContainer {
+  width: 100%;
+  height: 130px;
+  min-height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.factor-courseMainContainer > * + * {
+  margin-right: 12px;
+}
+
+.factor-courseRemoveBtnContainer {
+  width: 26px;
+  min-width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transform: translateY(12px);
+  -ms-transform: translateY(12px);
+  transform: translateY(12px);
+  background-image: url("../img/factor/removeItemIconDark.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: auto;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+}
+
+.factor-courseImage {
+  width: 100px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: relative;
+}
+
+.factor-courseContentContainer {
+  width: calc(100% - 150px);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  direction: rtl;
+}
+
+.factor-courseContentContainer > * + * {
+  margin-top: 6px;
+}
+
+.factor-courseBottomWrapper {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  margin-top: auto !important;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.factor-courseMasterAvatar {
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  min-height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 12px;
+}
+
+.factor-coursePriceContainer {
+  width: 100%;
+  height: 33px;
+  min-height: 33px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-left: 24px;
+}
+
+.factor-coursePriceContainer span {
+  height: 33px;
+  line-height: 33px;
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.factor-coursePriceContainer > * + * {
+  margin-right: 6px;
+}
+
+.factor-coursePriceSep {
+  width: 1px;
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.factor-CoursePriceOld {
+  width: auto;
+  height: 100%;
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 33px;
+}
+
+.factor-CoursePriceOld:before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(120, 134, 159, 0.6);
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+  border-radius: 2px;
+}
+
+.factor-coursePriceAlert {
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 33px;
+}
+
+.factor-discountContainer {
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+  position: absolute;
+  left: -20px;
+  bottom: 24px;
+  background-image: url("../img/factor/discount.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.factor-discountContainer:before {
+  content: "";
+  z-index: -1;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 5px 32px rgba(147, 179, 100, 1);
+  box-shadow: 0 5px 32px rgba(147, 179, 100, 1);
+  position: absolute;
+}
+
+.factor-discountContainer span {
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 1);
+  -webkit-transform: translateY(1px) rotate(30deg);
+  -ms-transform: translateY(1px) rotate(30deg);
+  transform: translateY(1px) rotate(30deg);
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
+
+/*Final Price
+
+ 88888888b oo                   dP     888888ba           oo                   
+ 88                             88     88    `8b                               
+a88aaaa    dP 88d888b. .d8888b. 88    a88aaaa8P' 88d888b. dP .d8888b. .d8888b. 
+ 88        88 88'  `88 88'  `88 88     88        88'  `88 88 88'  `"" 88ooood8 
+ 88        88 88    88 88.  .88 88     88        88       88 88.  ... 88.  ... 
+ dP        dP dP    dP `88888P8 dP     dP        dP       dP `88888P' `88888P' 
+                                                                               
+                                                                               
+
+*/
+
+.factor-finalPriceWrapper {
+  width: 100%;
+  height: auto;
+  padding-right: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  direction: rtl;
+}
+
+.factor-finalPriceContainer {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  overflow: hidden;
+  -webkit-box-shadow: 0 5px 32px rgba(102, 143, 204, 0.15);
+  box-shadow: 0 5px 32px rgba(102, 143, 204, 0.15);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 12px 12px 12px;
+}
+
+.factor-finalPriceContainer > * + * {
+  margin-top: 12px;
+}
+
+.factor-finalPriceRow {
+  width: 100%;
+  height: 24px;
+  min-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.factor-finalPriceTitle {
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.factor-finalPriceTitle span {
+  font-family: IRSansNumMedium;
+  font-size: 12px;
+}
+
+.factor-finalPriceSubitle {
+  font-family: IRANSans;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.factor-finalPriceValue {
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.factor-finalPriceValue span {
+  font-family: IRSansNumMedium;
+  font-size: 12px;
+}
+
+.factor-finalPriceSep {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed rgba(120, 134, 159, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.factor-finalPriceSepCut {
+  width: 18px;
+  height: 18px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(247, 250, 255, 1);
+}
+
+.factor-finalPriceSepCut.rightCut {
+  -webkit-transform: translateX(22px) translateY(1px);
+  -ms-transform: translateX(22px) translateY(1px);
+  transform: translateX(22px) translateY(1px);
+  -webkit-box-shadow: inset 2px 0px 9px rgba(102, 143, 204, 0.15);
+  box-shadow: inset 2px 0px 9px rgba(102, 143, 204, 0.15);
+}
+
+.factor-finalPriceSepCut.leftCut {
+  -webkit-transform: translateX(-22px) translateY(1px);
+  -ms-transform: translateX(-22px) translateY(1px);
+  transform: translateX(-22px) translateY(1px);
+  -webkit-box-shadow: inset -2px 0px 9px rgba(102, 143, 204, 0.15);
+  box-shadow: inset -2px 0px 9px rgba(102, 143, 204, 0.15);
+}
+
+.factor-finalPriceMainContainer {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.factor-finalPriceMainContainer > * + * {
+  margin-top: 12px;
+}
+
+.factor-finalPriceMainTitle {
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.factor-finalPriceMainValue {
+  font-family: IRANSans;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.factor-finalPriceMainValue span {
+  font-family: IRSansNumMedium;
+  font-size: 16px;
+}
+
+.factor-paymentGatewayContainer {
+  width: 100%;
+  height: 50px;
+  min-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  direction: rtl;
+  border: 1px solid rgba(140, 181, 243, 0.4);
+  border-radius: 5px;
+  padding: 0px 6px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: 400ms ease;
+  -o-transition: 400ms ease;
+  transition: 400ms ease;
+}
+
+.factor-paymentGatewayContainer:hover {
+  border: 1px solid rgba(140, 181, 243, 1);
+}
+
+.factor-paymentGatewayContainer.active {
+  border: 1px solid rgba(140, 181, 243, 1);
+  background-color: rgba(140, 181, 243, 0.1);
+}
+
+.factor-paymentGatewayIcon {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.factor-paymentGatewayIcon.samanBank {
+  background-image: url("../img/factor/samanBank.svg");
+}
+
+.factor-paymentGatewayIcon.ayandehBank {
+  background-image: url("../img/factor/ayandehBank.svg");
+}
+.factor-paymentGatewayIcon.zarinpal {
+  background-image: url("../img/factor/zarinpal.svg");
+}
+
+.factor-paymentGatewayContainer span {
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.factor-paymentBtn {
+  width: 100%;
+  height: 50px;
+  min-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  direction: rtl;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: 400ms ease;
+  -o-transition: 400ms ease;
+  transition: 400ms ease;
+  font-family: IRANSans;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.factor-paymentBtn:hover {
+  background-color: rgba(166, 206, 255, 1) !important;
+}
+
+.factor-paymentBtn:focus {
+  background-color: rgba(166, 206, 255, 1) !important;
+}
+
+/* Discount Code */
+/* 
+      dP oo                                                dP       a88888b.                dP          
+      88                                                   88      d8'   `88                88          
+.d888b88 dP .d8888b. .d8888b. .d8888b. dP    dP 88d888b. d8888P    88        .d8888b. .d888b88 .d8888b. 
+88'  `88 88 Y8ooooo. 88'  `"" 88'  `88 88    88 88'  `88   88      88        88'  `88 88'  `88 88ooood8 
+88.  .88 88       88 88.  ... 88.  .88 88.  .88 88    88   88      Y8.   .88 88.  .88 88.  .88 88.  ... 
+`88888P8 dP `88888P' `88888P' `88888P' `88888P' dP    dP   dP       Y88888P' `88888P' `88888P8 `88888P' 
+                                                                                                        
+                                                                                                        
+ */
+
+.factor-discountCodeWrapper {
+  width: 100%;
+  height: auto;
+  padding-right: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  direction: rtl;
+}
+
+.factor-discountCodeContainer {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  overflow: hidden;
+  -webkit-box-shadow: 0 5px 32px rgba(102, 143, 204, 0.15);
+  box-shadow: 0 5px 32px rgba(102, 143, 204, 0.15);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 12px 12px 12px;
+}
+
+.factor-discountCodeContainer > * + * {
+  margin-top: 12px;
+}
+
+.factor-discountInput {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  direction: rtl;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: IRANSans;
+  font-weight: normal;
+  line-height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid rgba(207, 215, 229, 1);
+  border-radius: 0;
+  margin-top: 24px !important;
+  transition: 200ms ease;
+}
+.factor-discountInput:focus {
+  border: 1px solid rgba(140, 181, 243, 1) !important;
+}
+.factor-discountInput::-webkit-input-placeholder {
+  color: rgba(120, 134, 159, 0.3);
+}
+
+.factor-discountInput::-moz-placeholder {
+  color: rgba(120, 134, 159, 0.3);
+}
+
+.factor-discountInput:-ms-input-placeholder {
+  color: rgba(120, 134, 159, 0.3);
+}
+
+.factor-discountInput:-moz-placeholder {
+  color: rgba(120, 134, 159, 0.3);
+}
+
+.factor-discountInput::-moz-selection {
+  background-color: rgba(140, 181, 243, 1);
+  color: #fff;
+}
+
+.factor-discountInput::selection {
+  background-color: rgba(140, 181, 243, 1);
+  color: #fff;
+}
+
+.factor-discountCodeError {
+  width: 100%;
+  min-height: 36px;
+  height: auto;
+  border: 1px solid rgba(243, 72, 72, 0.6);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: rgba(243, 72, 72, 0.1);
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  direction: rtl;
+  padding: 0px 12px;
+  line-height: 36px;
+}
+
+/*BackToCart
+
+ 888888ba                    dP          d888888P              a88888b.                     dP   
+ 88    `8b                   88             88                d8'   `88                     88   
+a88aaaa8P' .d8888b. .d8888b. 88  .dP        88    .d8888b.    88        .d8888b. 88d888b. d8888P 
+ 88   `8b. 88'  `88 88'  `"" 88888"         88    88'  `88    88        88'  `88 88'  `88   88   
+ 88    .88 88.  .88 88.  ... 88  `8b.       88    88.  .88    Y8.   .88 88.  .88 88         88   
+ 88888888P `88888P8 `88888P' dP   `YP       dP    `88888P'     Y88888P' `88888P8 dP         dP   
+                                                                                                 
+                                                                                                 
+*/
+
+.factor-returnToCartBtnContainer {
+  width: 100%;
+  height: 48px;
+  min-height: 48px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.factor-returnToCartBtnContainer.leftPanel {
+  display: none;
+}
+
+.factor-returnToCartBtnContainer.rightPanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.factor-returnToCartBtn {
+  width: auto;
+  height: 48px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.factor-returnToCartBtnIcon {
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/factor/backToCartIcon.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.factor-returnToCartBtn span {
+  font-family: IRANSans;
+  font-weight: 500;
+  font-size: 12px;
+  -webkit-transform: translateX(12px);
+  -ms-transform: translateX(12px);
+  transform: translateX(12px);
+}

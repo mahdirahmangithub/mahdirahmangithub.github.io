@@ -1,0 +1,2186 @@
+    /*
+            ,;               
+            %@@@,          
+              "N@@g,          
+     @@@@@@g     "B@@g        
+    ]@@@@@@@@g,    "*B@@g     
+    ]@@@@@@@@@@@g     "$@@    
+    ]@@@@@@@@@@@@@@g   $@@    
+    ]@@@@@@@@@@@@@@@@@@@P     
+    ]@@@@@@@@@@@@@@@@P*       
+    ]@@@@@@@@@@@@@R*          
+    ]@@@@@@@@@@N"             
+    ]@@@@@@@N*                
+     *B@@N"
+*/
+
+    body {
+        background-color: #fff;
+        margin: 0;
+        border: 0;
+        padding: 0;
+        outline: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        text-rendering: optimizeLegibility;
+        scroll-behavior: smooth;
+    }
+
+    body.active {
+        overflow-y: hidden;
+    }
+
+    a {
+        text-decoration: none !important;
+    }
+
+
+    *:focus {
+        outline: none;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+
+    .userPanel-main {
+        width: 100%;
+        min-width: 320px;
+        height: auto;
+        min-height: 660px;
+        position: relative;
+        padding: 128px 24px 80px 24px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        padding-right: 24px;
+        padding-left: 24px;
+        box-sizing: border-box;
+    }
+
+    .userPanelEditorContainer {
+        width: 100%;
+        max-width: 966px;
+        height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+        flex-flow: row-reverse;
+        direction: rtl;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        position: relative;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
+
+    .userPanelEditorContainer>*+* {
+        margin-left: 48px;
+    }
+    /*Editor Panel*/
+    /*
+
+ 88888888b       dP oo   dP                         888888ba                             dP 
+ 88              88      88                         88    `8b                            88 
+a88aaaa    .d888b88 dP d8888P .d8888b. 88d888b.    a88aaaa8P' .d8888b. 88d888b. .d8888b. 88 
+ 88        88'  `88 88   88   88'  `88 88'  `88     88        88'  `88 88'  `88 88ooood8 88 
+ 88        88.  .88 88   88   88.  .88 88           88        88.  .88 88    88 88.  ... 88 
+ 88888888P `88888P8 dP   dP   `88888P' dP           dP        `88888P8 dP    dP `88888P' dP                                                                                         
+
+ */
+
+    .userPanelEditorLeft {
+        width: calc(100% - 426px);
+        height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        direction: rtl;
+    }
+
+    .userPanelEditorLeft>*+* {
+        margin-top: 24px;
+    }
+    /*
+Statistical Panel
+*/
+    /*
+
+.d88888b    dP              dP   oo            dP   oo                   dP     888888ba                             dP 
+88.    "'   88              88                 88                        88     88    `8b                            88 
+`Y88888b. d8888P .d8888b. d8888P dP .d8888b. d8888P dP .d8888b. .d8888b. 88    a88aaaa8P' .d8888b. 88d888b. .d8888b. 88 
+      `8b   88   88'  `88   88   88 Y8ooooo.   88   88 88'  `"" 88'  `88 88     88        88'  `88 88'  `88 88ooood8 88 
+d8'   .8P   88   88.  .88   88   88       88   88   88 88.  ... 88.  .88 88     88        88.  .88 88    88 88.  ... 88 
+ Y88888P    dP   `88888P8   dP   dP `88888P'   dP   dP `88888P' `88888P8 dP     dP        `88888P8 dP    dP `88888P' dP 
+                                                                                                                        
+                                                                                                                        
+
+*/
+
+    .userPanelEditorRight {
+        width: 378px;
+        height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        direction: rtl;
+        -webkit-transition: 400ms ease;
+        -o-transition: 400ms ease;
+        transition: 400ms ease;
+    }
+
+    .userPanelEditorRight>*+* {
+        margin-top: 24px;
+    }
+    /*
+Avatar Editor
+*/
+    /*
+
+ .d888888                      dP                         88888888b       dP oo   dP                     
+d8'    88                      88                         88              88      88                     
+88aaaaa88a dP   .dP .d8888b. d8888P .d8888b. 88d888b.    a88aaaa    .d888b88 dP d8888P .d8888b. 88d888b. 
+88     88  88   d8' 88'  `88   88   88'  `88 88'  `88     88        88'  `88 88   88   88'  `88 88'  `88 
+88     88  88 .88'  88.  .88   88   88.  .88 88           88        88.  .88 88   88   88.  .88 88       
+88     88  8888P'   `88888P8   dP   `88888P8 dP           88888888P `88888P8 dP   dP   `88888P' dP       
+                      
+*/
+
+    .userPanelPhotoEditorWrapper {
+        width: 100%;
+        min-height: 84px;
+        height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+        flex-flow: row;
+    }
+
+    .userPanelPhotoEditorWrapper>*+* {
+        margin-right: 24px;
+    }
+
+    #userPanelPhotoEditorWrapper1st {
+        margin-top: 0px !important;
+    }
+
+    .userPanelAvatarContainer {
+        width: 84px;
+        min-width: 84px;
+        height: 84px;
+        min-height: 84px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        border-radius: 100px;
+        overflow: hidden;
+        vertical-align: middle;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .userPanelAvatarContainer:hover .userPanelAvatar {
+        -webkit-filter: blur(.7px);
+        filter: blur(.7px);
+    }
+
+    .userPanelAvatarContainer:hover .userPanelEditAvatarContainer {
+        -webkit-transform: translateY(60%);
+        -ms-transform: translateY(60%);
+        transform: translateY(60%);
+    }
+
+    .userPanelAvatar {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('../img/headerAvatar.jpg');
+        cursor: pointer;
+    }
+
+    .usePanelAvatarOverlay {
+        width: 100%;
+        height: 100%;
+        border-radius: 100px;
+        position: absolute;
+        overflow: hidden;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .userPanelEditAvatarContainer {
+        width: 100%;
+        height: 60%;
+        background-color: rgba(0, 0, 0, .3);
+        -webkit-transition: 400ms ease;
+        -o-transition: 400ms ease;
+        transition: 400ms ease;
+        -webkit-transform: translateY(150%);
+        -ms-transform: translateY(150%);
+        transform: translateY(150%);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background-image: url('../img/camera.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+    }
+
+    .userPanelEditorFileInput {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        outline: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        cursor: pointer;
+    }
+
+    .avatarLoading {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: none;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, .6);
+    }
+
+    .avatarLoading.loading {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .loadingCircle {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        opacity: 0;
+        -webkit-transform: rotate(225deg);
+        -ms-transform: rotate(225deg);
+        transform: rotate(225deg);
+    }
+
+    .avatarLoading.loading .loadingCircle {
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: orbit;
+        animation-name: orbit;
+        -webkit-animation-duration: 5.5s;
+        animation-duration: 5.5s;
+    }
+
+    .loadingCircle:after {
+        content: '';
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 1);
+    }
+
+    .loadingCircle2 {
+        -webkit-animation-delay: 240ms;
+        animation-delay: 240ms;
+    }
+
+    .loadingCircle3 {
+        -webkit-animation-delay: 480ms;
+        animation-delay: 480ms;
+    }
+
+    .loadingCircle4 {
+        -webkit-animation-delay: 720ms;
+        animation-delay: 720ms;
+    }
+
+    .loadingCircle5 {
+        -webkit-animation-delay: 960ms;
+        animation-delay: 960ms;
+    }
+
+    @-webkit-keyframes orbit {
+        0% {
+            -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+            opacity: 1;
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+        7% {
+            -webkit-transform: rotate(345deg);
+            transform: rotate(345deg);
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+        }
+        30% {
+            -webkit-transform: rotate(455deg);
+            transform: rotate(455deg);
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+        }
+        39% {
+            -webkit-transform: rotate(690deg);
+            transform: rotate(690deg);
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+        }
+        70% {
+            -webkit-transform: rotate(815deg);
+            transform: rotate(815deg);
+            opacity: 1;
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+        75% {
+            -webkit-transform: rotate(945deg);
+            transform: rotate(945deg);
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+        76% {
+            -webkit-transform: rotate(945deg);
+            transform: rotate(945deg);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: rotate(945deg);
+            transform: rotate(945deg);
+            opacity: 0;
+        }
+    }
+
+    @keyframes orbit {
+        0% {
+            -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+            opacity: 1;
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+        7% {
+            -webkit-transform: rotate(345deg);
+            transform: rotate(345deg);
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+        }
+        30% {
+            -webkit-transform: rotate(455deg);
+            transform: rotate(455deg);
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+        }
+        39% {
+            -webkit-transform: rotate(690deg);
+            transform: rotate(690deg);
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+        }
+        70% {
+            -webkit-transform: rotate(815deg);
+            transform: rotate(815deg);
+            opacity: 1;
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+        75% {
+            -webkit-transform: rotate(945deg);
+            transform: rotate(945deg);
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+        76% {
+            -webkit-transform: rotate(945deg);
+            transform: rotate(945deg);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: rotate(945deg);
+            transform: rotate(945deg);
+            opacity: 0;
+        }
+    }
+    /*Name Editor*/
+    /*
+
+888888ba                                   88888888b       dP oo   dP                     
+88    `8b                                  88              88      88                     
+88     88 .d8888b. 88d8b.d8b. .d8888b.    a88aaaa    .d888b88 dP d8888P .d8888b. 88d888b. 
+88     88 88'  `88 88'`88'`88 88ooood8     88        88'  `88 88   88   88'  `88 88'  `88 
+88     88 88.  .88 88  88  88 88.  ...     88        88.  .88 88   88   88.  .88 88       
+dP     dP `88888P8 dP  dP  dP `88888P'     88888888P `88888P8 dP   dP   `88888P' dP       
+                                                                                          
+                                                                                          
+
+*/
+
+    .userPanelNameEditorContainer {
+        width: calc(100% - 108px);
+        height: 84px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .nameEditorInput {
+        width: 100%;
+        height: 60px;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        direction: rtl;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-family: IRANSans;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 80px;
+        padding-left: 10px;
+        padding-right: 10px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border-radius: 0;
+    }
+
+    .nameEditorInput::-webkit-input-placeholder {
+        color: rgba(120, 134, 159, 1);
+    }
+
+    .nameEditorInput::-moz-placeholder {
+        color: rgba(120, 134, 159, 1);
+    }
+
+    .nameEditorInput:-ms-input-placeholder {
+        color: rgba(120, 134, 159, 1);
+    }
+
+    .nameEditorInput:-moz-placeholder {
+        color: rgba(120, 134, 159, 1);
+    }
+
+    .nameEditorInput::-moz-selection {
+        background-color: rgba(140, 181, 243, 1);
+        color: #fff;
+    }
+
+    .nameEditorInput::selection {
+        background-color: rgba(140, 181, 243, 1);
+        color: #fff;
+    }
+
+    .nameEditorInputLabel {
+        font-family: IRANSans;
+        font-weight: 500;
+        font-size: 14px;
+        position: absolute;
+        right: 10px;
+        bottom: 0;
+        -webkit-transition: 400ms ease;
+        -o-transition: 400ms ease;
+        transition: 400ms ease;
+    }
+    /*
+Info Editor
+*/
+    /*
+
+dP          .8888b              88888888b       dP oo   dP                     
+88          88   "              88              88      88                     
+88 88d888b. 88aaa  .d8888b.    a88aaaa    .d888b88 dP d8888P .d8888b. 88d888b. 
+88 88'  `88 88     88'  `88     88        88'  `88 88   88   88'  `88 88'  `88 
+88 88    88 88     88.  .88     88        88.  .88 88   88   88.  .88 88       
+dP dP    dP dP     `88888P'     88888888P `88888P8 dP   dP   `88888P' dP       
+                                                                               
+                                                                               
+
+*/
+
+    .userpanelInfoEditorWrapper {
+        width: 100%;
+        height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+    }
+
+    .userpanelInfoEditorWrapper>*+* {
+        margin-top: 6px;
+    }
+
+    .userpanelInfoEditorTitle {
+        width: 100%;
+        height: 72px;
+        font-family: IRANSans;
+        font-weight: bold;
+        font-size: 16px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        line-height: 72px;
+    }
+
+    .userpanelInfoEditorSubTitle {
+        width: 100%;
+        height: 12px;
+        font-family: IRSansNumMedium;
+        font-size: 12px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        line-height: 12px;
+    }
+
+    .userpanelInfoEditorContainer {
+        width: 100%;
+        height: auto;
+        min-height: 72px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+        flex-flow: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding-right: 10px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border-bottom: 1px solid rgba(120, 134, 159, .2);
+        position: relative;
+    }
+
+    .userpanelInfoEditorContainer.noPadding {
+        padding-right: 0px;
+        margin-top: 0px !important;
+    }
+
+    .userpanelInfoEditorContainer.error .userpanelInfoEditError {
+        display: block;
+    }
+
+    .userpanelInfoEditorContainer.error .userpanelInfoLabel {
+        color: rgba(243, 119, 72, 1) !important;
+    }
+
+    .userpanelInfoLabel {
+        font-family: IRANSans;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 50px;
+    }
+
+    .userpanelInfoInputContainer {
+        width: 100%;
+        height: 100%;
+        max-width: 260px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+        flex-flow: row;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        position: relative;
+        margin-right: auto;
+    }
+
+    .userpanelInfoInput {
+        width: calc(100% - 40px);
+        height: 50px;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-family: IRSansNumMedium;
+        font-size: 14px;
+        line-height: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border-radius: 0;
+    }
+
+
+
+    .userpanelInfoInput::-webkit-input-placeholder {
+        color: rgba(120, 134, 159, 1);
+    }
+
+    .userpanelInfoInput::-moz-placeholder {
+        color: rgba(120, 134, 159, 1);
+    }
+
+    .userpanelInfoInput:-ms-input-placeholder {
+        color: rgba(120, 134, 159, 1);
+    }
+
+    .userpanelInfoInput:-moz-placeholder {
+        color: rgba(120, 134, 159, 1);
+    }
+
+
+    .userpanelInfoInput::-moz-selection {
+        background-color: rgba(140, 181, 243, 1);
+        color: #fff;
+    }
+
+
+    .userpanelInfoInput::selection {
+        background-color: rgba(140, 181, 243, 1);
+        color: #fff;
+    }
+
+    .userpanelInfoEditBtn {
+        width: 40px;
+        height: 40px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background-image: url('../img/edit.svg');
+        opacity: .6;
+        -webkit-transition: 300ms ease;
+        -o-transition: 300ms ease;
+        transition: 300ms ease;
+        cursor: pointer;
+    }
+
+    .userpanelInfoEditBtn:hover {
+        opacity: 1;
+    }
+
+    .userpanelInfoEditBtn.active {
+        opacity: 1;
+    }
+
+    .userpanelInfoEditError {
+        position: absolute;
+        bottom: 3px;
+        right: 10px;
+        font-family: IRANSans;
+        font-weight: normal;
+        font-size: 10px;
+        display: none;
+    }
+
+    .userpanelinputOptionsContainer {
+        position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        width: 100%;
+        max-height: 200px;
+        min-height: 30px;
+        height: auto;
+        background-color: rgba(255, 255, 255, .95);
+        -webkit-box-shadow: 0px 6px 20px 0px rgba(120, 134, 159, 0.2);
+        box-shadow: 0px 6px 20px 0px rgba(120, 134, 159, 0.2);
+        border-radius: 2px;
+        right: 0px;
+        top: 60%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 1000;
+        list-style-type: none;
+        overflow-y: auto;
+        overflow-x: hidden;
+        display: none;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    .userpanelinputOptionsContainer>*+* {
+        margin-top: 6px;
+    }
+
+    .userpanelinputOptionsContainer::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    .userpanelinputOptionsContainer::-webkit-scrollbar-thumb {
+        background: rgba(120, 134, 159, .4);
+        border-radius: 100px;
+    }
+
+    .userpanelinputOptionsContainer.active {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .userpanelinputOption {
+        width: 100%;
+        line-height: 30px;
+        font-family: IRANSans;
+        font-weight: 500;
+        font-size: 12px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        opacity: .6;
+        -webkit-transition: 300ms ease;
+        -o-transition: 300ms ease;
+        transition: 300ms ease;
+        cursor: pointer;
+    }
+
+    .userpanelinputOption:hover {
+        opacity: 1
+    }
+
+    .userpanelPasswordEditorContainer {
+        width: 100%;
+        height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .userpanelPasswordEditorInputContainer {
+        width: 50%;
+        height: 48px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 12px;
+        position: relative;
+        -webkit-transition: 400ms ease;
+        -o-transition: 400ms ease;
+        transition: 400ms ease;
+    }
+
+    .userpanelPasswordEditorInputContainer.error .userpanelPassEditError {
+        display: block;
+    }
+
+    .userpanelPasswordEditorInputContainer.error .userpanelPasswordEditorInput::-webkit-input-placeholder {
+        color: rgba(243, 119, 72, 1) !important;
+    }
+
+    .userpanelPasswordEditorInputContainer.error .userpanelPasswordEditorInput::-moz-placeholder {
+        color: rgba(243, 119, 72, 1) !important;
+    }
+
+    .userpanelPasswordEditorInputContainer.error .userpanelPasswordEditorInput:-ms-input-placeholder {
+        color: rgba(243, 119, 72, 1) !important;
+    }
+
+    .userpanelPasswordEditorInputContainer.error .userpanelPasswordEditorInput:-moz-placeholder {
+        color: rgba(243, 119, 72, 1) !important;
+    }
+
+    .userpanelPasswordEditorInputContainer.error .userpanelPasswordEditorInput {
+        border: 1px solid rgba(243, 119, 72, 1) !important;
+    }
+
+    .userpanelPasswordEditorInput {
+        width: 100%;
+        height: 37px;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-family: IRANSans;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 37px;
+        padding-right: 10px;
+        padding-left: 37px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border-radius: 2px;
+        border: 1px solid rgba(120, 134, 159, .2);
+        -webkit-transition: 400ms ease;
+        -o-transition: 400ms ease;
+        transition: 400ms ease;
+    }
+
+    .userpanelPasswordEditorInput:focus {
+
+        border: 1px solid rgba(140, 181, 243, 1) !important;
+    }
+
+
+    .userpanelPasswordEditorInput::-webkit-input-placeholder {
+        color: rgba(120, 134, 159, .6);
+    }
+
+    .userpanelPasswordEditorInput::-moz-placeholder {
+        color: rgba(120, 134, 159, .6);
+    }
+
+    .userpanelPasswordEditorInput:-ms-input-placeholder {
+        color: rgba(120, 134, 159, .6);
+    }
+
+    .userpanelPasswordEditorInput:-moz-placeholder {
+        color: rgba(120, 134, 159, .6);
+    }
+
+
+    .userpanelPasswordEditorInput::-moz-selection {
+        background-color: rgba(140, 181, 243, 1);
+        color: #fff;
+    }
+
+
+    .userpanelPasswordEditorInput::selection {
+        background-color: rgba(140, 181, 243, 1);
+        color: #fff;
+    }
+
+    .userpanelPasswordEditorInput:focus~.userpanelEditorRetypePassChecker {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+
+    .userpanelPassEditError {
+        position: absolute;
+        bottom: -14px;
+        left: 10px;
+        font-family: IRANSans;
+        font-weight: normal;
+        font-size: 10px;
+        display: none;
+    }
+
+    .userpanelEditorRetypePassChecker {
+        position: absolute;
+        width: 37px;
+        height: 37px;
+        left: 0;
+        background-image: url('../img/close.svg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+        -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+        transform-origin: center;
+        -webkit-transition: 400ms ease;
+        -o-transition: 400ms ease;
+        transition: 400ms ease;
+    }
+
+    .userpanelEditorRetypePassChecker.correct {
+        background-image: url('../img/check.svg');
+    }
+
+    .userpanelEditorRetypePassChecker.filledPass {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+
+    .userpanelEditorFinalBtnsWrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        min-height: 72px;
+        height: auto;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+        flex-flow: row-reverse;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        position: relative;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+
+    .userpanelEditorFinalBtnsWrapper>*+* {
+        margin-left: 12px;
+    }
+
+    .saveUserpanelEditsBtn {
+        width: auto;
+        min-width: 37px;
+        height: 37px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 0px 24px;
+        font-family: IRANSans;
+        font-weight: 500;
+        font-size: 12px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        line-height: 33px;
+        border-radius: 2px;
+        cursor: default;
+        -webkit-transition: 400ms ease;
+        -o-transition: 400ms ease;
+        transition: 400ms ease;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        letter-spacing: .01rem;
+        border: 1px solid rgba(120, 134, 159, .4) !important;
+        pointer-events: none;
+    }
+
+    .saveUserpanelEditsBtn.active {
+        cursor: pointer;
+        border: 1px solid rgba(243, 119, 72, 1) !important;
+        background-color: rgba(243, 119, 72, 1) !important;
+        color: rgba(255, 255, 255, 1) !important;
+        -webkit-transform: translateY(-3px);
+        -ms-transform: translateY(-3px);
+        transform: translateY(-3px);
+        pointer-events: auto;
+    }
+
+    .saveUserpanelEditsBtn.active:hover {
+        border: 1px solid rgba(255, 133, 89, 1) !important;
+        background-color: rgba(255, 133, 89, 1) !important;
+    }
+
+    .saveUserpanelEditsBtn.active:focus {
+        border: 1px solid rgba(255, 133, 89, 1) !important;
+        background-color: rgba(255, 133, 89, 1) !important;
+    }
+
+    .cancelUserpanelEditsBtn {
+        width: auto;
+        min-width: 37px;
+        height: 37px;
+        display: none;
+        padding: 0px 24px;
+        font-family: IRANSans;
+        font-weight: 500;
+        font-size: 12px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        line-height: 33px;
+        border-radius: 2px;
+        cursor: default;
+        -webkit-transition: 400ms ease;
+        -o-transition: 400ms ease;
+        transition: 400ms ease;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        letter-spacing: .01rem;
+        -webkit-transform: translateY(-3px);
+        -ms-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+
+    .saveUserpanelEditsBtn.active~.cancelUserpanelEditsBtn {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        cursor: pointer;
+    }
+
+    .saveUserpanelEditsBtn.active~.cancelUserpanelEditsBtn:hover {
+        color: rgba(120, 134, 159, 1) !important;
+    }
+
+    .saveUserpanelEditsBtn.active~.cancelUserpanelEditsBtn:focus {
+        color: rgba(120, 134, 159, 1) !important;
+    }
+    /*Editor Mobile Menu */
+    /*
+
+ 88888888b       dP oo   dP                        8888ba.88ba           dP       oo dP             8888ba.88ba                             
+ 88              88      88                        88  `8b  `8b          88          88             88  `8b  `8b                            
+a88aaaa    .d888b88 dP d8888P .d8888b. 88d888b.    88   88   88 .d8888b. 88d888b. dP 88 .d8888b.    88   88   88 .d8888b. 88d888b. dP    dP 
+ 88        88'  `88 88   88   88'  `88 88'  `88    88   88   88 88'  `88 88'  `88 88 88 88ooood8    88   88   88 88ooood8 88'  `88 88    88 
+ 88        88.  .88 88   88   88.  .88 88          88   88   88 88.  .88 88.  .88 88 88 88.  ...    88   88   88 88.  ... 88    88 88.  .88 
+ 88888888P `88888P8 dP   dP   `88888P' dP          dP   dP   dP `88888P' 88Y8888' dP dP `88888P'    dP   dP   dP `88888P' dP    dP `88888P' 
+
+*/
+
+    .userPanelEditorMobileMenuWrapper {
+        width: 100%;
+        height: auto;
+        display: none;
+        position: relative;
+    }
+
+
+    .userPanelEditorMobileMenuContainer {
+        width: 100%;
+        height: 120px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        border-radius: 4px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        overflow: hidden;
+        -webkit-box-shadow: 0 5px 32px rgba(102, 143, 204, 0.15);
+        box-shadow: 0 5px 32px rgba(102, 143, 204, 0.15);
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 0px 0px;
+        -ms-flex-flow: row;
+            flex-flow: row;
+        align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        overflow-y: hidden;
+        position: relative;
+    }
+
+    .userPanelEditorMobileMenuContainer>*+* {
+        margin-right: 12px;
+    }
+
+    .userPanelEditorMobileMenuItemContainer {
+        width: 120px;
+        min-width: 120px;
+        height: 120px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+                flex-flow: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        position: relative;
+    }
+
+    .userPanelEditorMobileMenuItemContainer:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        position: absolute;
+        border-bottom: 5px solid rgba(140, 181, 243, 1);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        -webkit-transform: scaleX(.3);
+        -ms-transform: scaleX(.3);
+        transform: scaleX(.3);
+        opacity: 0;
+        -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+        transform-origin: center;
+        -webkit-transition: 300ms ease;
+        -o-transition: 300ms ease;
+        transition: 300ms ease;
+    }
+    .userPanelEditorMobileMenuItemContainer:hover:before {
+         -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        transform: scaleX(1);
+        opacity: 1;
+ 
+    }
+       .userPanelEditorMobileMenuItemContainer.active:hover:before {
+         -webkit-transform: scaleX(.3);
+        -ms-transform: scaleX(.3);
+        transform: scaleX(.3);
+        opacity: 0;
+ 
+    }
+    .userPanelEditorMobileMenuItemContainer>*+* {
+        margin-top: 9px;
+    }
+
+    .userPanelEditorMobileMenuItemContainer.active .userPanelEditorMobileMenuTitle {
+        color: rgba(140, 181, 243, 1) !important;
+    }
+
+    .userPanelEditorMobileMenuIcon {
+        width: 48px;
+        min-width: 48px;
+        height: 48px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+
+    .userPanelEditorMobileMenuIcon.personalInfo {
+        background-image: url('../img/editor/mobilePersonalInfoIcon.svg');
+    }
+
+
+    .userPanelEditorMobileMenuItemContainer.active .userPanelEditorMobileMenuIcon.personalInfo {
+        background-image: url('../img/editor/mobilePersonalInfoIconActive.svg');
+    }
+
+    .userPanelEditorMobileMenuIcon.changePass {
+        background-image: url('../img/editor/mobilePasswordIcon.svg');
+    }
+
+
+    .userPanelEditorMobileMenuItemContainer.active .userPanelEditorMobileMenuIcon.changePass {
+        background-image: url('../img/editor/mobilePasswordIconActive.svg');
+    }
+
+    .userPanelEditorMobileMenuIcon.mailSetting {
+        background-image: url('../img/editor/mobileMailSettingIcon.svg');
+    }
+
+    .userPanelEditorMobileMenuItemContainer.active .userPanelEditorMobileMenuIcon.mailSetting {
+        background-image: url('../img/editor/mobileMailSettingIconActive.svg');
+    }
+
+    .userPanelEditorMobileMenuIcon.wallet {
+        background-image: url('../img/editor/mobileWalletIcon.svg');
+    }
+
+    .userPanelEditorMobileMenuItemContainer.active .userPanelEditorMobileMenuIcon.wallet {
+        background-image: url('../img/editor/mobileWalletIconActive.svg');
+    }
+
+
+    .userPanelEditorMobileMenuTitle {
+        min-width: 120px;
+        text-align: center;
+        font-family: IRANSans;
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+    .userPanelEditorMobileMenuHiderRight {
+        width: 24px;
+        height: 100%;
+        position: absolute;
+        right: 0px;
+        cursor: pointer;
+        background: url('../img/editor/rightHandle.svg'), -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+        background: url('../img/editor/rightHandle.svg'), -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 1)));
+        background: url('../img/editor/rightHandle.svg'), -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+        background: url('../img/editor/rightHandle.svg'), linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=1);
+        pointer-events: auto;
+    }
+
+    .userPanelEditorMobileMenuHiderRight.hide {
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+        background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 1)));
+        background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+        pointer-events: none;
+    }
+
+    .userPanelEditorMobileMenuHiderLeft {
+        width: 24px;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+        cursor: pointer;
+        background: url('../img/editor/leftHandle.svg'), -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        background: url('../img/editor/leftHandle.svg'), -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0)));
+        background: url('../img/editor/leftHandle.svg'), -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        background: url('../img/editor/leftHandle.svg'), linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=1);
+        pointer-events: auto;
+    }
+
+    .userPanelEditorMobileMenuHiderLeft.hide {
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0)));
+        background: -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        pointer-events: none;
+    }
+    /*Side Panel*/
+    /*
+
+
+.d88888b  oo       dP              888888ba                             dP 
+88.    "'          88              88    `8b                            88 
+`Y88888b. dP .d888b88 .d8888b.    a88aaaa8P' .d8888b. 88d888b. .d8888b. 88 
+      `8b 88 88'  `88 88ooood8     88        88'  `88 88'  `88 88ooood8 88 
+d8'   .8P 88 88.  .88 88.  ...     88        88.  .88 88    88 88.  ... 88 
+ Y88888P  dP `88888P8 `88888P'     dP        `88888P8 dP    dP `88888P' dP 
+                                                                           
+                                                                           
+
+*/
+
+    .userPanelEditorSideMenuWrapper {
+        width: 100%;
+        height: auto;
+        padding-left: 12px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        position: relative;
+        direction: rtl;
+    }
+
+    .userPanelEditorSideMenuContainer {
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        border-radius: 4px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        overflow: hidden;
+        -webkit-box-shadow: 0 5px 32px rgba(102, 143, 204, 0.15);
+        box-shadow: 0 5px 32px rgba(102, 143, 204, 0.15);
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 12px 0px;
+    }
+
+    .userPanelEditorSideMenuContainer a {
+        width: 100%;
+        height: 50px;
+    }
+
+    .userPanelEditorSideMenuItemContainer {
+        width: 100%;
+        height: 50px;
+        min-height: 50px;
+        padding-left: 12px;
+        padding-right: 12px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row;
+                flex-flow: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        direction: rtl;
+        cursor: pointer;
+        position: relative;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+    }
+
+
+    .userPanelEditorSideMenuItemContainer:before {
+        content: "";
+        width: calc(100% + 24px);
+        height: 90%;
+        z-index: 2;
+        position: absolute;
+        border-right: 4px solid rgba(140, 181, 243, 1);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        -webkit-transform: scaleY(.3);
+        -ms-transform: scaleY(.3);
+        transform: scaleY(.3);
+        opacity: 0;
+        -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+        transform-origin: center;
+        -webkit-transition: 300ms ease;
+        -o-transition: 300ms ease;
+        transition: 300ms ease;
+    }
+
+    .userPanelEditorSideMenuItemContainer>*+* {
+        margin-right: 6px;
+    }
+
+    .userPanelEditorSideMenuItemContainer:hover:before {
+        -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        transform: scaleY(1);
+        opacity: 1
+    }
+
+    .userPanelEditorSideMenuItemContainer.active:hover:before {
+        -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+        transform: scaleY(0);
+        opacity: 0
+    }
+
+    .userPanelEditorSideMenuItemContainer.active .userPanelEditorSideMenuTitle {
+        color: rgba(140, 181, 243, 1) !important;
+    }
+
+
+    .userPanelEditorSideMenuIcon {
+        width: 48px;
+        min-width: 48px;
+        height: 48px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+
+
+    .userPanelEditorSideMenuIcon.personalInfo {
+        background-image: url('../img/editor/personalInfoIcon.svg');
+    }
+
+
+    .userPanelEditorSideMenuItemContainer.active .userPanelEditorSideMenuIcon.personalInfo {
+        background-image: url('../img/editor/personalInfoIconActive.svg');
+    }
+
+    .userPanelEditorSideMenuIcon.changePass {
+        background-image: url('../img/editor/passwordIcon.svg');
+    }
+
+
+    .userPanelEditorSideMenuItemContainer.active .userPanelEditorSideMenuIcon.changePass {
+        background-image: url('../img/editor/passwordIconActive.svg');
+    }
+
+    .userPanelEditorSideMenuIcon.mailSetting {
+        background-image: url('../img/editor/mailSettingIcon.svg');
+    }
+
+    .userPanelEditorSideMenuItemContainer.active .userPanelEditorSideMenuIcon.mailSetting {
+        background-image: url('../img/editor/mailSettingIconActive.svg');
+    }
+
+    .userPanelEditorSideMenuIcon.wallet {
+        background-image: url('../img/editor/walletIcon.svg');
+    }
+
+    .userPanelEditorSideMenuItemContainer.active .userPanelEditorSideMenuIcon.wallet {
+        background-image: url('../img/editor/walletIconActive.svg');
+    }
+
+    .userPanelEditorSideMenuTitle {
+        font-family: IRANSans;
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+    .userPanelEditorSideMenuSep {
+        width: 92.2%;
+        height: 1px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .userPanelEditorSideMenuImage {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        background-image: url('../img/pens.svg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        bottom: 6px;
+        left: 0
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .userpanelEditorSideWrapper {
+        width: 100%;
+        height: auto;
+        padding-left: 12px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        position: relative;
+        direction: rtl;
+    }
+
+    .userpanelEditorSideContainer {
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        border-radius: 4px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        overflow: hidden;
+        -webkit-box-shadow: 0 5px 32px rgba(102, 143, 204, 0.15);
+        box-shadow: 0 5px 32px rgba(102, 143, 204, 0.15)
+    }
+
+    .userpanelEditorSideContainer.userpanelEditorSideFlat {
+        -webkit-box-shadow: 0 0px 0px rgba(255, 255, 255, 0);
+        box-shadow: 0 0px 0px rgba(255, 255, 255, 0);
+    }
+
+    .userpanelEditorSideHeader {
+        width: 100%;
+        height: 72px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-family: IRANSans;
+        font-weight: 500;
+        font-size: 12px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        padding-right: 24px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+
+    .userpanelEditorSideContentContainer {
+        width: 100%;
+        height: calc(100% - 72px);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        padding: 12px 24px 24px 24px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .userpanelEditorSideContent {
+        width: 100%;
+        height: 48px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+        flex-flow: row;
+        direction: rtl;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        font-family: IRSansNumMedium;
+        font-size: 12px;
+    }
+
+    .userpanelSideProgressChartContainer {
+        width: 100%;
+        max-width: 350px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .userpanelSideProgressChartContainer:before {
+        content: "";
+        display: block;
+        padding-top: 70%;
+    }
+
+    .userpanelSideProgressChartTitle {
+        font-family: IRANSans;
+        font-weight: 500;
+        font-size: 12px;
+        position: absolute;
+        top: 0;
+        right: 0
+    }
+
+    .userpanelSideProgressChartNum {
+        font-family: IRSansNumBold;
+        font-size: 20px;
+    }
+
+    .userpanelProgressBase {
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: absolute;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .userpanelProgressBar {
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: absolute;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        stroke-dasharray: 0% 360%;
+        -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+        transform-origin: center;
+        -webkit-transition: 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 400ms;
+        -o-transition: 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 400ms;
+        transition: 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 400ms;
+    }
+
+    .userpanelStarsAveWrapper {
+        width: 150px;
+        height: 24px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+        flex-flow: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        margin-right: auto;
+    }
+
+    .userpanelStarsAveWrapper>*+* {
+        margin-right: 12px;
+    }
+
+    .userpanelStarsAveContainer {
+        width: 100%;
+        min-height: 24px;
+        height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+        flex-flow: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        font-family: IRSansNumMedium;
+        font-size: 12px;
+    }
+
+    .userpanelStarsAveBarBase {
+        width: 82.53px;
+        height: 24px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .userpanelStarsAveBar {
+        width: 0%;
+        height: 22px;
+        position: absolute;
+        left: 0;
+        border-radius: 100px;
+        -webkit-transition: 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 400ms;
+        -o-transition: 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 400ms;
+        transition: 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 400ms;
+    }
+
+    .starsClip {
+        position: absolute;
+        left: 0
+    }
+
+    .starsClipEmpty {
+        position: absolute;
+        left: 0
+    }
+
+    .userpanelEditorSideSep {
+        width: 106%;
+        height: 1px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    .userpanelEditorSideTimeChartWrapper {
+        width: 100%;
+        height: 80px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+        flex-flow: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        padding: 12px 0px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-top: 0px;
+    }
+
+    .userpanelEditorSideTimeChartContainer {
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+        flex-flow: row;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        position: relative;
+        padding-bottom: 6px;
+        overflow-y: hidden;
+    }
+
+    .userpanelEditorSideTimeChartContainer>*+* {
+        margin-right: 4px;
+    }
+
+    .userpanelEditorSideTimeChart {
+        width: 5px;
+        min-width: 5px;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        cursor: pointer;
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border-radius: 1px;
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 3500ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 3500ms;
+        -o-transition: transform 600ms ease 3500ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 3500ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 3500ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 3500ms;
+    }
+
+
+
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(1) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 400ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 400ms;
+        -o-transition: transform 600ms ease 400ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 400ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 400ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 400ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(2) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 500ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 500ms;
+        -o-transition: transform 600ms ease 500ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 500ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 500ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 500ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(3) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 600ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 600ms;
+        -o-transition: transform 600ms ease 600ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 600ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 600ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 600ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(4) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 700ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 700ms;
+        -o-transition: transform 600ms ease 700ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 700ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 700ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 700ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(5) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 800ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 800ms;
+        -o-transition: transform 600ms ease 800ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 800ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 800ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 800ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(6) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 900ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 900ms;
+        -o-transition: transform 600ms ease 900ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 900ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 900ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 900ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(7) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1000ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1000ms;
+        -o-transition: transform 600ms ease 1000ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 1000ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 1000ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1000ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(8) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1100ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1100ms;
+        -o-transition: transform 600ms ease 1100ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 1100ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 1100ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1100ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(9) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1200ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1200ms;
+        -o-transition: transform 600ms ease 1200ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 1200ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 1200ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1200ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(10) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1300ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1300ms;
+        -o-transition: transform 600ms ease 1300ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 1300ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 1300ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1300ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(11) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1400ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1400ms;
+        -o-transition: transform 600ms ease 1400ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 1400ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 1400ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1400ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(12) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1500ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1500ms;
+        -o-transition: transform 600ms ease 1500ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 1500ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 1500ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1500ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(13) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1600ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1600ms;
+        -o-transition: transform 600ms ease 1600ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 1600ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 1600ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1600ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(14) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1700ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1700ms;
+        -o-transition: transform 600ms ease 1700ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 1700ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 1700ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1700ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(15) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1800ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1800ms;
+        -o-transition: transform 600ms ease 1800ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 1800ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 1800ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1800ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(16) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1900ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1900ms;
+        -o-transition: transform 600ms ease 1900ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 1900ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 1900ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 1900ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(17) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2000ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2000ms;
+        -o-transition: transform 600ms ease 2000ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 2000ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 2000ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2000ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(18) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2100ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2100ms;
+        -o-transition: transform 600ms ease 2100ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 2100ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 2100ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2100ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(19) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2200ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2200ms;
+        -o-transition: transform 600ms ease 2200ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 2200ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 2200ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2200ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(20) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2300ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2300ms;
+        -o-transition: transform 600ms ease 2300ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 2300ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 2300ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2300ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(21) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2400ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2400ms;
+        -o-transition: transform 600ms ease 2400ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 2400ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 2400ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2400ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(22) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2500ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2500ms;
+        -o-transition: transform 600ms ease 2500ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 2500ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 2500ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2500ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(23) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2600ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2600ms;
+        -o-transition: transform 600ms ease 2600ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 2600ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 2600ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2600ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(24) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2700ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2700ms;
+        -o-transition: transform 600ms ease 2700ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 2700ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 2700ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2700ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(25) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2800ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2800ms;
+        -o-transition: transform 600ms ease 2800ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 2800ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 2800ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2800ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(26) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2900ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2900ms;
+        -o-transition: transform 600ms ease 2900ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 2900ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 2900ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 2900ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(27) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 3000ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 3000ms;
+        -o-transition: transform 600ms ease 3000ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 3000ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 3000ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 3000ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(28) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 3100ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 3100ms;
+        -o-transition: transform 600ms ease 3100ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 3100ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 3100ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 3100ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(29) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 3200ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 3200ms;
+        -o-transition: transform 600ms ease 3200ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 3200ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 3200ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 3200ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(30) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 3300ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 3300ms;
+        -o-transition: transform 600ms ease 3300ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 3300ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 3300ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 3300ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(31) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 3400ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 3400ms;
+        -o-transition: transform 600ms ease 3400ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 3400ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 3400ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 3400ms;
+    }
+
+    .userpanelEditorSideTimeChartContainer .userpanelEditorSideTimeChart:nth-child(32) {
+        -webkit-transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 3500ms;
+        transition: background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 3500ms;
+        -o-transition: transform 600ms ease 3500ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 3500ms, background-color 200ms ease, margin-bottom 200ms ease;
+        transition: transform 600ms ease 3500ms, background-color 200ms ease, margin-bottom 200ms ease, -webkit-transform 600ms ease 3500ms;
+    }
+
+
+
+
+
+    .userpanelEditorSideTimeChart.max:hover {
+        background-color: rgba(140, 181, 243, 1) !important;
+    }
+
+    .userpanelEditorSideTimeChart.med:hover {
+        background-color: rgba(168, 204, 114, 1) !important;
+    }
+
+    .userpanelEditorSideTimeChart.min:hover {
+        background-color: rgba(243, 119, 72, 1) !important;
+    }
+    /*Wallet CHart*/
+
+    .userpanelEditorWalletChartWrapper {
+        width: 100%;
+        height: 300px;
+    }
