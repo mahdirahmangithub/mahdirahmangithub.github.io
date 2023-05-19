@@ -618,6 +618,37 @@ section .hero {
     background: radial-gradient(50% 50% at 50% 50%, transparent 0%, var(--stroke_light) 80%, var(--text_primary_light) 100%);
 }
 
+
+
+.hero .dark_matter_container.safari {
+    -webkit-filter: none;
+    filter: none;
+     width: 200px;
+    height: 200px;
+}
+
+
+.hero .dark_matter_container.safari .dark_matter {
+    display: none;
+    visibility: hidden;
+}
+
+.hero .dark_matter_container.safari .dark_matter::before {
+    display: none;
+    visibility: hidden;
+}
+
+.hero .dark_matter_container.safari .dark_matter_video {
+    display: block !important;
+    visibility: visible !important;
+
+}
+
+.hero .dark_matter_container.safari .dark_matter_video_cover {
+    display: block !important;
+    visibility: visible !important;
+}
+
 @-webkit-keyframes text_reveal {
     0% {
         -webkit-transform: translate(0, 100%);
@@ -1067,8 +1098,12 @@ article.multi_role .position .position_description:not(:last-child)::before {
     margin: 90px auto;
     width: 100%;
     -webkit-filter: url(#portal_glitch);
-    filter: url(#portal_glitch)
+    filter: url(#portal_glitch);
     
+}
+.portal_container.safari{
+    visibility: hidden;
+
 }
 
 .portal_container path {
@@ -1249,8 +1284,7 @@ section .works {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-filter: url(#pencil_3);
-            filter: url(#pencil_3);
+
     opacity: 0.5;
 
 
@@ -1421,4 +1455,16 @@ section .works {
     fill: none;
     stroke: var(--text_primary_light);
 
+}
+
+.skull{
+    width: 500px;
+    height: 500px;
+    filter: url(#dark_matter_1);
+
+}
+ 
+.skull svg{
+    filter: url(#dark_matter_2);
+   
 }

@@ -43,6 +43,15 @@
 		justify-content: center;
 
 	}
+	.section_container {
+		width: 90%;
+		margin: 2rem 0;
+	}
+
+	section .works {
+
+		padding: 2rem 1rem;
+	}
 }
 
 @media (min-width: 720px) {

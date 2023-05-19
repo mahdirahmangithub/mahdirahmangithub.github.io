@@ -10,10 +10,18 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="var(--background_light)">
    <!-- favicon -->
+   <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
+<link rel="manifest" href="/static/favicon/site.webmanifest">
+<link rel="mask-icon" href="/static/favicon/safari-pinned-tab.svg" color="#23281e">
+<link rel="shortcut icon" href="/static/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#edeae5">
+<meta name="msapplication-config" content="/static/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
   <!-- style  -->
   <link rel="stylesheet" href="../static/css/style.css" />
   <link rel="stylesheet" href="../static/css/media.css" />
-
   <link id="themeStyle" rel="stylesheet">
   <!-- script -->
 </head>
@@ -177,6 +185,8 @@
               </svg>
             </div>
           </button>
+
+ 
       </div>
       <div class="section_content resume">
         <h4 class="bold_700">Resume</h4>
@@ -285,7 +295,7 @@
             <span class="position_title body_sm_14 medium_500">Graphic Designer, Printing Supervisor</span>
           </div>
         </article>
-        <div id="portal" data-parallax-factor="0.36"></div>
+        <div id="portal" class="portal" data-parallax-factor="0.36"></div>
       </div>
       <div class="section_container">
         <div class="cutting_mat_container">
@@ -649,27 +659,9 @@
 <script src="../static/js/portal.js"></script>
 <script src="../static/js/parallax.js"></script>
 <script src="../static/js/theme.js"></script>
-<script>
-  var video = document.getElementById("dark_matter_video");
+<script src="../static/js/safari.js"></script>
 
-  // Check if iOS Safari
-  var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-  var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
-  if (isIOS && isSafari) {
-    // Autoplay the video
-    video.play();
-
-  }
-  video.addEventListener("ended", function () {
-    // Update the video source here
-    var nextSource = "../static/img/dark_matter_loop.mp4"; // Replace with your next video source
-    video.src = nextSource;
-    video.load();
-    video.play();
-    video.loop = true; // Enable looping for the second video
-  });
-</script>
 
  
 
