@@ -1,0 +1,665 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="var(--background_light)" />
+  <title>Mahdi Rahman</title>
+  <meta name="description" content="Product Designer | Design System Manager" />
+  <!-- favicon -->
+  <!-- style  -->
+  <link rel="stylesheet" href="../static/css/style.css" />
+  <link rel="stylesheet" href="../static/css/media.css" />
+
+  <link id="themeStyle" rel="stylesheet">
+  <!-- script -->
+</head>
+
+<body>
+  <svg height="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <filter x="-16%" y="-16%" width="132%" height="132%" filterUnits="objectBoundingBox" id="dark_matter_1">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="400" seed="1" result="f1">
+        <animate attributeName="scale" values="408;100;16;2" dur="16" repeatCount="indefinite" />
+      </feTurbulence>
+      <feDisplacementMap xChannelSelector="G" yChannelSelector="R" scale="16" in="SourceGraphic" in2="f1" result="f4">
+        <animate attributeName="scale" values="400;500;100;16" dur="8" repeatCount="indefinite" />
+      </feDisplacementMap>
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="8" in="SourceGraphic" in2="f1" result="f4">
+        <animate attributeName="scale" values="24;80;16;40" dur="16" repeatCount="indefinite" />
+      </feDisplacementMap>
+      <feTurbulence type="fractalNoise" baseFrequency="0.4" numOctaves="100" seed="400" result="f2">
+        <animate attributeName="scale" values="0;16;2;0" dur="15s" repeatCount="indefinite" />
+      </feTurbulence>
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="500" in="SourceGraphic" in2="f2" result="f5">
+        <animate attributeName="scale" values="0;18;20;0" dur="15s" repeatCount="indefinite" />
+      </feDisplacementMap>
+      <feTurbulence type="fractalNoise" baseFrequency="2" numOctaves="2" seed="100" result="f3"></feTurbulence>
+      <feTurbulence type="fractalNoise" baseFrequency="1.2" numOctaves="4" seed="500" result="f3">
+        <animate attributeName="scale" values="0;18;20;0" dur="2s" repeatCount="indefinite" />
+      </feTurbulence>
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="4" in="SourceGraphic" in2="f3" result="f6">
+      </feDisplacementMap>
+      <feBlend mode="multiply" in2="f4" in="f5" result="out1"></feBlend>
+      <feBlend mode="multiply" in="out1" in2="f6" result="out2">
+        <animate values="0;18;20;0" dur="15s" repeatCount="indefinite" />
+      </feBlend>
+      <feOffset dx="-5" dy="-5" in="displace" result="unoffsetdisplace" />
+    </filter>
+    <filter x="-16%" y="-16%" width="132%" height="132%" filterUnits="objectBoundingBox" id="dark_matter_2">
+      <feTurbulence type="turbulence" baseFrequency=".08" numOctaves="4" result="turb" />
+      <feColorMatrix in="turb" result="huedturb" type="hueRotate" values="90">
+        <animate attributeType="XML" attributeName="values" values="0;180;360" dur="6s" repeatCount="indefinite" />
+      </feColorMatrix>
+      <feDisplacementMap in="SourceGraphic" in2="huedturb" scale="32" result="displace" xChannelSelector="B" />
+      <feOffset dx="-5" dy="-5" in="displace" result="unoffsetdisplace" />
+      <feComposite operator="over" in2="SourceGraphic" in="displaceR" />
+    </filter>
+    <filter id="dark_matter_creation">
+      <feTurbulence type="turbulence" baseFrequency="0.04 " numOctaves="2" result="turbulence" />
+      <feDisplacementMap in2="turbulence" in="SourceGraphic" xChannelSelector="R" yChannelSelector="G">
+        <animate attributeName="scale" values="60;0" dur="10" repeatCount="1" />
+      </feDisplacementMap>
+    </filter>
+    <filter x="-16%" y="-16%" width="132%" height="132%" filterUnits="objectBoundingBox" id="pencil_1">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="4" seed="1" result="f1"></feTurbulence>
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="5" in="SourceGraphic" in2="f1" result="f4">
+      </feDisplacementMap>
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="10" result="f2"></feTurbulence>
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="5" in="SourceGraphic" in2="f2" result="f5">
+      </feDisplacementMap>
+      <feTurbulence type="fractalNoise" baseFrequency="1.2" numOctaves="2" seed="100" result="f3"></feTurbulence>
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="4" in="SourceGraphic" in2="f3" result="f6">
+      </feDisplacementMap>
+      <feBlend mode="multiply" in2="f4" in="f5" result="out1"></feBlend>
+      <feBlend mode="multiply" in="out1" in2="f6" result="out2"></feBlend>
+    </filter>
+    <filter x="-16%" y="-16%" width="132%" height="132%" filterUnits="objectBoundingBox" id="pencil_2">
+      <feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="4" seed="1" result="f1"></feTurbulence>
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="4" in="SourceGraphic" in2="f1" result="f4">
+      </feDisplacementMap>
+      <feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="3" seed="2" result="f2"></feTurbulence>
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="8" in="SourceGraphic" in2="f2" result="f5">
+      </feDisplacementMap>
+      <feTurbulence type="fractalNoise" baseFrequency="1.2" numOctaves="2" seed="4" result="f3"></feTurbulence>
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="2" in="SourceGraphic" in2="f3" result="f6">
+      </feDisplacementMap>
+      <feBlend mode="multiply" in2="f4" in="f5" result="out1"></feBlend>
+      <feBlend mode="multiply" in="out1" in2="f6" result="out2"></feBlend>
+    </filter>
+    <filter x="-16%" y="-16%" width="132%" height="132%" filterUnits="objectBoundingBox" id="pencil_3">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" seed="1" result="f1"></feTurbulence>
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="4" in="SourceGraphic" in2="f1" result="f4">
+      </feDisplacementMap>
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" seed="2" result="f2"></feTurbulence>
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="8" in="SourceGraphic" in2="f2" result="f5">
+      </feDisplacementMap>
+      <feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="2" seed="40" result="f3"></feTurbulence>
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="2" in="SourceGraphic" in2="f3" result="f6">
+      </feDisplacementMap>
+      <feBlend mode="multiply" in2="f4" in="f5" result="out1"></feBlend>
+      <feBlend mode="multiply" in="out1" in2="f6" result="out2"></feBlend>
+    </filter>
+    <filter x="-16%" y="-16%" width="132%" height="132%" filterUnits="objectBoundingBox" id="portal_glitch">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="4" seed="1" result="f1"></feTurbulence>
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="8" in="SourceGraphic" in2="f1" result="f4">
+        <animate attributeName="scale" values="12;8;16;2" dur="8" repeatCount="indefinite" />
+      </feDisplacementMap>
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="100" result="f2"></feTurbulence>
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="5" in="SourceGraphic" in2="f2" result="f5">
+      </feDisplacementMap>
+      <feTurbulence type="fractalNoise" baseFrequency="1.2" numOctaves="2" seed="100" result="f3"></feTurbulence>
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="4" in="SourceGraphic" in2="f3" result="f6">
+      </feDisplacementMap>
+      <feBlend mode="multiply" in2="f4" in="f5" result="out1"></feBlend>
+      <feBlend mode="multiply" in="out1" in2="f6" result="out2"></feBlend>
+    </filter>
+    <filter id="cursor_matrix">
+      <feBlend mode="difference" in="SourceGraphic" in2="BackgroundImage" />
+    </filter>
+  </svg>
+  <app-main role="article" class="app">
+    <nav>
+      <div class="nav_content">
+        <div class="line">
+          <span class="medium_500">Mahdi Rahman</span>
+        </div>
+        <div class="nav_items">
+          <button id="theme_btn" class="theme_btn" onclick="toggleTheme()">
+            <div class="icon theme_icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="16" height="16" rx="8" />
+                <path
+                  d="M8 15C8.91925 15 9.8295 14.8189 10.6788 14.4672C11.5281 14.1154 12.2997 13.5998 12.9497 12.9497C13.5998 12.2997 14.1154 11.5281 14.4672 10.6788C14.8189 9.82951 15 8.91925 15 8C15 7.08075 14.8189 6.1705 14.4672 5.32122C14.1154 4.47194 13.5998 3.70026 12.9497 3.05025C12.2997 2.40024 11.5281 1.88463 10.6788 1.53284C9.8295 1.18106 8.91925 1 8 1L8 8L8 15Z" />
+              </svg>
+            </div>
+          </button>
+          <button class="nav_menu_btn">
+            <div class="icon nav_menu_icon">
+              <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.1421 0.871582L0.857489 13.1283" />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div class="section_content hero">
+        <h1 class="black_900">
+          <div class="line">
+            <span>Systematic</span>
+            <span>Design</span>
+          </div>
+          <div class="line">
+            <span>Approach</span>
+          </div>
+        </h1>
+        <h6 class="regular_400">
+          <span>Design System Manager</span>
+          <span>Product Designer</span>
+          </h2>
+          <div class="dark_matter_container">
+            <div id="dark_matter" class="dark_matter"></div>
+            <video id="dark_matter_video" class="dark_matter_video" autoplay muted playsinline>
+              <source src="../static/img/dark_matter_creation.mp4" type="video/mp4">
+            </video>
+            <div class="dark_matter_video_cover"></div>
+
+
+          </div>
+          <button class="scroll_down_btn">
+            <div class="icon scroll_down_icon">
+              <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 0.607666L13 21.3923" stroke-width="2" />
+              </svg>
+            </div>
+          </button>
+      </div>
+      <div class="section_content resume">
+        <h4 class="bold_700">Resume</h4>
+        <article class="not_blurred">
+          <span class="date caption_lg_12 regular_400">Apr 2022 - Present</span>
+          <div class="position">
+            <div class="position_header">
+              <h5 class="position_company body_lg_16 bold_700">
+                <a href="https://www.linkedin.com/company/happeohq/" target="_blank" rel="external"
+                  title="Happeo Linkedin" aria-label="link to Happeo Linkedin" class="hidden" Happeo>Happeo</a>
+              </h5>
+              <span class="position_dur caption_lg_12 regular_400">{1yr, 2mos}</span>
+            </div>
+            <span class="position_title body_sm_14 medium_500">Senior Product Designer</span>
+            <p class="position_description body_sm_14 regular_400">I synchronized the design team's pace with that of
+              the implementation team by establishing guidelines for the design and project delivery processes,
+              integrating libraries, and structuring the design system. Furthermore, I enhanced these aspects by
+              successfully executing two intricate projects focused on platform analytics filters and SharePoint
+              integration research within the product. </p>
+          </div>
+        </article>
+        <article class="not_blurred multi_role">
+          <span class="date caption_lg_12 regular_400">Feb 2019 - Apr 2022</span>
+          <div class="position">
+            <div class="position_header">
+              <h5 class="position_company body_lg_16 bold_700">
+                <a href="https://www.linkedin.com/company/divarofficial/" target="_blank" rel="external"
+                  title="Divar Linkedin" aria-label="link to Divar Linkedin" class="hidden">Divar</a>
+              </h5>
+              <span class="position_dur caption_lg_12 regular_400">{3yrs, 3mos}</span>
+            </div>
+            <span class="position_title body_sm_14 medium_500">UX Engineering Chapter Leader</span>
+            <p class="position_description body_sm_14 regular_400">As the chapter leader of UXE, I have overseen the
+              development and maintenance of the <a href="https://www.sonnat.dev/" target="_blank" rel="external"
+                title="Sonnat Developer Tools, React Components & Resources"
+                aria-label="link to Sonnat Developer Tools, React Components & Resources">SONNAT design system</a> for
+              Divar, the most widely used classified ads platform in Iran with over 35 million monthly active users. Our
+              team has created a comprehensive design language that effectively addresses communication barriers between
+              cross-functional teams, including design, research, and development. </p>
+            <span class="position_title body_sm_14 medium_500">UX Engineer</span>
+            <p class="position_description body_sm_14 regular_400">I spearheaded the redesign of Divar's platform
+              website and PWA by utilizing user behavior data and conducting usability tests to inform the development
+              of effective design foundations and navigation strategies. In collaboration with a team of over 10
+              front-end developers, I ensured the optimal implementation and accurate setup of our progressive design
+              system within the product. Additionally, I have initiated the recruitment and evaluation process of design
+              engineers to establish the first UXE team in Iran. </p>
+          </div>
+        </article>
+        <article class="not_blurred">
+          <span class="date caption_lg_12 regular_400">Feb 2017 - May 2019</span>
+          <div class="position">
+            <div class="position_header">
+              <h5 class="position_company body_lg_16 bold_700">
+                <a href="https://www.linkedin.com/company/praxo-health-information/" target="_blank" rel="external"
+                  title="Praxo Linkedin" aria-label="link to Praxo Linkedin" class="hidden">Praxo Health Information
+                </a>
+              </h5>
+              <span class="position_dur caption_lg_12 regular_400">{2yrs, 4mos}</span>
+            </div>
+            <span class="position_title body_sm_14 medium_500">Co-Founder, Product Designer</span>
+            <p class="position_description body_sm_14 regular_400">In 2017, I co-founded Praxo with a colleague. Our
+              web-based platform serves as a health record and facilitates communication between physicians and medical
+              professionals by providing access to various tools, including charts, scheduling, e-prescribing, and
+              medical billing. As part of this endeavor, I oversaw product design, UX research, pro-user interviews, and
+              NPS/SUS evaluations, as well as front-end development utilizing React and React Native. </p>
+          </div>
+        </article>
+        <article class="not_blurred multi_role">
+          <span class="date caption_lg_12 regular_400">Apr 2013 - Jan 2017</span>
+          <div class="position">
+            <div class="position_header long_company">
+              <h5 class="position_company body_lg_16 bold_700">
+                <a href="https://www.linkedin.com/company/behine-pardazan-rizmoj-sanat/" target="_blank" rel="external"
+                  title="Behineh Pardazan Rizmoj Sanat Linkedin"
+                  aria-label="link to Behineh Pardazan Rizmoj Sanat Linkedin" class="hidden">Behineh Pardazan Rizmoj
+                  Sanat</a>
+              </h5>
+              <span class="position_dur caption_lg_12 regular_400">{3yrs, 10mos}</span>
+            </div>
+            <span class="position_title body_sm_14 medium_500">UI Developer</span>
+            <p class="position_description body_sm_14 regular_400">I spent four years as a UI developer and UX designer
+              at an innovative telecommunications company in Iran, where I designed and developed components and
+              interfaces that have been utilized in various platforms, including VSR IFF systems, online flight tracking
+              platforms, and commercial radar systems. </p>
+            <span class="position_title body_sm_14 medium_500">UX Designer</span>
+            <p class="position_description body_sm_14 regular_400"></p>
+          </div>
+        </article>
+        <article class="not_blurred">
+          <span class="date caption_lg_12 regular_400">Jan 2012 - Apr 2013</span>
+          <div class="position">
+            <div class="position_header">
+              <h5 class="position_company body_lg_16 bold_700">Iranian TV Channel</h5>
+              <span class="position_dur caption_lg_12 regular_400">{1yr, 4mos}</span>
+            </div>
+            <span class="position_title body_sm_14 medium_500">Graphic Designer, UX Designer</span>
+          </div>
+        </article>
+        <article class="not_blurred">
+          <span class="date caption_lg_12 regular_400">Aug 2010 - Jan 2012</span>
+          <div class="position">
+            <div class="position_header">
+              <h5 class="position_company body_lg_16 bold_700">Ortod Advertising Agency</h5>
+              <span class="position_dur caption_lg_12 regular_400">{1yr, 6mos}</span>
+            </div>
+            <span class="position_title body_sm_14 medium_500">Graphic Designer, Printing Supervisor</span>
+          </div>
+        </article>
+        <div id="portal" data-parallax-factor="0.36"></div>
+      </div>
+      <div class="section_container">
+        <div class="cutting_mat_container">
+          <div class="vertical_grid">
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+          </div>
+          <div class="horizontal_grid">
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+          </div>
+          <div class="guide_grid">
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <line></line>
+            <div class="circle_guide">
+              <svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="400" cy="400" r="399.5" stroke-width="4" stroke-dasharray="2 10" />
+              </svg>
+              <svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="400" cy="400" r="399.5" stroke-width="16" stroke-dasharray="2 100" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="section_content works">
+          <h4 class="bold_700">Works</h4>
+        </div>
+      </div>
+    </section>
+  </app-main>
+  <div class="blur"></div>
+  <canvas class="grain"></canvas>
+
+</body>
+<!-- script -->
+<script src="../static/js/grain.js"></script>
+<script src="../static/js/portal.js"></script>
+<script src="../static/js/parallax.js"></script>
+<script src="../static/js/theme.js"></script>
+<script>
+  var video = document.getElementById("dark_matter_video");
+
+  // Check if iOS Safari
+  var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+  if (isIOS && isSafari) {
+    // Autoplay the video
+    video.play();
+
+
+  }
+</script>
+
+
+</html>

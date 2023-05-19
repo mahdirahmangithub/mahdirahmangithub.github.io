@@ -1,0 +1,30 @@
+
+:root {
+    --background_dark: rgb(238, 234, 229);
+
+    --background_light: rgb(0, 0, 0);
+
+    --text_primary_light: rgb(0, 0, 0);
+    --text_secondary_light: rgba(0, 0, 0, 0.8);
+    --text_tertiary_light: rgba(0, 0, 0, 0.6);
+    --text_hint_light: rgba(0, 0, 0, 0.5);
+    --text_disabled_light: rgba(0, 0, 0, 0.4);
+
+    --stroke_light: rgba(0, 0, 0, 0.2);
+    --divider_light: rgba(0, 0, 0, 0.1);
+
+
+    --text_primary_dark: rgb(238, 234, 229);
+    --text_secondary_dark: rgba(238, 234, 229, 0.8);
+    --text_tertiary_dark: rgba(238, 234, 229, 0.6);
+    --text_hint_dark: rgba(238, 234, 229, 0.5);
+    --text_disabled_dark: rgba(238, 234, 229, 0.4);
+
+    --stroke_dark: rgba(238, 234, 229, 0.2);
+    --divider_dark: rgba(238, 234, 229, 0.1);
+
+
+    --objects_dark:rgba(238, 234, 229, 0.6);
+
+    --object_light:rgb(0, 0, 0);
+}
