@@ -603,8 +603,7 @@ section .hero {
 }
 
 .hero .dark_matter_container .dark_matter_video.dark {
-    -webkit-filter: invert(80%) contrast(200%) sepia(20%);
-            filter: invert(80%) contrast(200%) sepia(20%);
+             filter: invert(80%) contrast(204%) sepia(20%);
 }
 
 .hero .dark_matter_container .dark_matter_video_cover {

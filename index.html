@@ -6,7 +6,10 @@
   <meta name="theme-color" content="var(--background_light)" />
   <title>Mahdi Rahman</title>
   <meta name="description" content="Product Designer | Design System Manager" />
-  <!-- favicon -->
+  <!-- PWA -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+   <!-- favicon -->
   <!-- style  -->
   <link rel="stylesheet" href="../static/css/style.css" />
   <link rel="stylesheet" href="../static/css/media.css" />
@@ -655,10 +658,10 @@
 
   if (isIOS && isSafari) {
     // Autoplay the video
-    video.play();  
+    video.play();
 
   }
-  video.addEventListener("ended", function() {
+  video.addEventListener("ended", function () {
     // Update the video source here
     var nextSource = "../static/img/dark_matter_loop.mp4"; // Replace with your next video source
     video.src = nextSource;
@@ -666,6 +669,18 @@
     video.play();
     video.loop = true; // Enable looping for the second video
   });
+</script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(function(registration) {
+        console.log('Service Worker registered with scope:', registration.scope);
+      })
+      .catch(function(error) {
+        console.error('Service Worker registration failed:', error);
+      });
+  }
 </script>
 
 
