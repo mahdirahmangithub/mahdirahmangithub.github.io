@@ -1069,11 +1069,12 @@ article.multi_role .position .position_description:not(:last-child)::before {
     width: 100%;
     -webkit-filter: url(#portal_glitch);
     filter: url(#portal_glitch)
+    
 }
 
 .portal_container path {
     fill: none;
-
+ 
 }
 
 

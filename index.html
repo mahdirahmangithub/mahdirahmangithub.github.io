@@ -655,10 +655,17 @@
 
   if (isIOS && isSafari) {
     // Autoplay the video
-    video.play();
-
+    video.play();  
 
   }
+  video.addEventListener("ended", function() {
+    // Update the video source here
+    var nextSource = "../static/img/dark_matter_loop.mp4"; // Replace with your next video source
+    video.src = nextSource;
+    video.load();
+    video.play();
+    video.loop = true; // Enable looping for the second video
+  });
 </script>
 
 

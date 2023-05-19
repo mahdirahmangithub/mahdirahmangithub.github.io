@@ -93,9 +93,20 @@
 		letter-spacing: -0.09375rem !important;
 	}
 
+	#portal {
+		top: 0;
+		left: 0;
+	}
+
+	.portal_container {
+
+		-webkit-filter: none;
+		filter: none;
+
+	}
+
 	.section_container {
 		width: 100%;
-
 		margin: 2rem 0;
 	}
 
@@ -192,11 +203,7 @@
 
 	}
 
-	#portal {
-		display: none;
-		visibility: hidden;
 
-	}
 
 	.guide_grid {
 		display: none;
