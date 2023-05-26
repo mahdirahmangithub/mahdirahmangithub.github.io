@@ -22,7 +22,10 @@
   <link rel="stylesheet" href="../static/css/style.css" />
   <link rel="stylesheet" href="../static/css/media.css" />
   <link id="themeStyle" rel="stylesheet">
-  <!-- script -->
+
+   <!-- script -->
+   <script src="../static/js/duration.js"></script>
+
 </head>
 
 <body>
@@ -190,14 +193,14 @@
       <div class="section_content resume">
         <h4 class="bold_700">Resume</h4>
         <article class="not_blurred">
-          <span class="date caption_lg_12 regular_400">Apr 2022 - Present</span>
+          <span class="date caption_lg_12 regular_400" start_month="Apr" start_year="2022" end_month="" end_year="">Apr 2022 - Present</span>
           <div class="position">
             <div class="position_header">
               <h5 class="position_company body_lg_16 bold_700">
                 <a href="https://www.linkedin.com/company/happeohq/" target="_blank" rel="external"
                   title="Happeo Linkedin" aria-label="link to Happeo Linkedin" class="hidden" Happeo>Happeo</a>
               </h5>
-              <span class="position_dur caption_lg_12 regular_400">{1yr, 2mos}</span>
+              <span class="position_dur caption_lg_12 regular_400"> </span>
             </div>
             <span class="position_title body_sm_14 medium_500">Senior Product Designer</span>
             <p class="position_description body_sm_14 regular_400">I synchronized the design team's pace with that of
@@ -208,14 +211,14 @@
           </div>
         </article>
         <article class="not_blurred multi_role">
-          <span class="date caption_lg_12 regular_400">Feb 2019 - Apr 2022</span>
+          <span class="date caption_lg_12 regular_400" start_month="Feb" start_year="2019" end_month="Apr" end_year="2022"></span>
           <div class="position">
             <div class="position_header">
               <h5 class="position_company body_lg_16 bold_700">
                 <a href="https://www.linkedin.com/company/divarofficial/" target="_blank" rel="external"
                   title="Divar Linkedin" aria-label="link to Divar Linkedin" class="hidden">Divar</a>
               </h5>
-              <span class="position_dur caption_lg_12 regular_400">{3yrs, 3mos}</span>
+              <span class="position_dur caption_lg_12 regular_400"> </span>
             </div>
             <span class="position_title body_sm_14 medium_500">UX Engineering Chapter Leader</span>
             <p class="position_description body_sm_14 regular_400">As the chapter leader of UXE, I have overseen the
@@ -235,7 +238,7 @@
           </div>
         </article>
         <article class="not_blurred">
-          <span class="date caption_lg_12 regular_400">Feb 2017 - May 2019</span>
+          <span class="date caption_lg_12 regular_400" start_month="Feb" start_year="2017" end_month="May" end_year="2019"></span>
           <div class="position">
             <div class="position_header">
               <h5 class="position_company body_lg_16 bold_700">
@@ -243,7 +246,7 @@
                   title="Praxo Linkedin" aria-label="link to Praxo Linkedin" class="hidden">Praxo Health Information
                 </a>
               </h5>
-              <span class="position_dur caption_lg_12 regular_400">{2yrs, 4mos}</span>
+              <span class="position_dur caption_lg_12 regular_400"> </span>
             </div>
             <span class="position_title body_sm_14 medium_500">Co-Founder, Product Designer</span>
             <p class="position_description body_sm_14 regular_400">In 2017, I co-founded Praxo with a colleague. Our
@@ -254,7 +257,7 @@
           </div>
         </article>
         <article class="not_blurred multi_role">
-          <span class="date caption_lg_12 regular_400">Apr 2013 - Jan 2017</span>
+          <span class="date caption_lg_12 regular_400" start_month="Apr" start_year="2013" end_month="Jan" end_year="2017"></span>
           <div class="position">
             <div class="position_header long_company">
               <h5 class="position_company body_lg_16 bold_700">
@@ -263,7 +266,7 @@
                   aria-label="link to Behineh Pardazan Rizmoj Sanat Linkedin" class="hidden">Behineh Pardazan Rizmoj
                   Sanat</a>
               </h5>
-              <span class="position_dur caption_lg_12 regular_400">{3yrs, 10mos}</span>
+              <span class="position_dur caption_lg_12 regular_400">  </span>
             </div>
             <span class="position_title body_sm_14 medium_500">UI Developer</span>
             <p class="position_description body_sm_14 regular_400">I spent four years as a UI developer and UX designer
@@ -275,21 +278,21 @@
           </div>
         </article>
         <article class="not_blurred">
-          <span class="date caption_lg_12 regular_400">Jan 2012 - Apr 2013</span>
+          <span class="date caption_lg_12 regular_400" start_month="Jan" start_year="2012" end_month="Apr" end_year="2013"></span>
           <div class="position">
             <div class="position_header">
               <h5 class="position_company body_lg_16 bold_700">Iranian TV Channel</h5>
-              <span class="position_dur caption_lg_12 regular_400">{1yr, 4mos}</span>
+              <span class="position_dur caption_lg_12 regular_400"> </span>
             </div>
             <span class="position_title body_sm_14 medium_500">Graphic Designer, UX Designer</span>
           </div>
         </article>
         <article class="not_blurred">
-          <span class="date caption_lg_12 regular_400">Aug 2010 - Jan 2012</span>
+          <span class="date caption_lg_12 regular_400" start_month="Aug" start_year="2010" end_month="Jan" end_year="2012"></span>
           <div class="position">
             <div class="position_header">
               <h5 class="position_company body_lg_16 bold_700">Ortod Advertising Agency</h5>
-              <span class="position_dur caption_lg_12 regular_400">{1yr, 6mos}</span>
+              <span class="position_dur caption_lg_12 regular_400"> </span>
             </div>
             <span class="position_title body_sm_14 medium_500">Graphic Designer, Printing Supervisor</span>
           </div>
@@ -338,7 +341,11 @@
   </app-main>
   <div class="blur"></div>
   <canvas class="grain"></canvas>
-
+  <script>
+    window.onload = function() {
+      fillDates();
+    };
+  </script>
 </body>
 <!-- script -->
 <script src="../static/js/grain.js"></script>
@@ -346,14 +353,6 @@
 <script src="../static/js/parallax.js"></script>
 <script src="../static/js/theme.js"></script>
 <script src="../static/js/footer.js"></script>
-
 <script src="../static/js/safari.js"></script>
-
-
-
- 
-
-
-
 
 </html>
