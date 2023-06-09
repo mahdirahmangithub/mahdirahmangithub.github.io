@@ -1135,6 +1135,7 @@ article.multi_role .position .position_description:not(:last-child)::before {
     background-color: var(--background_dark);
     margin: 4rem 0 0 0;
     position: relative;
+    
 }
 
 .section_container::before {
@@ -1146,6 +1147,7 @@ article.multi_role .position .position_description:not(:last-child)::before {
     background-color: var(--text_primary_dark);
     border-radius: 0.5rem;
     filter: url(#pencil_1);
+    z-index: 1;
 }
 
 
@@ -1173,6 +1175,8 @@ section .works {
 
 .works h4 {
     color: var(--text_primary_light);
+        z-index: 1;
+
 }
 
 .works article {
@@ -1196,8 +1200,7 @@ section .works {
 
 .works article h5 {
     color: var(--text_primary_light);
-    z-index: 10000;
-}
+ }
 
 
 

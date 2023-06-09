@@ -9,7 +9,7 @@ function handleIntersection(entries, observer) {
       } else {
         footer.style.opacity = 0;
         footer.style.pointerEvents = "none";
-
+ 
       }
     });
   }
