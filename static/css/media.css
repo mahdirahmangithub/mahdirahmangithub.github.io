@@ -211,5 +211,20 @@
 
 
 	}
+
+
+	footer {
+ 
+		padding: 1rem ;
+	 
+	}
+
+footer .footer_content {
+ 
+    -ms-flex-flow: column;
+    flex-flow: column;
+	gap: 1rem;
+  
+}
  
 }

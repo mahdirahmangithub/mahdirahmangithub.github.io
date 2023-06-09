@@ -492,6 +492,7 @@ section .hero {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: start;
+ 
 }
 
 .hero h1 .line span {
