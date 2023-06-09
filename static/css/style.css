@@ -11,7 +11,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
- 
+
 }
 
 *:focus {
@@ -90,7 +90,7 @@ caption {
     font-family: inter;
     margin-top: 0;
     margin-bottom: 0;
- 
+
 
 
 }
@@ -1134,22 +1134,20 @@ article.multi_role .position .position_description:not(:last-child)::before {
     background-color: var(--background_dark);
     margin: 4rem 0 0 0;
     position: relative;
-    z-index: 1;
 }
 
 .section_container::before {
     content: '';
     display: block;
     position: absolute;
-    width: calc(100% + 1rem);
-    height: calc(100% + 1rem);
+    width: calc(100% + 1.05rem);
+    height: calc(100% + 1.05rem);
     background-color: var(--text_primary_dark);
     border-radius: 0.5rem;
-    -webkit-filter: url(#pencil_1);
     filter: url(#pencil_1);
-
-
 }
+
+
 
 section .works {
     width: 100%;
@@ -1176,7 +1174,29 @@ section .works {
     color: var(--text_primary_light);
 }
 
+.works article {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 
+}
+
+.works article h5 {
+    color: var(--text_primary_light);
+    z-index: 10000;
+}
 
 
 
