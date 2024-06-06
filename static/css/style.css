@@ -40,6 +40,19 @@ a::after {
     transition: 200ms ease;
 }
 
+a.dark::after {
+    content: ' [→] ';
+    text-align: start;
+    font-size: larger;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: var(--text_disabled_light);
+    -webkit-transition: 200ms ease;
+    -o-transition: 200ms ease;
+    transition: 200ms ease;
+}
+
 a.hidden::after {
     display: none;
     visibility: hidden;
@@ -47,6 +60,10 @@ a.hidden::after {
 
 a:hover::after {
     color: var(--text_primary_dark);
+}
+
+a.dark:hover::after {
+    color: var(--text_primary_light);
 }
 
 button,
@@ -86,6 +103,8 @@ h5,
 h6,
 span,
 p,
+ul,
+li,
 caption {
     font-family: inter;
     margin-top: 0;
@@ -492,7 +511,7 @@ section .hero {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: start;
- 
+
 }
 
 .hero h1 .line span {
@@ -1066,6 +1085,19 @@ article.multi_role .position .position_title::before {
 
 }
 
+ul.position_description {
+    margin: 0;
+    padding-left: 1rem;
+}
+
+
+
+ul.position_description li {
+    margin: 0;
+    padding: 0;
+    color: var(--text_tertiary_dark);
+}
+
 .resume article .position .position_description::before {
     content: '';
     display: block;
@@ -1136,7 +1168,7 @@ article.multi_role .position .position_description:not(:last-child)::before {
     background-color: var(--background_dark);
     margin: 4rem 0 0 0;
     position: relative;
-    
+
 }
 
 .section_container::before {
@@ -1176,7 +1208,7 @@ section .works {
 
 .works h4 {
     color: var(--text_primary_light);
-        z-index: 1;
+    z-index: 1;
 
 }
 
@@ -1189,7 +1221,7 @@ section .works {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-flow: row;
-    flex-flow: row;
+    flex-flow: column;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
@@ -1201,9 +1233,13 @@ section .works {
 
 .works article h5 {
     color: var(--text_primary_light);
- }
+    margin-bottom: 1rem;
+}
 
-
+.works article p {
+    color: var(--text_secondary_light);
+    padding-bottom: 0.25rem;
+}
 
 footer {
     width: 100%;
@@ -1260,4 +1296,30 @@ footer .footer_content .contacts {
 
 footer a {
     color: var(--text_primary_dark);
+}
+
+.img_container {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--stroke_light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 2rem;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+img {
+    display: block;
+    width: 60%;
+    height: 100%;
+    border-radius: inherit;
+    object-position: center center;
+    object-fit: cover;
+    image-rendering: auto;
 }
